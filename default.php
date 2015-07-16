@@ -73,6 +73,9 @@ function getProduct($url) {
             $produkt['dostupnos_pobocky'][$pob1] = $pob2;
         }
     }
+    if ($obsah_stranky->find('div.sti_image', 0)) {
+      echo "Url image".$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
+    }
     printr($produkt);
     $obsah = printr($produkt, true);
     file_put_contents('produkty.txt', $obsah, FILE_APPEND);
