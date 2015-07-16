@@ -95,6 +95,25 @@ function getProduct($url) {
             $produkt['dostupnost_pobocky'][$pob1] = $pob2;
         }
     }
+    foreach ($obsah_stranky->find('table[class=sti_details]') as $tabulka) {
+        $i = 0;
+        foreach ($tabulka->find('tr') as $parametry) {
+            if ($i > 0) {
+                $klic = '';
+                $hodnota = '';
+                if ($tabulka->find('td', 0)) {
+                    $klic = $parametry->find('td', 0)->plaintext;
+                }
+                if ($tabulka->find('td', 1)) {
+                    $hodnota = $parametry->find('td', 1)->plaintext;
+                }
+                if ($klic && $hodnota) {
+                    $produkt['parametry'][$klic] = $hodnota;
+                }
+            }
+            $i++;
+        }
+    }
     if ($obsah_stranky->find('div.sti_image', 0)) {
       $produkt["url_image"] = 'http://dealer.tsbohemia.cz/'.$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
     }
