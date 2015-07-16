@@ -51,6 +51,20 @@ function getProduct($url) {
             if ($element->find('th', 0)) {
                 $prvek1 = $element->find('th', 0)->plaintext;
                 $prvek1 = str_replace('Výrobce', 'vyrobce', $prvek1);
+                $prvek1 = str_replace('Kód', 'kod', $prvek1);
+                $prvek1 = str_replace('Part No.', 'part_no', $prvek1);
+                $prvek1 = str_replace('Dostupnost na eshopu', 'dostupnost_eshop', $prvek1);
+                $prvek1 = str_replace('Objednat', '', $prvek1);
+                $prvek1 = str_replace('Vaše cena bez DPH', 'cena_bez_dph', $prvek1);
+                $prvek1 = str_replace('Recyklační poplatek (RP*)', 'recyklacni_poplatek', $prvek1);
+                $prvek1 = str_replace('Autorský fond (AF*)', 'autorsky_fond', $prvek1);
+                $prvek1 = str_replace('Vaše cena s RP*+ AF*', 'cena_s_rp_af', $prvek1);
+                $prvek1 = str_replace('Vaše cena s DPH', 'cena_s_rp_af', $prvek1);
+                $prvek1 = str_replace('Garance ceny', '', $prvek1);
+                $prvek1 = str_replace('Záruka spotřebitel', 'zaruka_spotrebitel', $prvek1);
+                $prvek1 = str_replace('Záruka ostatní', 'zaruka_ostatni', $prvek1);
+                $prvek1 = str_replace('Status', 'status', $prvek1);
+                $prvek1 = str_replace('dostupnos_pobocky', 'dostupnost_pobocky', $prvek1);
             }
             if ($element->find('td', 0)) {
                 $prvek2 = $element->find('td', 0)->plaintext;
