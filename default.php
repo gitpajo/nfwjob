@@ -100,7 +100,7 @@ function getProduct($url) {
     file_put_contents('produkty.txt', $obsah, FILE_APPEND);
 }
 
-getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
+//getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
 /* $link = @mysql_connect('localhost', 'root', '')
   or die('Could not connect: ' . mysql_error());
