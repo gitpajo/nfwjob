@@ -64,7 +64,6 @@ function getProduct($url) {
                 $prvek1 = str_replace('Záruka spotřebitel', 'zaruka_spotrebitel', $prvek1);
                 $prvek1 = str_replace('Záruka ostatní', 'zaruka_ostatni', $prvek1);
                 $prvek1 = str_replace('Status', 'status', $prvek1);
-                $prvek1 = str_replace('dostupnos_pobocky', 'dostupnost_pobocky', $prvek1);
             }
             if ($element->find('td', 0)) {
                 $prvek2 = $element->find('td', 0)->plaintext;
