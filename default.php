@@ -83,6 +83,11 @@ function getProduct($url) {
             } else {
                 $pob2 = '';
             }
+            if ($pob2 == 'img_skladem') {
+                $pob2 = 1;
+            } else {
+                $pob2 = 0;
+            }
             $i++;
             $produkt['dostupnos_pobocky'][$pob1] = $pob2;
         }
