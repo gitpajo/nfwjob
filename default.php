@@ -50,6 +50,7 @@ function getProduct($url) {
             $prvek2 = '';
             if ($element->find('th', 0)) {
                 $prvek1 = $element->find('th', 0)->plaintext;
+                $prvek1 = str_replace('Výrobce', 'vyrobce', $prvek1);
             }
             if ($element->find('td', 0)) {
                 $prvek2 = $element->find('td', 0)->plaintext;
