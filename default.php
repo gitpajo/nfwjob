@@ -88,7 +88,7 @@ function getProduct($url) {
                 $pob2 = 0;
             }
             $i++;
-            $produkt['dostupnos_pobocky'][$pob1] = $pob2;
+            $produkt['dostupnost_pobocky'][$pob1] = $pob2;
         }
     }
     if ($obsah_stranky->find('div.sti_image', 0)) {
