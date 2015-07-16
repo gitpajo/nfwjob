@@ -1,0 +1,631 @@
+Array
+(
+    [vyrobce] =>   Patriot Memory
+    [kod] => 9302835
+    [part_no] => PB120GS25SSDR
+    [dostupnost_eshop] =>         Skladem         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										           										           										           										           										         										           										         										           										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 1 234 Kč
+    [Recyklační poplatek  (RP*)] => 1.50; DPH: 21% (Komponenty nezaložené na mechanickém pohybu) 
+    [Autorský fond  (AF*)] => 37.03; DPH: 21% (HDD zabudovat. do PC) 
+    [Vaše cena s RP*+ AF*] => 1 273 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 1 540 Kč
+    [Záruka spotřebitel] => 36 Měsíce
+    [Záruka ostatní] => 36 Měsíce
+    [status] => V ceníku 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_skladem
+            [TOH] => img_skladem
+            [TOP] => img_skladem
+            [TBA] => img_skladem
+            [BR] => img_skladem
+            [ZL] => img_dostupnost
+            [OP] => img_skladem
+            [UH] => img_dostupnost
+            [HK] => img_skladem
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [vyrobce] =>   Motorola
+    [kod] => 8982704
+    [part_no] => 8592118802697
+    [dostupnost_eshop] =>         do 2 dnů         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 4 957 Kč
+    [Recyklační poplatek  (RP*)] => 1.20; DPH: 21% (Mobilní telefony) 
+    [Vaše cena s RP*] => 4 958 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 5 999 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => 
+            [TOH] => 
+            [TOP] => 
+            [TBA] => 
+            [BR] => 
+            [ZL] => 
+            [OP] => 
+            [UH] => 
+            [HK] => 
+            [ZN] => 
+            [JI] => 
+            [LI] => 
+            [PR] => 
+            [BC] => 
+        )
+
+)
+Array
+(
+    [vyrobce] =>   Acer
+    [kod] => 7702261
+    [part_no] => DT.SULEC.010
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 12 Měsíce
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+)
+Array
+(
+    [vyrobce] =>   Acer
+    [kod] => 7702262
+    [part_no] => DQ.SVCEC.007
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 12 Měsíce
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [vyrobce] =>   OKI
+    [kod] => 8982705
+    [part_no] => 45762112
+    [dostupnost_eshop] =>         do 2 dnů         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 12 166 Kč
+    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [Autorský fond  (AF*)] => 90.00; DPH: 21% (Multifunkční přístroje 5001-10000 Kč) 
+    [Vaše cena s RP*+ AF*] => 12 268 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 14 844 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => 
+            [TOH] => 
+            [TOP] => 
+            [TBA] => 
+            [BR] => 
+            [ZL] => 
+            [OP] => 
+            [UH] => 
+            [HK] => 
+            [ZN] => 
+            [JI] => 
+            [LI] => 
+            [PR] => 
+            [BC] => 
+        )
+
+)
+Array
+(
+    [vyrobce] =>   OKI
+    [kod] => 8982706
+    [part_no] => 45762022
+    [dostupnost_eshop] =>         Skladem         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										         										         										         										           										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 8 447 Kč
+    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [Autorský fond  (AF*)] => 45.00; DPH: 21% (Tiskárny BEZ ink.tech. 5001-10000 Kč) 
+    [Vaše cena s RP*+ AF*] => 8 504 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 10 290 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_skladem
+            [TOH] => 
+            [TOP] => 
+            [TBA] => 
+            [BR] => img_skladem
+            [ZL] => 
+            [OP] => 
+            [UH] => 
+            [HK] => 
+            [ZN] => 
+            [JI] => 
+            [LI] => 
+            [PR] => 
+            [BC] => 
+        )
+
+)
+Array
+(
+    [vyrobce] =>   Acer
+    [kod] => 7702263
+    [part_no] => DQ.SUPEC.001
+    [dostupnost_eshop] =>         3-4 týdny         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC      15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										      
+    [Vaše cena bez DPH] => 20 591 Kč
+    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Stolní osobní počítač) 
+    [Autorský fond  (AF*)] => 50.00; DPH: 21% (HDD+CD/DVD-RW zabudované do PC) 
+    [Vaše cena s RP*+ AF*] => 20 653 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 24 990 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 12 Měsíce
+    [status] => V ceníku 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => 
+            [TOH] => 
+            [TOP] => 
+            [TBA] => 
+            [BR] => 
+            [ZL] => 
+            [OP] => 
+            [UH] => 
+            [HK] => 
+            [ZN] => 
+            [JI] => 
+            [LI] => 
+            [PR] => 
+            [BC] => 
+        )
+
+)
+Array
+(
+    [vyrobce] =>   OKI
+    [kod] => 8982707
+    [part_no] => 45762102
+    [dostupnost_eshop] =>         do 5 dnů         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC      5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										      
+    [Vaše cena bez DPH] => 7 398 Kč
+    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [Autorský fond  (AF*)] => 90.00; DPH: 21% (Multifunkční přístroje 5001-10000 Kč) 
+    [Vaše cena s RP*+ AF*] => 7 500 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 9 075 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => 
+            [TOH] => 
+            [TOP] => 
+            [TBA] => 
+            [BR] => 
+            [ZL] => 
+            [OP] => 
+            [UH] => 
+            [HK] => 
+            [ZN] => 
+            [JI] => 
+            [LI] => 
+            [PR] => 
+            [BC] => 
+        )
+
+)
+Array
+(
+    [kod] => 8982708
+    [part_no] => 45762012
+    [dostupnost_eshop] =>         Skladem         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										         										         										         										           										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 5 902 Kč
+    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [Autorský fond  (AF*)] => 24.00; DPH: 21% (Tiskárny BEZ ink.tech. do 5000 Kč) 
+    [Vaše cena s RP*+ AF*] => 5 938 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 7 185 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_skladem
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_skladem
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [vyrobce] =>   Acer
+    [kod] => 7702264
+    [part_no] => DQ.SVAEC.004
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 12 Měsíce
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+)
+Array
+(
+    [kod] => 8982709
+    [part_no] => 45762002
+    [dostupnost_eshop] =>         Zavolejte         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 4 464 Kč
+    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [Autorský fond  (AF*)] => 24.00; DPH: 21% (Tiskárny BEZ ink.tech. do 5000 Kč) 
+    [Vaše cena s RP*+ AF*] => 4 500 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 5 445 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_dostupnost
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_dostupnost
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [vyrobce] =>   Ubiquiti
+    [kod] => 7860111P
+    [part_no] => NBE-M5-300
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+)
+Array
+(
+    [vyrobce] =>   Acer
+    [kod] => 7702265
+    [part_no] => DT.SVMEC.002
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 12 Měsíce
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+)
+Array
+(
+    [vyrobce] =>   LG
+    [kod] => 8982710
+    [part_no] => LGH955.ACZETS
+    [dostupnost_eshop] =>         do 2 dnů         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 13 131 Kč
+    [Recyklační poplatek  (RP*)] => 1.20; DPH: 21% (Mobilní telefony) 
+    [Vaše cena s RP*] => 13 132 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 15 890 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => 
+            [TOH] => 
+            [TOP] => 
+            [TBA] => 
+            [BR] => 
+            [ZL] => 
+            [OP] => 
+            [UH] => 
+            [HK] => 
+            [ZN] => 
+            [JI] => 
+            [LI] => 
+            [PR] => 
+            [BC] => 
+        )
+
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [vyrobce] =>   Nintendo
+    [kod] => 8880031
+    [part_no] => NI3P090130
+    [dostupnost_eshop] =>         Zavolejte         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 330 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 399 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_dostupnost
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_dostupnost
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [vyrobce] =>   Nintendo
+    [kod] => 8880032
+    [part_no] => NI3P090140
+    [dostupnost_eshop] =>         Skladem         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										         										         										         										           										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 330 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 399 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_skladem
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_skladem
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [vyrobce] =>   Nintendo
+    [kod] => 8880033
+    [part_no] => NI3P092010
+    [dostupnost_eshop] =>         Zavolejte         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 247 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 299 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_dostupnost
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_dostupnost
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [vyrobce] =>   Nintendo
+    [kod] => 8880034
+    [part_no] => NI3S28201
+    [dostupnost_eshop] =>         Zavolejte         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 660 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 799 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_dostupnost
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_dostupnost
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [vyrobce] =>   ASUS
+    [kod] => 8982146P
+    [part_no] => X552EP-SX003H
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+)
+Array
+(
+    [vyrobce] =>   Nintendo
+    [kod] => 8880035
+    [part_no] => NI3S34355
+    [dostupnost_eshop] =>         Zavolejte         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 826 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 999 Kč
+    [Záruka spotřebitel] => 24 Měsíce
+    [Záruka ostatní] => 24 Měsíce
+    [status] => TOP produkt 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_dostupnost
+            [TOH] => img_dostupnost
+            [TOP] => img_dostupnost
+            [TBA] => img_dostupnost
+            [BR] => img_dostupnost
+            [ZL] => img_dostupnost
+            [OP] => img_dostupnost
+            [UH] => img_dostupnost
+            [HK] => img_dostupnost
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
+Array
+(
+    [status] =>  
+    [Hodnocení produktu] => Hodnoceno x          					   				
+)
+Array
+(
+    [vyrobce] =>   Patriot Memory
+    [kod] => 9302835
+    [part_no] => PB120GS25SSDR
+    [dostupnost_eshop] =>         Skladem         
+    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										           										           										           										           										         										           										         										           										         										         										         										         										         										      
+    [Vaše cena bez DPH] => 1 234 Kč
+    [Recyklační poplatek  (RP*)] => 1.50; DPH: 21% (Komponenty nezaložené na mechanickém pohybu) 
+    [Autorský fond  (AF*)] => 37.03; DPH: 21% (HDD zabudovat. do PC) 
+    [Vaše cena s RP*+ AF*] => 1 273 Kč
+    [DPH] => 21%
+    [Vaše cena s DPH] => 1 540 Kč
+    [Záruka spotřebitel] => 36 Měsíce
+    [Záruka ostatní] => 36 Měsíce
+    [status] => V ceníku 
+    [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [dostupnos_pobocky] => Array
+        (
+            [OL] => img_skladem
+            [TOH] => img_skladem
+            [TOP] => img_skladem
+            [TBA] => img_skladem
+            [BR] => img_skladem
+            [ZL] => img_dostupnost
+            [OP] => img_skladem
+            [UH] => img_dostupnost
+            [HK] => img_skladem
+            [ZN] => img_dostupnost
+            [JI] => img_dostupnost
+            [LI] => img_dostupnost
+            [PR] => img_dostupnost
+            [BC] => img_dostupnost
+        )
+
+)
