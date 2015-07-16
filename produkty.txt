@@ -15,24 +15,25 @@ Array
     [Záruka ostatní] => 36 Měsíce
     [status] => V ceníku 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_skladem
-            [TOH] => img_skladem
-            [TOP] => img_skladem
-            [TBA] => img_skladem
-            [BR] => img_skladem
-            [ZL] => img_dostupnost
-            [OP] => img_skladem
-            [UH] => img_dostupnost
-            [HK] => img_skladem
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 1
+            [TOH] => 1
+            [TOP] => 1
+            [TBA] => 1
+            [BR] => 1
+            [ZL] => 0
+            [OP] => 1
+            [UH] => 0
+            [HK] => 1
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212486
 )
 Array
 (
@@ -50,24 +51,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => 
-            [TOH] => 
-            [TOP] => 
-            [TBA] => 
-            [BR] => 
-            [ZL] => 
-            [OP] => 
-            [UH] => 
-            [HK] => 
-            [ZN] => 
-            [JI] => 
-            [LI] => 
-            [PR] => 
-            [BC] => 
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212487
 )
 Array
 (
@@ -78,6 +80,7 @@ Array
     [Záruka ostatní] => 12 Měsíce
     [status] =>  
     [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [url_image] => img.asp?stiid=212488
 )
 Array
 (
@@ -88,6 +91,7 @@ Array
     [Záruka ostatní] => 12 Měsíce
     [status] =>  
     [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [url_image] => img.asp?stiid=212489
 )
 Array
 (
@@ -111,24 +115,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => 
-            [TOH] => 
-            [TOP] => 
-            [TBA] => 
-            [BR] => 
-            [ZL] => 
-            [OP] => 
-            [UH] => 
-            [HK] => 
-            [ZN] => 
-            [JI] => 
-            [LI] => 
-            [PR] => 
-            [BC] => 
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212491
 )
 Array
 (
@@ -147,24 +152,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_skladem
-            [TOH] => 
-            [TOP] => 
-            [TBA] => 
-            [BR] => img_skladem
-            [ZL] => 
-            [OP] => 
-            [UH] => 
-            [HK] => 
-            [ZN] => 
-            [JI] => 
-            [LI] => 
-            [PR] => 
-            [BC] => 
+            [OL] => 1
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 1
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212492
 )
 Array
 (
@@ -183,24 +189,25 @@ Array
     [Záruka ostatní] => 12 Měsíce
     [status] => V ceníku 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => 
-            [TOH] => 
-            [TOP] => 
-            [TBA] => 
-            [BR] => 
-            [ZL] => 
-            [OP] => 
-            [UH] => 
-            [HK] => 
-            [ZN] => 
-            [JI] => 
-            [LI] => 
-            [PR] => 
-            [BC] => 
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212493
 )
 Array
 (
@@ -219,24 +226,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => 
-            [TOH] => 
-            [TOP] => 
-            [TBA] => 
-            [BR] => 
-            [ZL] => 
-            [OP] => 
-            [UH] => 
-            [HK] => 
-            [ZN] => 
-            [JI] => 
-            [LI] => 
-            [PR] => 
-            [BC] => 
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212494
 )
 Array
 (
@@ -254,24 +262,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_skladem
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_skladem
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 1
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 1
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212495
 )
 Array
 (
@@ -282,6 +291,7 @@ Array
     [Záruka ostatní] => 12 Měsíce
     [status] =>  
     [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [url_image] => img.asp?stiid=212496
 )
 Array
 (
@@ -299,24 +309,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_dostupnost
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_dostupnost
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212497
 )
 Array
 (
@@ -327,6 +338,7 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] =>  
     [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [url_image] => img.asp?stiid=212498
 )
 Array
 (
@@ -337,6 +349,7 @@ Array
     [Záruka ostatní] => 12 Měsíce
     [status] =>  
     [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [url_image] => img.asp?stiid=212499
 )
 Array
 (
@@ -354,24 +367,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => 
-            [TOH] => 
-            [TOP] => 
-            [TBA] => 
-            [BR] => 
-            [ZL] => 
-            [OP] => 
-            [UH] => 
-            [HK] => 
-            [ZN] => 
-            [JI] => 
-            [LI] => 
-            [PR] => 
-            [BC] => 
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212500
 )
 Array
 (
@@ -412,24 +426,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_dostupnost
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_dostupnost
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212506
 )
 Array
 (
@@ -445,24 +460,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_skladem
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_skladem
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 1
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 1
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212507
 )
 Array
 (
@@ -483,24 +499,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_dostupnost
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_dostupnost
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212509
 )
 Array
 (
@@ -526,24 +543,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_dostupnost
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_dostupnost
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212512
 )
 Array
 (
@@ -554,6 +572,7 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] =>  
     [Hodnocení produktu] => Hodnoceno 0x          					   				
+    [url_image] => img.asp?stiid=212513
 )
 Array
 (
@@ -569,24 +588,25 @@ Array
     [Záruka ostatní] => 24 Měsíce
     [status] => TOP produkt 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_dostupnost
-            [TOH] => img_dostupnost
-            [TOP] => img_dostupnost
-            [TBA] => img_dostupnost
-            [BR] => img_dostupnost
-            [ZL] => img_dostupnost
-            [OP] => img_dostupnost
-            [UH] => img_dostupnost
-            [HK] => img_dostupnost
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 0
+            [TOH] => 0
+            [TOP] => 0
+            [TBA] => 0
+            [BR] => 0
+            [ZL] => 0
+            [OP] => 0
+            [UH] => 0
+            [HK] => 0
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212514
 )
 Array
 (
@@ -610,22 +630,23 @@ Array
     [Záruka ostatní] => 36 Měsíce
     [status] => V ceníku 
     [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnos_pobocky] => Array
+    [dostupnost_pobocky] => Array
         (
-            [OL] => img_skladem
-            [TOH] => img_skladem
-            [TOP] => img_skladem
-            [TBA] => img_skladem
-            [BR] => img_skladem
-            [ZL] => img_dostupnost
-            [OP] => img_skladem
-            [UH] => img_dostupnost
-            [HK] => img_skladem
-            [ZN] => img_dostupnost
-            [JI] => img_dostupnost
-            [LI] => img_dostupnost
-            [PR] => img_dostupnost
-            [BC] => img_dostupnost
+            [OL] => 1
+            [TOH] => 1
+            [TOP] => 1
+            [TBA] => 1
+            [BR] => 1
+            [ZL] => 0
+            [OP] => 1
+            [UH] => 0
+            [HK] => 1
+            [ZN] => 0
+            [JI] => 0
+            [LI] => 0
+            [PR] => 0
+            [BC] => 0
         )
 
+    [url_image] => img.asp?stiid=212486
 )
