@@ -57,8 +57,8 @@ function getProduct($url) {
                 $prvek1 = str_replace('Dostupnost na eshopu', 'dostupnost_eshop', $prvek1);
                 $prvek1 = str_replace('Objednat', '', $prvek1);
                 $prvek1 = str_replace('Vaše cena bez DPH', 'cena_bez_dph', $prvek1);
-                $prvek1 = str_replace('Recyklační poplatek (RP*)', 'recyklacni_poplatek', $prvek1);
-                $prvek1 = str_replace('Autorský fond (AF*)', 'autorsky_fond', $prvek1);
+                $prvek1 = str_replace('Recyklační poplatek  (RP*)', 'recyklacni_poplatek', $prvek1);
+                $prvek1 = str_replace('Autorský fond  (AF*)', 'autorsky_fond', $prvek1);
                 $prvek1 = str_replace('Vaše cena s RP*+ AF*', 'cena_s_rp_af', $prvek1);
                 $prvek1 = str_replace('Vaše cena s DPH', 'cena_s_rp_af', $prvek1);
                 $prvek1 = str_replace('Garance ceny', '', $prvek1);
