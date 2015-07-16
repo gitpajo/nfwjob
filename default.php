@@ -72,6 +72,9 @@ function getProduct($url) {
             if ($prvek1 && $prvek2) {
                 $produkt[$prvek1] = $prvek2;
             }
+            if ($prvek1 == 'Dostupnost na pobočkách') {
+              unset($produkt[$prvek1]);
+            }
         }
     }
     foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
