@@ -96,7 +96,7 @@ function getProduct($url) {
       echo "Url image".$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
     }
     printr($produkt);
-    $obsah = printr($produkt, true);
+    $obsah = print_r($produkt, true);
     file_put_contents('produkty.txt', $obsah, FILE_APPEND);
 }
 
