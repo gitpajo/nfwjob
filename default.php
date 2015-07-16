@@ -50,6 +50,7 @@ function getProduct($url) {
             $prvek2 = '';
             if ($element->find('th', 0)) {
                 $prvek1 = $element->find('th', 0)->plaintext;
+                $prvek1 = str_replace(html_entity_decode('&nbsp;'), ' ', $prvek1);
                 $prvek1 = str_replace('Výrobce', 'vyrobce', $prvek1);
                 $prvek1 = str_replace('Kód', 'kod', $prvek1);
                 $prvek1 = str_replace('Part No.', 'part_no', $prvek1);
