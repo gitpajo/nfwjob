@@ -92,7 +92,8 @@ function getProduct($url) {
         }
     }
     if ($obsah_stranky->find('div.sti_image', 0)) {
-      echo "Url image".$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
+      echo "Url image ".$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
+      $produkt["url_image"] = $obsah_stranky->find('div.sti_image',0)->find('img',0)->src;
     }
     printr($produkt);
     $obsah = print_r($produkt, true);
