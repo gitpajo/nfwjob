@@ -117,6 +117,7 @@ function getProduct($url) {
    if ($obsah_stranky == false) {
         printr('Nelze načíst stránku');
     } else {
+        $produkt = array();
     foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
         $i = 0;
         foreach ($tabulka->find('th') as $dostup) {
