@@ -42,8 +42,7 @@ foreach ($produkty as $produkt) {
     getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $produkt);
 }
 
-function getInformation($url, $obsah_stranky) {
-    $produkt = array();
+function getInformation($url, $obsah_stranky, $produkt) {
      foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
         foreach ($tabulka->find('tr') as $element) {
             $prvek1 = '';
@@ -77,18 +76,18 @@ function getInformation($url, $obsah_stranky) {
             }
         }
     }
+    return $produkt;
 }
 
-function getParametr($url, $obsah_stranky) {
+function getParametr($url, $obsah_stranky, $produkt) {
     
 }
 
-function getImage($url, $obsah_stranky) {
+function getImage($url, $obsah_stranky, $produkt) {
     
 }
 
-function getInclusion($url, $obsah_stranky) {
-    $produkt = array();
+function getInclusion($url, $obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
         $podm = TRUE;
         $i = 0;
