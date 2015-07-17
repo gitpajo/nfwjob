@@ -42,7 +42,24 @@ foreach ($url_produkty as $url_produkt) {
     getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $url_produkt);
 }
 
-function getInformation($url, $obsah_stranky, $produkt) {
+function getProduct($url) {
+    $obsah_stranky = file_get_html($url);
+    if ($obsah_stranky == false) {
+        printr('Nelze načíst stránku');
+    } else {
+        $produkt = array();
+        $produkt = array_merge($produkt, getInformation($obsah_stranky, $produkt));
+        $produkt = array_merge($produkt, getAvailability($obsah_stranky, $produkt));
+        $produkt = array_merge($produkt, getParametr($obsah_stranky, $produkt));
+        $produkt = array_merge($produkt, getImage($obsah_stranky, $produkt));
+        $produkt = array_merge($produkt, getInclusion($obsah_stranky, $produkt));    
+        printr($produkt);
+        $obsah = print_r($produkt, true);
+        file_put_contents('produkty.txt', $obsah, FILE_APPEND);
+    }
+}
+
+function getInformation($obsah_stranky, $produkt) {
      foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
         foreach ($tabulka->find('tr') as $element) {
             $prvek1 = '';
@@ -79,44 +96,7 @@ function getInformation($url, $obsah_stranky, $produkt) {
     return $produkt;
 }
 
-function getParametr($url, $obsah_stranky, $produkt) {
-    
-}
-
-function getImage($url, $obsah_stranky, $produkt) {
-    
-}
-
-function getInclusion($url, $obsah_stranky, $produkt) {
-    foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
-        $podm = TRUE;
-        $i = 0;
-        $j = 0;
-        $kategorie = '';
-        while ($podm) {
-            if ($tabulka->find('strong.hcat', $j)) {
-                $kategorie = $tabulka->find('strong.hcat', $j)->plaintext;
-            }
-            if ($tabulka->find('a', $i)) {
-                if ($kategorie) {
-                    $produkt['zarazeni'][$kategorie][] = $tabulka->find('a', $i)->plaintext;
-                }  
-            } else {
-                $podm = FALSE;
-            }
-            $i++;
-            $j++;
-        }
-    }
-    return $produkt;
-}
-
-function getProduct($url) {
-    $obsah_stranky = file_get_html($url);
-   if ($obsah_stranky == false) {
-        printr('Nelze načíst stránku');
-    } else {
-        $produkt = array();
+function getAvailability($obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
         $i = 0;
         foreach ($tabulka->find('th') as $dostup) {
@@ -135,6 +115,10 @@ function getProduct($url) {
             $produkt['dostupnost_pobocky'][$pob1] = $pob2;
         }
     }
+    return $produkt;
+}
+
+function getParametr($obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('table[class=sti_details]') as $tabulka) {
         $podminka = false;
         foreach ($tabulka->find('tr') as $parametry) {
@@ -154,16 +138,39 @@ function getProduct($url) {
             $podminka = true;
         }
     }
-    
-    $produkt = array_merge($produkt, getInclusion($url, $obsah_stranky));
-    
+    return $produkt;
+}
+
+function getImage($obsah_stranky, $produkt) {
     if ($obsah_stranky->find('div.sti_image', 0)) {
-      $produkt["url_image"] = 'http://dealer.tsbohemia.cz/'.$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
+        $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' .
+                $obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
     }
-    printr($produkt);
-    $obsah = print_r($produkt, true);
-    file_put_contents('produkty.txt', $obsah, FILE_APPEND);
+    return $produkt;
+}
+
+function getInclusion($obsah_stranky, $produkt) {
+    foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
+        $podm = TRUE;
+        $i = 0;
+        $j = 0;
+        $kategorie = '';
+        while ($podm) {
+            if ($tabulka->find('strong.hcat', $j)) {
+                $kategorie = $tabulka->find('strong.hcat', $j)->plaintext;
+            }
+            if ($tabulka->find('a', $i)) {
+                if ($kategorie) {
+                    $produkt['zarazeni'][$kategorie][] = $tabulka->find('a', $i)->plaintext;
+                }
+            } else {
+                $podm = FALSE;
+            }
+            $i++;
+            $j++;
+        }
     }
+    return $produkt;
 }
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
