@@ -55,6 +55,7 @@ function getImage($url, $obsah_stranky) {
 }
 
 function getInclusion($url, $obsah_stranky) {
+    $produkt = array();
     foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
         $podm = TRUE;
         $i = 0;
