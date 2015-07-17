@@ -96,9 +96,9 @@ function getProduct($url) {
         }
     }
     foreach ($obsah_stranky->find('table[class=sti_details]') as $tabulka) {
-        $i = 0;
+        $podminka = false;
         foreach ($tabulka->find('tr') as $parametry) {
-            if ($i > 0) {
+            if ($podminka == true) {
                 $klic = '';
                 $hodnota = '';
                 if ($tabulka->find('td', 0)) {
@@ -111,7 +111,7 @@ function getProduct($url) {
                     $produkt['parametry'][$klic] = $hodnota;
                 }
             }
-            $i++;
+            $podminka = true;
         }
     }
     if ($obsah_stranky->find('div.sti_image', 0)) {
