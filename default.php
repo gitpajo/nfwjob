@@ -55,7 +55,11 @@ function getProduct($url) {
         $produkt = array_merge($produkt, getInclusion($obsah_stranky, $produkt));    
         printr($produkt);
         $obsah = print_r($produkt, true);
-        file_put_contents('produkty.txt', $obsah, FILE_APPEND);
+        $soubor = 'produkty.txt';
+        if file_exists($soubor) {
+            unlink($soubor);
+        }
+        file_put_contents($soubor, $obsah, FILE_APPEND);
     }
 }
 
