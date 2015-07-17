@@ -42,6 +42,22 @@ foreach ($produkty as $produkt) {
     getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $produkt);
 }
 
+function getInformation($url, $obsah_stranky) {
+    
+}
+
+function getParametr($url, $obsah_stranky) {
+    
+}
+
+function getImage($url, $obsah_stranky) {
+    
+}
+
+function getInclusion($url, $obsah_stranky) {
+    
+}
+
 function getProduct($url) {
     $obsah_stranky = file_get_html($url);
     foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
