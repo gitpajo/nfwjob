@@ -161,17 +161,18 @@ function getInclusion($obsah_stranky, $produkt) {
         $podm = TRUE;
         $i = 0;
         $j = 0;
-        $kategorie = '';
+        $eee = $tabulka->find('strong.hcat',0);
         while ($podm) {
-            if ($tabulka->find('strong.hcat', $j)) {
-                $kategorie = $tabulka->find('strong.hcat', $j)->plaintext;
-            }
-            if ($tabulka->find('a', $i)) {
-                if ($kategorie) {
-                    $produkt['zarazeni'][$kategorie][] = $tabulka->find('a', $i)->plaintext;
-                }
+            if ($eee->next_sibling() != null) {
+              if ($eee->tag == 'strong') {
+                $kategorie = $eee->plaintext;
+              }
+              if ($eee->tag == 'a') {
+                $produkt['zarazeni'][$kategorie][] = $eee->plaintext;
+              }
+              $eee = $eee->next_sibling();
             } else {
-                $podm = FALSE;
+              $podm = FALSE;
             }
             $i++;
             $j++;
