@@ -55,7 +55,26 @@ function getImage($url, $obsah_stranky) {
 }
 
 function getInclusion($url, $obsah_stranky) {
-    
+    foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
+        $podm = TRUE;
+        $i = 0;
+        $j = 0;
+        $kategorie = '';
+        while ($podm) {
+            if ($tabulka->find('strong.hcat', $j)) {
+                $kategorie = $tabulka->find('strong.hcat', $j)->plaintext;
+            }
+            if ($tabulka->find('a', $i)) {
+                if ($kategorie) {
+                    $produkt['zarazeni'][$kategorie][] = $tabulka->find('a', $i)->plaintext;
+                }  
+            } else {
+                $podm = FALSE;
+            }
+            $i++;
+            $j++;
+        }
+    }
 }
 
 function getProduct($url) {
@@ -130,26 +149,7 @@ function getProduct($url) {
             $podminka = true;
         }
     }
-    foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
-        $podm = TRUE;
-        $i = 0;
-        $j = 0;
-        $kategorie = '';
-        while ($podm) {
-            if ($tabulka->find('strong.hcat', $j)) {
-                $kategorie = $tabulka->find('strong.hcat', $j)->plaintext;
-            }
-            if ($tabulka->find('a', $i)) {
-                if ($kategorie) {
-                    $produkt['zarazeni'][$kategorie][] = $tabulka->find('a', $i)->plaintext;
-                }  
-            } else {
-                $podm = FALSE;
-            }
-            $i++;
-            $j++;
-        }
-    }
+    
     
     if ($obsah_stranky->find('div.sti_image', 0)) {
       $produkt["url_image"] = 'http://dealer.tsbohemia.cz/'.$obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
