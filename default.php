@@ -132,6 +132,7 @@ function getParametr($obsah_stranky, $produkt) {
                 $hodnota = '';
                 if ($tabulka->find('td', 0)) {
                     $klic = $parametry->find('td', 0)->plaintext;
+                    $klic = str_replace('Mám o tento produkt zájem:', '', $klic);
                 }
                 if ($tabulka->find('td', 1)) {
                     $hodnota = $parametry->find('td', 1)->plaintext;
