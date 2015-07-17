@@ -56,7 +56,7 @@ function getProduct($url) {
         printr($produkt);
         $obsah = print_r($produkt, true);
         $soubor = 'produkty.txt';
-        if file_exists($soubor) {
+        if (file_exists($soubor)) {
             unlink($soubor);
         }
         file_put_contents($soubor, $obsah, FILE_APPEND);
