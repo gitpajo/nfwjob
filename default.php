@@ -48,6 +48,7 @@ function getProduct($url) {
         printr('Nelze načíst stránku');
     } else {
         $produkt = array();
+        $produkt = array_merge($produkt, getPopis($obsah_stranky, $produkt));
         $produkt = array_merge($produkt, getInformation($obsah_stranky, $produkt));
         $produkt = array_merge($produkt, getAvailability($obsah_stranky, $produkt));
         $produkt = array_merge($produkt, getParametr($obsah_stranky, $produkt));
@@ -123,6 +124,11 @@ function getAvailability($obsah_stranky, $produkt) {
             $produkt['dostupnost_pobocky'][$pobocka] = $skladem;
         }
     }
+    return $produkt;
+}
+
+function getPopis($obsah_stranky, $produkt) {
+    $produkt['popis'] = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
     return $produkt;
 }
 
