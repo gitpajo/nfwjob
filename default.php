@@ -85,7 +85,6 @@ function getInformation($obsah_stranky, $produkt) {
                 $prvek1 = str_replace('Záruka spotřebitel', 'zaruka_spotrebitel', $prvek1);
                 $prvek1 = str_replace('Záruka ostatní', 'zaruka_ostatni', $prvek1);
                 $prvek1 = str_replace('Status', 'status', $prvek1);
-                $prvek1 = str_replace('Hodnocení produktu', '', $prvek1);
             }
             if ($element->find('td', 0)) {
                 $prvek2 = $element->find('td', 0)->plaintext;
@@ -95,6 +94,9 @@ function getInformation($obsah_stranky, $produkt) {
                 $produkt[$prvek1] = $prvek2;
             }
             if ($prvek1 == 'Dostupnost na pobočkách') {
+                unset($produkt[$prvek1]);
+            }
+            if ($prvek1 == 'Hodnocení produktu') {
                 unset($produkt[$prvek1]);
             }
         }
@@ -133,13 +135,15 @@ function getParametr($obsah_stranky, $produkt) {
                 $hodnota = '';
                 if ($tabulka->find('td', 0)) {
                     $klic = $parametry->find('td', 0)->plaintext;
-                    $klic = str_replace('Mám o tento produkt zájem:', '', $klic);
                 }
                 if ($tabulka->find('td', 1)) {
                     $hodnota = $parametry->find('td', 1)->plaintext;
                 }
                 if ($klic && $hodnota) {
                     $produkt['parametry'][$klic] = $hodnota;
+                }
+                if ($klic == 'Mám o tento produkt zájem:') {
+                    unset($produkt[$klic]);
                 }
             }
             $podminka = true;
