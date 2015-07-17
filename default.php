@@ -153,9 +153,9 @@ function getParametr($obsah_stranky, $produkt) {
 }
 
 function getImage($obsah_stranky, $produkt) {
-    if ($obsah_stranky->find('div.sti_image', 0)) {
-        $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' .
-                $obsah_stranky->find('div.sti_image', 0)->find('img', 0)->src;
+    $images = $obsah_stranky->find('div.sti_image');
+    foreach ($images->find('img') as $image) {
+        $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' . $image->src;
     }
     return $produkt;
 }
