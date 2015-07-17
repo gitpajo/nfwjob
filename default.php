@@ -104,19 +104,19 @@ function getAvailability($obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
         $i = 0;
         foreach ($tabulka->find('th') as $dostup) {
-            $pob1 = $dostup->plaintext;
+            $pobocka = $dostup->plaintext;
             if ($tabulka->find('img', $i)) {
-                $pob2 = $tabulka->find('img', $i)->class;
+                $skladem = $tabulka->find('img', $i)->class;
             } else {
-                $pob2 = '';
+                $skladem = '';
             }
-            if ($pob2 == 'img_skladem') {
-                $pob2 = 1;
+            if ($skladem == 'img_skladem') {
+                $skladem = 1;
             } else {
-                $pob2 = 0;
+                $skladem = 0;
             }
             $i++;
-            $produkt['dostupnost_pobocky'][$pob1] = $pob2;
+            $produkt['dostupnost_pobocky'][$pobocka] = $skladem;
         }
     }
     return $produkt;
