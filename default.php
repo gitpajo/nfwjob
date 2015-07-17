@@ -32,14 +32,14 @@ foreach ($pages as $img) {
   printr($parametr);
   } */
 
-$produkty = array();
+$url_produkty = array();
 
 for ($cislo = 0; $cislo < 30; $cislo++) {
-    $produkty[] = 212486 + $cislo;
+    $url_produkty[] = 212486 + $cislo;
 }
 
-foreach ($produkty as $produkt) {
-    getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $produkt);
+foreach ($url_produkty as $url_produkt) {
+    getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $url_produkt);
 }
 
 function getInformation($url, $obsah_stranky, $produkt) {
