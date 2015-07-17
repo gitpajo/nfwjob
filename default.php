@@ -89,6 +89,7 @@ function getInformation($obsah_stranky, $produkt) {
             }
             if ($element->find('td', 0)) {
                 $prvek2 = $element->find('td', 0)->plaintext;
+                $prvek2 = trim($prvek2);
             }
             if ($prvek1 && $prvek2) {
                 $produkt[$prvek1] = $prvek2;
