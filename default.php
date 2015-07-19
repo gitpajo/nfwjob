@@ -61,7 +61,7 @@ function getProduct($url) {
     }
 }
 
-function saveProduct($produkt, $soubor) {
+function private saveProduct($produkt, $soubor) {
     $obsah = print_r($produkt, true);
     if (file_exists($soubor)) {
         unlink($soubor);
@@ -69,7 +69,7 @@ function saveProduct($produkt, $soubor) {
     return file_put_contents($soubor, $obsah, FILE_APPEND);
 }
 
-function getInformation($obsah_stranky, $produkt) {
+function private getInformation($obsah_stranky, $produkt) {
      foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
         foreach ($tabulka->find('tr') as $element) {
             $prvek1 = '';
@@ -110,7 +110,7 @@ function getInformation($obsah_stranky, $produkt) {
     return $produkt;
 }
 
-function getAvailability($obsah_stranky, $produkt) {
+function private getAvailability($obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
         $i = 0;
         foreach ($tabulka->find('th') as $dostup) {
@@ -132,12 +132,12 @@ function getAvailability($obsah_stranky, $produkt) {
     return $produkt;
 }
 
-function getPopis($obsah_stranky, $produkt) {
+function private getPopis($obsah_stranky, $produkt) {
     $produkt['popis'] = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
     return $produkt;
 }
 
-function getParametr($obsah_stranky, $produkt) {
+function private getParametr($obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('table[class=sti_details]') as $tabulka) {
         $podminka = false;
         foreach ($tabulka->find('tr') as $parametry) {
@@ -163,7 +163,7 @@ function getParametr($obsah_stranky, $produkt) {
     return $produkt;
 }
 
-function getImage($obsah_stranky, $produkt) {
+function private getImage($obsah_stranky, $produkt) {
     $images = $obsah_stranky->find('div.sti_image');
     foreach ($images->find('img') as $image) {
         $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' . $image->src;
@@ -171,7 +171,7 @@ function getImage($obsah_stranky, $produkt) {
     return $produkt;
 }
 
-function getInclusion($obsah_stranky, $produkt) {
+function private getInclusion($obsah_stranky, $produkt) {
     foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
         $podm = TRUE;
         $i = 0;
