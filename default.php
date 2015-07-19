@@ -69,6 +69,16 @@ function private saveProduct($produkt, $soubor) {
     return file_put_contents($soubor, $obsah, FILE_APPEND);
 }
 
+$seznam = array(
+    'Karel' => 'Pavel',
+    'kolo' => 'kočku'
+);
+
+$hledej = array_keys($seznam);
+$nahrad = array_values($seznam);
+
+echo str_replace($hledej, $nahrad, $text);
+
 function private getInformation($obsah_stranky, $produkt) {
      foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
         foreach ($tabulka->find('tr') as $element) {
