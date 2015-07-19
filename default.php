@@ -42,6 +42,8 @@ foreach ($url_produkty as $url_produkt) {
     getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $url_produkt);
 }
 
+class Product {
+
 function getProduct($url) {
     $obsah_stranky = file_get_html($url);
     if ($obsah_stranky == false) {
@@ -192,6 +194,8 @@ function getInclusion($obsah_stranky, $produkt) {
         }
     }
     return $produkt;
+}
+
 }
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
