@@ -55,13 +55,16 @@ function getProduct($url) {
         $produkt = array_merge($produkt, getImage($obsah_stranky, $produkt));
         $produkt = array_merge($produkt, getInclusion($obsah_stranky, $produkt));    
         printr($produkt);
-        $obsah = print_r($produkt, true);
-        $soubor = 'produkty.txt';
-        if (file_exists($soubor)) {
-            unlink($soubor);
-        }
-        file_put_contents($soubor, $obsah, FILE_APPEND);
+        saveProduct($produkt, 'produkty.txt');
     }
+}
+
+function saveProduct($produkt, $soubor) {
+    $obsah = print_r($produkt, true);
+    if (file_exists($soubor)) {
+        unlink($soubor);
+    }
+    return file_put_contents($soubor, $obsah, FILE_APPEND);
 }
 
 function getInformation($obsah_stranky, $produkt) {
