@@ -48,12 +48,12 @@ function getProduct($url) {
         printr('Nelze načíst stránku');
     } else {
         $produkt = array();
-        $produkt = array_merge($produkt, getPopis($obsah_stranky, $produkt));
-        $produkt = array_merge($produkt, getInformation($obsah_stranky, $produkt));
-        $produkt = array_merge($produkt, getAvailability($obsah_stranky, $produkt));
-        $produkt = array_merge($produkt, getParametr($obsah_stranky, $produkt));
-        $produkt = array_merge($produkt, getImage($obsah_stranky, $produkt));
-        $produkt = array_merge($produkt, getInclusion($obsah_stranky, $produkt));    
+        $produkt = getPopis($obsah_stranky, $produkt));
+        $produkt = getInformation($obsah_stranky, $produkt));
+        $produkt = getAvailability($obsah_stranky, $produkt));
+        $produkt = getParametr($obsah_stranky, $produkt));
+        $produkt = getImage($obsah_stranky, $produkt));
+        $produkt = getInclusion($obsah_stranky, $produkt));    
         printr($produkt);
         saveProduct($produkt, 'produkty.txt');
     }
