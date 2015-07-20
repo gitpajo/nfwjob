@@ -89,7 +89,6 @@ function private getInformation($obsah_stranky, $produkt) {
     $nahrad = array_values($seznam);
     foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
         foreach ($tabulka->find('tr') as $element) {
-
             $prvek1 = '';
             $prvek2 = '';
             if ($element->find('th', 0)) {
