@@ -4,7 +4,7 @@ class ProductInfo {
 
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
 
-    static function getProduct($url) {
+    static function getProduct($url, $soubor) {
 
         $obsah_stranky = file_get_html($url);
         if ($obsah_stranky == false) {
@@ -18,7 +18,7 @@ class ProductInfo {
             $produkt = getImage($obsah_stranky, $produkt);
             $produkt = getInclusion($obsah_stranky, $produkt);
             printr($produkt);
-            saveProduct($produkt, 'produkty.txt');
+            saveProduct($produkt, $soubor);
         }
     }
 
