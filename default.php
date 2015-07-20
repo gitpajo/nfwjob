@@ -1,5 +1,7 @@
 <?php
 
+require 'ProductInfo.php';
+
 set_time_limit(300);
 
 echo 'Hello World';
