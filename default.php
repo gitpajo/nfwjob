@@ -174,7 +174,7 @@ function private getParametr($obsah_stranky, $produkt) {
 }
 
 function private getImage($obsah_stranky, $produkt) {
-    $images = $obsah_stranky->find('div.sti_image');
+    $images = $obsah_stranky->find('div.sti_image', 0);
     foreach ($images->find('img') as $image) {
         $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' . $image->src;
     }
