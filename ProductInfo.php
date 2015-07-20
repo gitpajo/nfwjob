@@ -137,7 +137,7 @@ class ProductInfo {
             $images = $div->find('img');
             if ($images) {
                 foreach ($images as $image) {
-                    $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' . $image->src;
+                    $produkt["url_image"] = self::SERVER_URL . $image->src;
                 }
             }
         }
