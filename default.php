@@ -192,7 +192,7 @@ function private getInclusion($obsah_stranky, $produkt) {
         $i = 0;
         $j = 0;
         $eee = $tabulka->find('strong.hcat',0);
-        while ($podm) {
+        while ($podm && $eee) {
             if ($eee->next_sibling() != null) {
               if ($eee->tag == 'strong') {
                 $kategorie = $eee->plaintext;
