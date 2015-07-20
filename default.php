@@ -174,9 +174,14 @@ function private getParametr($obsah_stranky, $produkt) {
 }
 
 function private getImage($obsah_stranky, $produkt) {
-    $images = $obsah_stranky->find('div.sti_image', 0);
-    foreach ($images->find('img') as $image) {
-        $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' . $image->src;
+    $div = $obsah_stranky->find('div.sti_image', 0);
+    if ($div) {
+        $images = $div->find('img');
+        if ($images) {
+            foreach ($images as $image) {
+                $produkt["url_image"] = 'http://dealer.tsbohemia.cz/' . $image->src;
+            }
+        }    
     }
     return $produkt;
 }
