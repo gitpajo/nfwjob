@@ -47,7 +47,7 @@ if (file_exists($soubor)) {
 }
 
 foreach ($url_produkty as $url_produkty) {
-    ProductInfo::getProduct(ProductInfo::SERVER_URL . ?cls=stoitem&stiid=' . $url_produkty, $soubor);
+    ProductInfo::getProduct(ProductInfo::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
