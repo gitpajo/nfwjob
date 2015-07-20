@@ -106,7 +106,8 @@ class ProductInfo {
     }
 
     function getParametr($obsah_stranky, $produkt) {
-        foreach ($obsah_stranky->find('table[class=sti_details]') as $tabulka) {
+        $div = $obsah_stranky->find('div[id=parametry]', 0);
+        foreach ($div->find('table[class=sti_details]') as $tabulka) {
             $podminka = false;
             foreach ($tabulka->find('tr') as $parametry) {
                 if ($podminka == true) {
