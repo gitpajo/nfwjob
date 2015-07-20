@@ -101,7 +101,8 @@ class ProductInfo {
     }
 
     function getPopis($obsah_stranky, $produkt) {
-        $produkt['popis'] = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
+        $popis = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
+        $produkt['popis'] = trim($popis);
         return $produkt;
     }
 
