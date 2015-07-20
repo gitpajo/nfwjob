@@ -38,6 +38,10 @@ for ($cislo = 0; $cislo < 30; $cislo++) {
     $url_produkty[] = 212486 + $cislo;
 }
 
+if (file_exists('produkty.txt')) {
+    unlink('produkty.txt');
+}
+
 foreach ($url_produkty as $url_produkt) {
     getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $url_produkt);
 }
@@ -63,44 +67,35 @@ function getProduct($url) {
 
 function private saveProduct($produkt, $soubor) {
     $obsah = print_r($produkt, true);
-    if (file_exists($soubor)) {
-        unlink($soubor);
-    }
     return file_put_contents($soubor, $obsah, FILE_APPEND);
 }
 
-$seznam = array(
-    'Karel' => 'Pavel',
-    'kolo' => 'kočku'
-);
-
-$hledej = array_keys($seznam);
-$nahrad = array_values($seznam);
-
-echo str_replace($hledej, $nahrad, $text);
-
 function private getInformation($obsah_stranky, $produkt) {
-     foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
+   $seznam = array(
+        'Výrobce' => 'vyrobce',
+        'Kód' => 'kod',
+        'Part No.' => 'part_no',
+        'Dostupnost na eshopu' => 'dostupnost_eshop',
+        'Vaše cena bez DPH' => 'cena_bez_dph',
+        'Recyklační poplatek  (RP*)' => 'recyklacni_poplatek',
+        'Autorský fond  (AF*)' => 'autorsky_fond',
+        'Vaše cena s RP*+ AF*' => 'cena_s_rp_af',
+        'Vaše cena s DPH' => 'cena_s_rp_af',
+        'Záruka spotřebitel' => 'zaruka_spotrebitel',
+        'Záruka ostatní' => 'zaruka_ostatni',
+        'Status' => 'status',
+    );
+    $hledej = array_keys($seznam);
+    $nahrad = array_values($seznam);
+    foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
         foreach ($tabulka->find('tr') as $element) {
+
             $prvek1 = '';
             $prvek2 = '';
             if ($element->find('th', 0)) {
                 $prvek1 = $element->find('th', 0)->plaintext;
                 $prvek1 = str_replace(html_entity_decode('&nbsp;'), ' ', $prvek1);
-                $prvek1 = str_replace('Výrobce', 'vyrobce', $prvek1);
-                $prvek1 = str_replace('Kód', 'kod', $prvek1);
-                $prvek1 = str_replace('Part No.', 'part_no', $prvek1);
-                $prvek1 = str_replace('Dostupnost na eshopu', 'dostupnost_eshop', $prvek1);
-                $prvek1 = str_replace('Objednat', '', $prvek1);
-                $prvek1 = str_replace('Vaše cena bez DPH', 'cena_bez_dph', $prvek1);
-                $prvek1 = str_replace('Recyklační poplatek  (RP*)', 'recyklacni_poplatek', $prvek1);
-                $prvek1 = str_replace('Autorský fond  (AF*)', 'autorsky_fond', $prvek1);
-                $prvek1 = str_replace('Vaše cena s RP*+ AF*', 'cena_s_rp_af', $prvek1);
-                $prvek1 = str_replace('Vaše cena s DPH', 'cena_s_rp_af', $prvek1);
-                $prvek1 = str_replace('Garance ceny', '', $prvek1);
-                $prvek1 = str_replace('Záruka spotřebitel', 'zaruka_spotrebitel', $prvek1);
-                $prvek1 = str_replace('Záruka ostatní', 'zaruka_ostatni', $prvek1);
-                $prvek1 = str_replace('Status', 'status', $prvek1);
+                $prvek1 = str_replace($hledej, $nahrad, $prvek1);
             }
             if ($element->find('td', 0)) {
                 $prvek2 = $element->find('td', 0)->plaintext;
@@ -113,6 +108,12 @@ function private getInformation($obsah_stranky, $produkt) {
                 unset($produkt[$prvek1]);
             }
             if ($prvek1 == 'Hodnocení produktu') {
+                unset($produkt[$prvek1]);
+            }
+            if ($prvek1 == 'Objednat') {
+                unset($produkt[$prvek1]);
+            }
+            if ($prvek1 == 'Garance ceny') {
                 unset($produkt[$prvek1]);
             }
         }
