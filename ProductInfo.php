@@ -9,25 +9,43 @@ class ProductInfo {
         $obsah_stranky = file_get_html($url);
         if ($obsah_stranky == false) {
             printr('Nelze načíst stránku');
+        } elseif (!self::isProduct($obsah_stranky)) {
+            printr('Produkt nenalezen '. $url);
         } else {
             $produkt = array();
-            $produkt = getInformation($obsah_stranky, $produkt);
-            $produkt = getAvailability($obsah_stranky, $produkt);
-            $produkt = getPopis($obsah_stranky, $produkt);
-            $produkt = getParametr($obsah_stranky, $produkt);
-            $produkt = getImage($obsah_stranky, $produkt);
-            $produkt = getInclusion($obsah_stranky, $produkt);
+            $produkt = self::getInformation($obsah_stranky, $produkt);
+            $produkt = self::getAvailability($obsah_stranky, $produkt);
+            $produkt = self::getPopis($obsah_stranky, $produkt);
+            $produkt = self::getParametr($obsah_stranky, $produkt);
+            $produkt = self::getImage($obsah_stranky, $produkt);
+            $produkt = self::getInclusion($obsah_stranky, $produkt);
             printr($produkt);
-            saveProduct($produkt, $soubor);
+            self::saveProduct($produkt, $soubor);
         }
     }
 
-    function saveProduct($produkt, $soubor) {
+    private static function saveProduct($produkt, $soubor) {
         $obsah = print_r($produkt, true);
         return file_put_contents($soubor, $obsah, FILE_APPEND);
     }
+    
+    private static function isProduct($obsah_stranky) {
+        $tabulka =  $obsah_stranky->find('table[class=sti_detail sti_detail_head]', 0);
+        foreach ($tabulka->find('tr') as $element) {
+            if ($element->find('th', 0)) {
+                $prvek1 = $element->find('th', 0)->plaintext;
+            }
+            if ($element->find('td', 0)) {
+                $prvek2 = $element->find('td', 0)->plaintext;
+            }
+            if ($prvek1 == 'Kód' && $prvek2 != '') {
+                return true;
+            }
+        }
+        return false;
+    }
 
-    function getInformation($obsah_stranky, $produkt) {
+    private static function getInformation($obsah_stranky, $produkt) {
         $seznam = array(
             'Výrobce' => 'vyrobce',
             'Kód' => 'kod',
@@ -78,7 +96,7 @@ class ProductInfo {
         return $produkt;
     }
 
-    function getAvailability($obsah_stranky, $produkt) {
+    private static function getAvailability($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
             $i = 0;
             foreach ($tabulka->find('th') as $dostup) {
@@ -100,13 +118,13 @@ class ProductInfo {
         return $produkt;
     }
 
-    function getPopis($obsah_stranky, $produkt) {
+    private static function getPopis($obsah_stranky, $produkt) {
         $popis = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
         $produkt['popis'] = trim($popis);
         return $produkt;
     }
 
-    function getParametr($obsah_stranky, $produkt) {
+    private static function getParametr($obsah_stranky, $produkt) {
         $div = $obsah_stranky->find('div[id=parametry]', 0);
         foreach ($div->find('table[class=sti_details]') as $tabulka) {
             $podminka = false;
@@ -133,7 +151,7 @@ class ProductInfo {
         return $produkt;
     }
 
-    function getImage($obsah_stranky, $produkt) {
+    private static function getImage($obsah_stranky, $produkt) {
         $div = $obsah_stranky->find('div.sti_image', 0);
         if ($div) {
             $images = $div->find('img');
@@ -146,7 +164,7 @@ class ProductInfo {
         return $produkt;
     }
 
-    function getInclusion($obsah_stranky, $produkt) {
+    private static function getInclusion($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
             $podm = TRUE;
             $i = 0;
