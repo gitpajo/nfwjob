@@ -122,7 +122,7 @@ class ProductInfo {
                         $produkt['parametry'][$klic] = $hodnota;
                     }
                     if ($klic == 'Mám o tento produkt zájem:') {
-                        unset($produkt[$klic]);
+                        unset($produkt['parametry'][$klic]);
                     }
                 }
                 $podminka = true;
