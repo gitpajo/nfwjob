@@ -196,6 +196,7 @@ function private getInclusion($obsah_stranky, $produkt) {
             if ($eee->next_sibling() != null) {
               if ($eee->tag == 'strong') {
                 $kategorie = $eee->plaintext;
+                $produkt['zarazeni'][$kategorie] = '';
               }
               if ($eee->tag == 'a') {
                 $produkt['zarazeni'][$kategorie] .= ' -> '.$eee->plaintext;
