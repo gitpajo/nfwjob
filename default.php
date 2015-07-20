@@ -40,12 +40,14 @@ for ($cislo = 0; $cislo < 30; $cislo++) {
     $url_produkty[] = 212486 + $cislo;
 }
 
-if (file_exists('produkty.txt')) {
-    unlink('produkty.txt');
+$soubor = 'produkty.txt';
+
+if (file_exists($soubor)) {
+    unlink($soubor);
 }
 
-foreach ($url_produkty as $url_produkt) {
-    ProductInfo::getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $url_produkty);
+foreach ($url_produkty as $url_produkty) {
+    ProductInfo::getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
