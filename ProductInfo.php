@@ -2,6 +2,8 @@
 
 class ProductInfo {
 
+    const SERVER_URL = 'http://dealer.tsbohemia.cz/';
+
     static function getProduct($url) {
 
         $obsah_stranky = file_get_html($url);
