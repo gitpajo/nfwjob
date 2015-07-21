@@ -45,7 +45,7 @@ class ProductInfo {
         return false;
     }
     
-    private static funtion renameInformation($prvek1) {
+    private static function renameInformation($prvek1) {
         $seznam = array(
             'Výrobce' => 'vyrobce',
             'Kód' => 'kod',
@@ -75,7 +75,7 @@ class ProductInfo {
                 $prvek2 = '';
                 if ($element->find('th', 0)) {
                     $prvek1 = $element->find('th', 0)->plaintext;
-                    $prvek1 = self:renameInformation($prvek1);
+                    $prvek1 = self::renameInformation($prvek1);
                 }
                 if ($element->find('td', 0)) {
                     $prvek2 = $element->find('td', 0)->plaintext;
