@@ -94,7 +94,7 @@ class ProductInfo {
     
     private static function getName($obsah_stranky, $produkt) {
         $name = $obsah_stranky->find('div[class=f_left product_name]', 0)->plaintext;
-        $produkt['nazev'] = self::eraseSpace($produkt, $name);
+        $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
 
@@ -156,7 +156,7 @@ class ProductInfo {
 
     private static function getPopis($obsah_stranky, $produkt) {
         $popis = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
-        $produkt['popis'] = self::eraseSpace($produkt, $popis);
+        $produkt['popis'] = self::eraseSpace($popis);
         return $produkt;
     }
 
