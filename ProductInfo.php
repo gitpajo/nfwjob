@@ -20,7 +20,7 @@ class ProductInfo {
             $produkt = self::getParametr($obsah_stranky, $produkt);
             $produkt = self::getImage($obsah_stranky, $produkt);
             $produkt = self::getInclusion($obsah_stranky, $produkt);
-            self::unsetInformation($produkt);
+            $produkt = self::unsetInformation($produkt);
             printr($produkt);
             self::saveProduct($produkt, $soubor);
         }
