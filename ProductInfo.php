@@ -176,6 +176,9 @@ class ProductInfo {
     }
 
     private static function getImage($obsah_stranky, $produkt) {
+    //    $divs = $obsah_stranky->find('div[clas=sti_detail_gallery]');
+    //    foreach($divs as $div) {
+    //    $div->find('img',0)->src;
         $div = $obsah_stranky->find('div.sti_image', 0);
         if ($div) {
             $images = $div->find('img');
@@ -186,6 +189,7 @@ class ProductInfo {
             }
         }
         return $produkt;
+        }
     }
 
     private static function getInclusion($obsah_stranky, $produkt) {
