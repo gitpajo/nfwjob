@@ -66,6 +66,10 @@ class ProductInfo {
         $prvek1 = str_replace($hledej, $nahrad, $prvek1);
         return $prvek1;
     }
+    
+    private static function unsetInformation($prvek1) {
+        return $prvek1;
+    }
 
     private static function getInformation($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
