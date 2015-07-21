@@ -13,6 +13,7 @@ class ProductInfo {
             printr('Produkt nenalezen '. $url);
         } else {
             $produkt = array();
+            $produkt = self::getName($obsah_stranky, $produkt);
             $produkt = self::getInformation($obsah_stranky, $produkt);
             $produkt = self::getAvailability($obsah_stranky, $produkt);
             $produkt = self::getPopis($obsah_stranky, $produkt);
@@ -71,6 +72,13 @@ class ProductInfo {
         foreach ($produkt as $klic => $value) {
            //tady presunes jednotlive unsety
         }
+        return $produkt;
+    }
+    
+    private static function getName($obsah_stranky, $produkt) {
+        $name = $obsah_stranky->find('div[class=f_left product_name]', 0)->plaintext;
+        $name = str_replace(html_entity_decode('&nbsp;'), ' ', $name);
+        $produkt['name'] = trim($name);
         return $produkt;
     }
 
