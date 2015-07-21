@@ -87,7 +87,7 @@ class ProductInfo {
         return $produkt;
     }
     
-    private static function eraseSpace($produkt, $promenna) {
+    private static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
         return trim($promenna);
     }
