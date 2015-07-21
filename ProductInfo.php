@@ -201,7 +201,7 @@ class ProductInfo {
         return $produkt;
     }
 
-    private static function getInclusion($obsah_stranky, $produkt) {
+   private static function getInclusion($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
             $podminka = TRUE;
             $i = 0;
@@ -211,14 +211,13 @@ class ProductInfo {
                 if ($zarazeni->next_sibling() != null) {
                     if ($zarazeni->tag == 'strong') {
                         $kategorie = $zarazeni->plaintext;
-                        $kategorie = self::eraseSpace($zarazeni);
                         $produkt['zarazeni'][$kategorie] = '';
                     }
                     if ($zarazeni->tag == 'a') {
                         if ($produkt['zarazeni'][$kategorie] == '') {
-                            $produkt['zarazeni'][$kategorie] .= $zarazeni->plaintext;
+                            $produkt['zarazeni'][$kategorie] .= self::eraseSpace($zarazeni->plaintext);
                         } else {
-                            $produkt['zarazeni'][$kategorie] .= ' -> ' . $zarazeni->plaintext;
+                            $produkt['zarazeni'][$kategorie] .= ' -> ' . self::eraseSpace($zarazeni->plaintext);
                         }
                     }
                     $zarazeni = $zarazeni->next_sibling();
