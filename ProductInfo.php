@@ -170,6 +170,7 @@ class ProductInfo {
                     $hodnota = '';
                     if ($tabulka->find('td', 0)) {
                         $klic = $parametry->find('td', 0)->plaintext;
+                        $klic = self::eraseSpace($klic);
                     }
                     if ($tabulka->find('td', 1)) {
                         $hodnota = $parametry->find('td', 1)->plaintext;
