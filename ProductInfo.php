@@ -199,22 +199,22 @@ class ProductInfo {
 
     private static function getInclusion($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
-            $podm = TRUE;
+            $podminka = TRUE;
             $i = 0;
             $j = 0;
-            $eee = $tabulka->find('strong.hcat', 0);
-            while ($podm && $eee) {
-                if ($eee->next_sibling() != null) {
-                    if ($eee->tag == 'strong') {
-                        $kategorie = $eee->plaintext;
+            $zarazeni = $tabulka->find('strong.hcat', 0);
+            while ($podminka && $zarazeni) {
+                if ($zarazeni->next_sibling() != null) {
+                    if ($zarazeni->tag == 'strong') {
+                        $kategorie = $zarazeni->plaintext;
                         $produkt['zarazeni'][$kategorie] = '';
                     }
-                    if ($eee->tag == 'a') {
-                        $produkt['zarazeni'][$kategorie] .= ' -> ' . $eee->plaintext;
+                    if ($zarazeni->tag == 'a') {
+                        $produkt['zarazeni'][$kategorie] .= ' -> ' . $zarazeni->plaintext;
                     }
-                    $eee = $eee->next_sibling();
+                    $zarazeni = $zarazeni->next_sibling();
                 } else {
-                    $podm = FALSE;
+                    $podminka = FALSE;
                 }
                 $i++;
                 $j++;
