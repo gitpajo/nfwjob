@@ -89,6 +89,7 @@ class ProductInfo {
     
     private static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
+        $promenna = trim($promenna, ':');
         return trim($promenna);
     }
     
@@ -114,18 +115,6 @@ class ProductInfo {
                 }
                 if ($prvek1 && $prvek2) {
                     $produkt[$prvek1] = $prvek2;
-                }
-                if ($prvek1 == 'Dostupnost na pobočkách') {
-                    unset($produkt[$prvek1]);
-                }
-                if ($prvek1 == 'Hodnocení produktu') {
-                    unset($produkt[$prvek1]);
-                }
-                if ($prvek1 == 'Objednat') {
-                    unset($produkt[$prvek1]);
-                }
-                if ($prvek1 == 'Garance ceny') {
-                    unset($produkt[$prvek1]);
                 }
             }
         }
@@ -174,12 +163,10 @@ class ProductInfo {
                     }
                     if ($tabulka->find('td', 1)) {
                         $hodnota = $parametry->find('td', 1)->plaintext;
+                        $hodnota = self::eraseSpace($hodnota);
                     }
                     if ($klic && $hodnota) {
                         $produkt['parametry'][$klic] = $hodnota;
-                    }
-                    if ($klic == 'Mám o tento produkt zájem:') {
-                        unset($produkt['parametry'][$klic]);
                     }
                 }
                 $podminka = true;
