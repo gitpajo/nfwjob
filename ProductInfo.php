@@ -44,8 +44,8 @@ class ProductInfo {
         }
         return false;
     }
-
-    private static function getInformation($obsah_stranky, $produkt) {
+    
+    private static funtion renameInformation() {
         $seznam = array(
             'Výrobce' => 'vyrobce',
             'Kód' => 'kod',
@@ -62,6 +62,9 @@ class ProductInfo {
         );
         $hledej = array_keys($seznam);
         $nahrad = array_values($seznam);
+    }
+
+    private static function getInformation($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
             foreach ($tabulka->find('tr') as $element) {
 
