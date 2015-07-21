@@ -87,10 +87,14 @@ class ProductInfo {
         return $produkt;
     }
     
+    private static function eraseSpace($produkt, $promenna) {
+        $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
+        return trim($promenna);
+    }
+    
     private static function getName($obsah_stranky, $produkt) {
         $name = $obsah_stranky->find('div[class=f_left product_name]', 0)->plaintext;
-        $name = str_replace(html_entity_decode('&nbsp;'), ' ', $name);
-        $produkt['nazev'] = trim($name);
+        $produkt['nazev'] = self::eraseSpace($produkt, $name);
         return $produkt;
     }
 
@@ -152,8 +156,7 @@ class ProductInfo {
 
     private static function getPopis($obsah_stranky, $produkt) {
         $popis = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
-        $popis = str_replace(html_entity_decode('&nbsp;'), ' ', $popis);
-        $produkt['popis'] = trim($popis);
+        $produkt['popis'] = self::eraseSpace($produkt, $popis);
         return $produkt;
     }
 
