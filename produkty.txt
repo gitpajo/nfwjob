@@ -1,20 +1,17 @@
 Array
 (
-    [vyrobce] =>   Patriot Memory
+    [vyrobce] => Patriot Memory
     [kod] => 9302835
     [part_no] => PB120GS25SSDR
-    [dostupnost_eshop] =>         Skladem         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										           										           										           										           										         										           										         										           										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 1 234 Kč
-    [Recyklační poplatek  (RP*)] => 1.50; DPH: 21% (Komponenty nezaložené na mechanickém pohybu) 
-    [Autorský fond  (AF*)] => 37.03; DPH: 21% (HDD zabudovat. do PC) 
-    [Vaše cena s RP*+ AF*] => 1 273 Kč
+    [dostupnost_eshop] => Skladem
+    [cena_bez_dph] => 1 234 Kč
+    [recyklacni_poplatek] => 1.50; DPH: 21% (Komponenty nezaložené na mechanickém pohybu) 
+    [autorsky_fond] => 37.03; DPH: 21% (HDD zabudovat. do PC) 
+    [cena_s_rp_af] => 1 540 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 1 540 Kč
-    [Záruka spotřebitel] => 36 Měsíce
-    [Záruka ostatní] => 36 Měsíce
+    [zaruka_spotrebitel] => 36 Měsíce
+    [zaruka_ostatni] => 36 Měsíce
     [status] => V ceníku 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 1
@@ -33,24 +30,48 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212486
+    [popis] =>                      Patriot Blaze Solid-State Drive (SSD) je perfektní způsob, jak zvýšit výkon počítače. Blaze nabízí přenosové rychlosti až do 545 MB/s pro čtení a 430 MB/s pro zápis. Pro připojení poslouží rozhraní SATA III 6 Gb/s, které je zpětně kompatibilní s SATA II 3Gb/s.
+    [parametry] => Array
+        (
+            [Formát disku [palců]:] => 2,5
+            [Hloubka [mm]:] => 100
+            [Hmotnost [g]:] => 78,6
+            [Max. rychlost čtení [MB/s]:] => 545
+            [Max. rychlost zápisu [MB/s]:] => 430
+            [Podpora OS:] => Windows Vista
+            [Provedení:] => interní
+            [Rozhraní:] => SATA III
+            [Šířka [mm]:] => 69,85
+            [Technologie TRIM                  :] => ano
+            [Technologie výroby [nm]:] => 16
+            [Typ disku:] => SSD
+            [Typ NAND paměti               :] => MLC
+            [Velikost disku [GB]:] => 120
+            [Výška [mm]:] => 7
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212486
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Komponenty -> Disky -> Interní ->   SSD
+            [DLE VÝROBCE] =>  ->   Patriot Memory
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Motorola
+    [vyrobce] => Motorola
     [kod] => 8982704
     [part_no] => 8592118802697
-    [dostupnost_eshop] =>         do 2 dnů         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 4 957 Kč
-    [Recyklační poplatek  (RP*)] => 1.20; DPH: 21% (Mobilní telefony) 
-    [Vaše cena s RP*] => 4 958 Kč
+    [dostupnost_eshop] => do 2 dnů
+    [cena_bez_dph] => 4 957 Kč
+    [recyklacni_poplatek] => 1.20; DPH: 21% (Mobilní telefony) 
+    [Vaše cena s RP*] => 4 958 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 5 999 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [cena_s_rp_af] => 5 999 Kč
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -69,52 +90,211 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212487
+    [popis] =>                      Kompatibilita - Android 4.3 nebo vyšší
+OS - Android Wear
+Displej - 1.56 320x290, 205ppi
+Backlit LCD
+Corning Gorilla Glass 3
+Hmotnost
+kožený pásek - 49g
+23mm kovový pásek - 124g
+18mm kovový pásek - 104g
+Baterie - 320mAh
+Procesor - TI OMAP3
+Pameť - 4GB ROM + 512MB RAM
+Připojení - Bluetooth 4.0 Low Energy
+IP67
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212487
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Mobily a tablety -> Nositelná elektronika ->   Chytré náramky
+            [DLE VÝROBCE] =>  ->   Motorola
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Acer
+    [vyrobce] => Acer
     [kod] => 7702261
     [part_no] => DT.SULEC.010
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 12 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 12 Měsíce
     [status] =>  
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [url_image] => img.asp?stiid=212488
+    [popis] =>                      AXC-603_WJ1900 - Originální Windows® 8,1 BING, Intel Celeron Quad-Core J1900 2.0G / 1000GB SATA 7200rpm  / 4GB DDR3 / DVD-RW /  USB klávesnice a myš / card reader
+
+Model: Acer Aspire AXC-603
+Operační systém: Windows 8.1 with Bing
+Procesor:
+Výrobce procesoru Intel®
+Typ procesoru Celeron
+Model procesoru J2900
+Jádro procesoru Čtyřjádrový
+Rychlost procesoru 2.41 GHz
+64bitové zpracování Ano
+
+Paměť:
+Standardní paměť 4 GB
+Maximální paměť 8 GB
+Technologie paměti DDR3 SDRAM
+Pevný disk:
+Počet pevných disků 1
+Celková kapacita pevného disku 1 TB
+Rozhraní pevného disku Sériový ATA/300
+Optická mechanika:
+Typ optické mechaniky Zapisuje na DVD
+Podporovaná optická média DVD-RAM/±R/±RW
+Grafická karta: integrovaná Intel® HD
+Rozšiřující sloty: 1 x Mini PCI Express
+
+Síť: Ethernet
+Konektory (celkem):
+HDMI Ano
+Počet portů USB 2.0 4
+Počet portů USB 3.0 1
+Celkový počet portů USB 5
+Síť (RJ-45) Ano
+Audio linkový vstup Ano
+Audio Line Out Ano
+VGA Ano
+
+Čtečka paměťových karet: ano
+
+Provedení (case): mini PC (Nettop)
+
+Rozměry:
+Výška 100 mm
+Šířka 369.6 mm
+Hloubka 266.5 mm
+
+Napájení: 220 W
+
+Klávesice: USB klávesnice
+Myš: USB myš
+    [parametry] => Array
+        (
+            [Barva:] => černá
+            [Čtečka karet:] => ano
+            [Formát skříně:] => Mini Tower
+            [Frekvence paměti [MHz]:] => 1600
+            [Frekvence procesoru [GHz]:] => 2
+            [Grafická karta                :] => Intel HD Graphics
+            [Grafické výstupy:] => HDMI
+            [Hloubka [mm]:] => 266,5
+            [Kódové označení procesoru:] => Bay Trail
+            [Max. frekvence procesoru [GHz]:] => 2,41
+            [Max. velikost paměti [GB]:] => 8
+            [Model procesoru:] => Intel Celeron J1900 
+            [Operační systém:] => Windows 8.1 BING
+            [Optická mechanika:] => DVD+-RW
+            [Otáčky pevného disku [ot./min]:] => 7200
+            [Počet jader procesoru:] => 4
+            [Počet portů RJ-45:] => 1
+            [Počet portů USB 2.0:] => 4
+            [Počet portů USB 3.0:] => 1
+            [Počet předních USB 2.0        :] => 2
+            [Počet vláken procesoru:] => 4
+            [Procesorová řada:] => Celeron
+            [Příslušenství:] => Myš
+            [PS/2 port                     :] => 1
+            [Síťová karta - rychlost [Mbps]:] => 10/100/1000
+            [Šířka [mm]:] => 369,6
+            [Typ disku:] => HDD
+            [Typ grafické karty:] => integrovaná
+            [Typ paměti:] => DDR3
+            [Velikost disku [GB]:] => 1000
+            [Velikost operační paměti [GB]:] => 4
+            [Vstup pro mikrofon:] => ano
+            [Výrobce grafického chipu:] => Intel
+            [Výrobce procesoru:] => Intel
+            [Výška [mm]:] => 100
+            [Zdroj [W]:] => 220
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212488
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Počítače a notebooky -> Počítače ->   Kancelář a internet
+            [DLE VÝROBCE] =>  -> Acer -> Počítače -> Stolní počítače ->   PC Aspire
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Acer
+    [vyrobce] => Acer
     [kod] => 7702262
     [part_no] => DQ.SVCEC.007
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 12 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 12 Měsíce
     [status] =>  
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [url_image] => img.asp?stiid=212489
+    [popis] =>                      AZ3-615_Wdb_135W - Originální Windows® 8.1 / Intel Core i5 4590T LGA 2.0G 6M 1600 1150 35W Haswell / 1000GB + 8GB SSHD SATA 7200rpm / 8GB DDR3 / DVD-RW / NVIDIA® GeForce® GT 840M, 2 GB DDR3 / USB kybd &amp; mouse / card reader / USB 3.0 / wifi + BT4.0 / HDMI / 23" IPS LED monitor (1920x1080) non - Touch s reproduktory a webkamerou /
+    [parametry] => Array
+        (
+            [Barva:] => černá
+            [Bluetooth:] => ano
+            [Bluetooth specifikace         :] => v2.0
+            [Formát skříně:] => All in One
+            [Frekvence procesoru [GHz]:] => 2
+            [Grafická karta                :] => NVIDIA GeForce GT 840M
+            [Hloubka [mm]:] => 54
+            [Kódové označení procesoru:] => Haswell
+            [Max. frekvence procesoru [GHz]:] => 3
+            [Max. velikost paměti [GB]:] => 16
+            [Model procesoru:] => Intel Core i5-4590T
+            [Operační systém:] => Windows 8.1
+            [Optická mechanika:] => DVD+-RW
+            [Otáčky pevného disku [ot./min]:] => 7200
+            [Počet HDMI:] => 1
+            [Počet jader procesoru:] => 4
+            [Počet osazených disků:] => 1
+            [Počet portů RJ-45:] => 1
+            [Počet portů USB 2.0:] => 3
+            [Počet portů USB 3.0:] => 2
+            [Počet vláken procesoru:] => 4
+            [Povrch displeje :] => lesklý
+            [Procesorová řada:] => Core i5
+            [Rozlišení displeje [px]:] => FullHD (1920 x 1080)
+            [Síťová karta - rychlost [Mbps]:] => 10/100/1000
+            [Šířka [mm]:] => 579
+            [Technologie obrazu:] => LED
+            [Typ disku:] => SSHD
+            [Typ displeje                  :] => IPS
+            [Typ grafické karty:] => samostatná
+            [Typ paměti:] => DDR3
+            [Velikost disku [GB]:] => 1008
+            [Velikost displeje [palců]:] => 23
+            [Velikost operační paměti [GB]:] => 8
+            [Velikost paměti grafické karty [GB]:] => 2
+            [Výrobce grafického chipu:] => Intel
+            [Výrobce procesoru:] => Intel
+            [Výška [mm]:] => 489
+            [Webová kamera                 :] => ano
+            [Wi-Fi:] => ano
+            [Wi-Fi standardy       :] => g
+            [Zdroj [W]:] => 135
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212489
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Počítače a notebooky -> Počítače -> All-in-one počítače ->   Multimediální
+            [DLE VÝROBCE] =>  -> Acer -> Počítače ->   All-in-one počítače
+        )
+
 )
 Array
 (
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [vyrobce] =>   OKI
+    [vyrobce] => OKI
     [kod] => 8982705
     [part_no] => 45762112
-    [dostupnost_eshop] =>         do 2 dnů         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 12 166 Kč
-    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
-    [Autorský fond  (AF*)] => 90.00; DPH: 21% (Multifunkční přístroje 5001-10000 Kč) 
-    [Vaše cena s RP*+ AF*] => 12 268 Kč
+    [dostupnost_eshop] => do 2 dnů
+    [cena_bez_dph] => 12 166 Kč
+    [recyklacni_poplatek] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [autorsky_fond] => 90.00; DPH: 21% (Multifunkční přístroje 5001-10000 Kč) 
+    [cena_s_rp_af] => 14 844 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 14 844 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -133,25 +313,139 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212491
+    [popis] =>                      Popis:
+Černobílá multifunkční tiskárna 4v1 pro menší pracovní skupiny
+Kompaktní, ergonomický design
+Rychlost tisku až 40 stran za minutu
+LED tisk, kopírování, skenování
+Automatický oboustranný podavač originálů na 50 listů
+Prodloužená tříletá záruka
+Tisk:
+Způsob tisku	digitální LED jednoprůchodová
+Rychlost tisku A4	40 str/min černobíle
+První stránka	do 4,5 sekund
+Zahřívání	cca 60 sekund od zapnutí, do 17 sekund z úsporného režimu
+Max. rozlišení	1200x1200 dpi
+Doporučené měsíční zatížení	5000
+Maximální měsíční zatížení	80 000
+Kopírování:
+Rychlost opakovaných kopií	40 str/min černobíle
+První kopie	do 10 sekund
+Max. rozlišení	600x600 dpi
+Kopií	1-99
+Měřítko	25-400% (krok 1%)
+Skenování:
+Rychlost skenování:	Až 6 barevných skenů/min, až 30 černobílých skenů/min
+Rozlišení	600dpi
+Automatický podavač originálů	Automatický oboustranný podavač dokumentů (RADF) s kapacitou 50 listů, plochý skener
+Skenování do	FTP, HTTP, USB paměť, E-mail, TWAIN, CIFS a skenování do aplikace Actkey Utility
+Formát	M-TIFF, JPEG, XS, zabezpečené PDF + (BMP, PCX, GIF, TGA, PNG, WMF, EMF z Actkey Utility)
+Adresář	LDAP, 100 e-mailových adres, 20 skupin
+Faxování:
+Rozhraní:	RJ11x2 (LIne/TEl), PSTN, PBX
+Rychlost modemu	ITU-T G3 (SUper G3) až 33,6 kb/s, až 2 sekundy/stránka
+Rychlost vytáčení	16 jednotlačítkových (8x2 s klávesou shift), 100 rychlých voleb
+Skupiny	až 20
+Oběžníkové vysílání	maximálně 100
+stránkévá paměť	4 MB (cca. 200 stránek pro příjem a odesílání)
+Hardware a Software:
+Procesor	667 MHz
+Paměť	
+512MB RAM; 3GB eMMC
+
+SD paměťová karta	ne
+Pevný disk	není
+Tiskové jazyky	
+PostScript3 (emulace), PCL5e, PCL6(XL), EPSON FX, IBM ProPrinter, XPS, PDF(v1.7)
+
+Rozhraní	
+USB 2.0, 10/100/1000 Ethernet, Host USB x 1 (vepredu)
+
+LCD panel	7" (17.5cm) barevný podsvícený LCD dotykový displej &amp; key top; 23 kláves, 2 LED’s
+Podporované operační systémy:
+Windows	Windows 2000 / XP Home / XP Professional (32-bit a 64-bit) / Server 2003 (32-bit a 64-bit) / Server 2008 (32-bit a 64-bit) / Server 2008 R2 / Vista (32-bit a 64-bit) / Windows 7 (32-bit a 64-bit)
+Macintosh	Mac OS X 10.3.9 až 10.7.2
+Práce s papírem:
+Standartní vstup papíru	250 listů gramáže 80 g/m2
+Multifunkční podavač	100 listů gramáže 80 g/m2
+Automatický oboustranný podavač originálů (RADF)	50 listů gramáže 80 g/m2
+Volitelný 2. zásobník	530 listů gramáže 80 g/m2
+Standartní výstup papíru	Tiskem dolů: 150 listů gramáže 80 g/m2
+Podporované formáty papíru	
+1. zásobník: A4, A5, B5, A6; 2. zásobník: A4, A5, B5; Multifunkční podavač: A4, A5, B5, A6, obálky (C5, DL, Com-9, Com-10, Monarch), uživatelská velikost (délka až 1321 mm vč. banerů); Duplexní jednotka: A4, A5, B5; RADF: A4, A5, B5, A6 (A6 pouze při jednostranném tisku)
+
+Oboustranný tisk	standartně
+Gramáž papíru	
+1./2. zásobník: 60 až 120 g/m2 ; Multifunkční podavač: 6 až 160 g/m2 ; Duplexní jednotka: 60 až 120 g/m2 ; RADF: 60 až 105 g/m2
+
+Konstrukce:
+Rozměry (V*Š*H)	
+455 x 427 x 478 mm; s 2. zásobníkem 593 x 427 x 478 mm
+
+Hmotnost vč. spotřebního materiálu	
+cca 21 kg (včetně spotřebního materiálu)
+
+Elektrické parametry:
+Napájení	220/240 V (+/- 10%)
+Frekvence	50-60 Hz (+/- 3 Hz)
+Příkon	
+Typicky 620W, špičkově 950W, pohotovostní režim 95W(průměr), úsporný režim &lt; 14W, režim hluboké spánku &lt; 3W
+
+Spotřební materiál:
+Předinstalovaný	černý toner max. 2000 stran každý
+Výměnný	černý toner max. 3000 stran, max. 7000 stran nebo vysokokapacitní max. 12 000 stran, obrazový válec max. 25 000 stran, pásová jednotka max. 60 000 stran, zapékací jednotka max. 60 000 stran.
+Doplňující údaje:
+Multifunkční zařízení MB492 umí oboustranně tisknout, kopírovat i skenovata je ideální volbou pro menší střední skupiny uživatelů. Vytiskne až 40 stran za minutu s rozlišením 1200 dpi. Díky vysokokapacitním tonerům, nízké pořizovací ceně a provozním nákladům nabízí dobrý poměr ceny a výkonu.
+
+Záruka
+24 měsíců, nebo 36 měsíců po registraci zdarma (www.oki.cz/zaruka)
+    [parametry] => Array
+        (
+            [Automatický oboustranný tisk  :] => ano
+            [Barva tisku:] => černobílý
+            [Formáty papíru:] => A6
+            [Funkce tiskárny:] => Automatický podavač dokumentů
+            [Hloubka [mm]:] => 564
+            [Hmotnost [kg]:] => 50
+            [LCD displej:] => barevný dotykový
+            [Maximální pracovní využití [stran/měsíc]:] => 200000
+            [Počet portů RJ-45:] => 1
+            [Rozhraní:] => USB 2.0 (480Mb/s) 
+            [Rozlišení černého tisku [DPI]:] => 1200x1200
+            [Rozlišení kopírování [DPI]:] => 600x600
+            [Rozlišení skenování [DPI]:] => 600x600
+            [Rychlost černého tisku [stran/min]:] => 40
+            [Spotřeba při zátěži [W]:] => 870
+            [Spotřeba v pohotovost. režimu [W]:] => 120
+            [Šířka [mm]:] => 522
+            [Technologie tisku:] => Laser
+            [Vstupní zásobník              :] => 530
+            [Výstupní zásobník             :] => 500
+            [Výška [mm]:] => 675
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212491
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> PC příslušenství -> Tiskárny  ->   Multifunkční
+            [DLE VÝROBCE] =>  -> OKI ->   Multifunkční tiskárny
+        )
+
 )
 Array
 (
-    [vyrobce] =>   OKI
+    [vyrobce] => OKI
     [kod] => 8982706
     [part_no] => 45762022
-    [dostupnost_eshop] =>         Skladem         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										         										         										         										           										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 8 447 Kč
-    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
-    [Autorský fond  (AF*)] => 45.00; DPH: 21% (Tiskárny BEZ ink.tech. 5001-10000 Kč) 
-    [Vaše cena s RP*+ AF*] => 8 504 Kč
+    [dostupnost_eshop] => Skladem
+    [cena_bez_dph] => 8 447 Kč
+    [recyklacni_poplatek] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [autorsky_fond] => 45.00; DPH: 21% (Tiskárny BEZ ink.tech. 5001-10000 Kč) 
+    [cena_s_rp_af] => 10 290 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 10 290 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 1
@@ -170,25 +464,125 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212492
+    [popis] =>                      Popis:
+Rychlost tisku až 45 stran za minutu, rychlost tisku první stránky pouhých 4,5 sekund
+Výkonný procesor
+Rozlišení 1200 x 1200dpi pro jemné detaily
+Automatický oboustranný tisk a zásobník papíru rozšiřitelný až na 880 listů papíru
+Mimořádně spolehlivá digitální technologie LED s méně pohyblivými částmi pro výjimečnou odolnost
+Prodloužená tříletá záruka po registraci zdarma
+Tisk:
+Tisková technologie	digitální LED
+Rychlost tisku A4	45 str/min
+První stránka	do 4,5 sekund
+Zahřívání	Přibližně 17 s z úsporného režimu
+Max. rozlišení	
+1200 x 1200 dpi
+
+Průměrné zatížení	5 500 stránek/měs
+Maximální zatížení	100 000 stránek/měs
+Hardware a Software:
+Procesor	
+667 MHz
+
+Paměť	
+512MB RAM; 3GB eMMC
+
+Pevný disk	ne
+Tiskové jazyky	
+PostScript3 (emulace), PCL5e, PCL6(XL), EPSON FX, IBM ProPrinter, XPS, PDF(v1.7)
+
+Rozhraní	
+Vysokorychlostní USB 2.0, 10/100/1000 Ethernet
+
+Podporované operační systémy:
+Windows	
+Windows 7 (32-bit &amp; 64-bit), Windows 8 (32-bit &amp; 64-bit), Windows 8.1 (32-bit &amp; 64-bit), Windows Server 2003 (32-bit &amp; 64-bit), Windows Vista (32-bit &amp; 64-bit), Windows Server 2008 (32-bit &amp; 64-bit), Windows Server 2008 R2 (64-bit), Windows Server 2012 (64-bit), Windows Server 2012 R2 (32 bit &amp; 64 bit); Linux PPD; Mac OS 10.6.8 - 10.7, 10.8, 10.9
+
+Macintosh	
+Mac OS 10.6.8 - 10.7, 10.8, 10.9
+
+Práce s papírem:
+Standartní vstup papíru	250 listů 80g/m2
+Multifunkční podavač	100 listů až 80g/m2
+Volitelný vstup papíru	530 listů 80g/m2
+Standartní výstup papíru	
+Tiskem dolu: 150 listů; Tiskem nahoru: 100 listů
+
+Podporované formáty papíru	Zásobník 1: A4, A5, B5(JIS), A6, Letter, Legal 13, Legal 14, Executive, Statement; Zásobník 2: A4, A5, B5(JIS), Letter, Legal 13, Legal 14, Executive; MPT: A4, A5, B5(JIS), A6, Letter, Legal 13, Legal 14, Executive, Statement, Obálky: Monarch, Com-9, Com-10, DL, C5, C6; Duplex: A4, B5(JIS), Letter, až Legal 14, Executive
+Oboustranný tisk	standartně
+Gramáž papíru	
+Zásobník 1/2: 60 až 120 g/m2; MPT: 60 až 163 g/m2; Duplex: 60 až 120 g/m2
+
+Konstrukce:
+Rozměry (v*š*h)	
+286 x 387 x 394 mm; s 2. zasobnikem 424 x 387 x 394 mm
+
+Hmotnost vč. spotřebního materiálu	
+13 kg
+
+Elektrické parametry:
+Napájení	
+Jednofázové střídavé napětí 220 - 240 V
+
+Frekvence	Frekvence 50/60Hz +/-10%
+Příkon	
+Typicky: 630 W; Maximálně: 900 W; Pohotovostní režim: 80 W; Úsporný režim: &lt;7 W; Režim spánku: &lt;1,4 W;
+
+Spotřební materiál:
+Předinstalovaný	černý 3000 stran
+Výměnný	černý toner max 3000 stran nebo vysokokapacitní 7000 stran nebo extra vysokokapacitní 12000stran, obrazový válec 25 000 stran
+Doplňující údaje:
+Černobílá tiskárna B432 poskytuje vysoce kvalitní tiskové výstupy při výborném poměru cena/výkon. S B432 získáte spolehlivé a robustní zařízení, které nezatíží váš rozpočet.
+
+Záruka
+2 roky v servisu, po registraci produktu zdarma 3 roky (www.oki.cz/zaruka)
+    [parametry] => Array
+        (
+            [Automatický oboustranný tisk  :] => ano
+            [Barva tisku:] => černobílý
+            [Distribuce:] => CZ
+            [Doporučené pracovní využití [stran/měsíc]:] => 5000
+            [Formáty papíru:] => A6
+            [Hloubka [mm]:] => 394
+            [Hmotnost [kg]:] => 13
+            [LCD displej:] => monochromatický LCD
+            [Maximální pracovní využití [stran/měsíc]:] => 10000
+            [Počet portů RJ-45:] => 1
+            [Rozhraní:] => USB 2.0 (480Mb/s) 
+            [Rozlišení černého tisku [DPI]:] => 1200x1200
+            [Rychlost černého tisku [stran/min]:] => 47
+            [Spotřeba při zátěži [W]:] => 630
+            [Spotřeba v pohotovost. režimu [W]:] => 80
+            [Šířka [mm]:] => 387
+            [Technologie tisku:] => Laser
+            [Vstupní zásobník              :] => 630
+            [Výstupní zásobník             :] => 150
+            [Výška [mm]:] => 286
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212492
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> PC příslušenství -> Tiskárny  ->   Klasické
+            [DLE VÝROBCE] =>  -> OKI ->   Barevné laserové LED tiskárny
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Acer
+    [vyrobce] => Acer
     [kod] => 7702263
     [part_no] => DQ.SUPEC.001
-    [dostupnost_eshop] =>         3-4 týdny         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC      15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										    15 dnů      										      
-    [Vaše cena bez DPH] => 20 591 Kč
-    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Stolní osobní počítač) 
-    [Autorský fond  (AF*)] => 50.00; DPH: 21% (HDD+CD/DVD-RW zabudované do PC) 
-    [Vaše cena s RP*+ AF*] => 20 653 Kč
+    [dostupnost_eshop] => 3-4 týdny
+    [cena_bez_dph] => 20 591 Kč
+    [recyklacni_poplatek] => 12.00; DPH: 21% (Stolní osobní počítač) 
+    [autorsky_fond] => 50.00; DPH: 21% (HDD+CD/DVD-RW zabudované do PC) 
+    [cena_s_rp_af] => 24 990 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 24 990 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 12 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 12 Měsíce
     [status] => V ceníku 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -207,25 +601,80 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212493
+    [popis] =>                      AU5-620_Wtdb - Originální Windows® 8.1 /   Intel Core i5 i5-4200M Haswell / 1000GB SATA 5400rpm / 8GB (2 x 4GB) DDR3 / DVD-RW / VGA GTX 850M 2GB / RF2.4  kybd &amp; mouse/ USB 3.0 / wifi 802.11 a/b/g/n/ac / HDMI / 23" IPS LED monitor (1920x1080) Touch s reproduktory a webkamerou / ultra tenký (35mm) designový AIO
+    [parametry] => Array
+        (
+            [Barva:] => černá
+            [DirectX:] => 11.1
+            [Dotykový displej:] => ano
+            [Formát skříně:] => All in One
+            [Frekvence paměti [MHz]:] => 1600
+            [Frekvence procesoru [GHz]:] => 2,5
+            [Grafická karta                :] => NVIDIA GeForce GTX 850M
+            [Hloubka [mm]:] => 35
+            [Kódové označení procesoru:] => Haswell
+            [Max. frekvence procesoru [GHz]:] => 3,1
+            [Max. velikost paměti [GB]:] => 16
+            [Model procesoru:] => Intel Core i5-4200M
+            [Operační systém:] => Windows 8.1
+            [Optická mechanika:] => DVD+-RW
+            [Otáčky pevného disku [ot./min]:] => 5400
+            [Počet HDMI:] => 1
+            [Počet jader procesoru:] => 2
+            [Počet osazených disků:] => 1
+            [Počet portů RJ-45:] => 1
+            [Počet portů USB 2.0:] => 3
+            [Počet portů USB 3.0:] => 2
+            [Počet stream procesorů        :] => 640
+            [Počet vláken procesoru:] => 4
+            [Povrch displeje :] => lesklý
+            [Procesorová řada:] => Core i5
+            [Reproduktory:] => ano
+            [Rozlišení displeje [px]:] => FullHD (1920 x 1080)
+            [Síťová karta - rychlost [Mbps]:] => 10/100/1000
+            [Šířka [mm]:] => 560
+            [Technologie obrazu:] => LED
+            [Typ disku:] => HDD
+            [Typ displeje                  :] => IPS
+            [Typ grafické karty:] => samostatná
+            [Typ jádra:] => GM107 Maxwell
+            [Typ paměti:] => DDR3
+            [Velikost disku [GB]:] => 1024
+            [Velikost displeje [palců]:] => 23
+            [Velikost operační paměti [GB]:] => 8
+            [Velikost paměti grafické karty [GB]:] => 2
+            [Vstup pro mikrofon:] => ano
+            [Výrobce grafického chipu:] => Intel
+            [Výrobce procesoru:] => Intel
+            [Výška [mm]:] => 398
+            [Webová kamera                 :] => ano
+            [Wi-Fi:] => ano
+            [Wi-Fi standardy       :] => g
+            [Zdroj [W]:] => 135
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212493
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Počítače a notebooky -> Počítače -> All-in-one počítače ->   Herní
+            [DLE VÝROBCE] =>  -> Acer -> Počítače ->   All-in-one počítače
+        )
+
 )
 Array
 (
-    [vyrobce] =>   OKI
+    [vyrobce] => OKI
     [kod] => 8982707
     [part_no] => 45762102
-    [dostupnost_eshop] =>         do 5 dnů         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC      5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										    5 dnů      										      
-    [Vaše cena bez DPH] => 7 398 Kč
-    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
-    [Autorský fond  (AF*)] => 90.00; DPH: 21% (Multifunkční přístroje 5001-10000 Kč) 
-    [Vaše cena s RP*+ AF*] => 7 500 Kč
+    [dostupnost_eshop] => do 5 dnů
+    [cena_bez_dph] => 7 398 Kč
+    [recyklacni_poplatek] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [autorsky_fond] => 90.00; DPH: 21% (Multifunkční přístroje 5001-10000 Kč) 
+    [cena_s_rp_af] => 9 075 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 9 075 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -244,24 +693,145 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212494
+    [popis] =>                      Černobílá multifunkce 4v1 pro malé firmy
+Rychlost tisku 33 stran za minutu, doba tisku první stránky 5 sekund
+Reverzní automatický podavač a duplexní jednotka jako standard
+Kapacita zásobníku papíru 350 listů
+Emulace PCL, PS
+Možnost bezdrátového připojení (MB471w)
+ 
+Multifunkce MB471 kombinuje funkce oboustranného tisku, kopírování, skenování i faxování. Dokáže tisknout rychlostí až 33 stran za minutu v rozlišení 1200 dpi.NAVÍC NABÍZÍ BEZDRÁTOVÉ PŘIPOJENÍ DO SÍTĚ (MB471w), a tak může být umístěna kamkoliv bez nutnosti zapojení kabelů.
+
+Rychlá, spolehlivá a snadno ovladatelná
+
+Multifunkce MB471, vytvořená na základě osvědčené, odzkoušené a oceněné technologie, představuje nový standard v oblasti víceúčelových černobílých zařízení pro kanceláře.
+
+Díky flexibilním možnostem zpracování médií může zařízení MB471 tisknout mnoho typů dokumentů, od štítků až po tabulky, faktury, návrhy, formuláře, technické výkresy a další dokumenty, což z něj činí ideální volbu pro širokou řadu organizací a pracovních skupin napříč mnoha sektory, jako je například maloobchodní prodej, pohostinství, výstavba, finanční sektor a zdravotnictví. Tato multifunkční tiskárna představuje perfektní volbu pro každou kancelář, kde vyžadují rychlý černobílý tisk, doplněný o možnost kopírování, skenování a faxování.
+
+Výjimečné funkce usnadní každodenní činnosti
+
+MB471, doslova nabitá vynikajícími nástroji, ECO i standardními funkcemi, včetně reverzního automatického podavače na 50 listů, umožňuje tisknout, kopírovat, skenovat a faxovat oboustranné dokumenty. Díky přednímu USB portu můžete tisknout přímo z USB paměti a QWERTY klávesnice usnadňuje psaní e-mailových adres. Multifunkce je také kompatibilní s mobilními aplikacemi a umí tak tisknout přímo z mobilních zařízení prostřednictvím bezdrátových sítí.
+
+Ekologická přívětivost
+
+Multifunkce MB471 patří ve své kategorii k modelům, které jsou nejvíce zaměřeny na ochranu životního prostředí a jsou vybaveny funkcemi, které pomáhají snižovat spotřebu energie, dopad na životní prostředí i provozní náklady. Sloučení funkce více zařízení do jediného, LED technologie, funkce Eco Mode a režim hlubokého spánku snižují spotřebu energie a náklady, funkce Toner Save redukuje spotřebu toneru a oboustranný tisk spotřebu papíru.
+
+Prodloužená záruka zdarma
+Spolehlivost našich produktů je natolik vysoká, že Vám k nim zdarma nabízíme prodloužení standardní dvouleté záruční doby na tři roky. Stačí si produkt zaregistrovat na www.oki.cz/zaruka do 30 dnů od nákupu.
+Úplná specifikace 
+
+Klíčové vlastnosti
+PopisA4 černobílá multifunkce 4v1 (tisk, kopírování, skenování, faxování)
+Počet uživatelů1 až 10
+
+Tiskárna
+Rychlost tiskuA4: 33 černobílých stran za minutu
+Doba tisku první stránky5 sekund a méně
+Doba zahříváníDo 60 sekund od zapnutí, do 25 sekund z úsporného režimu
+Rychlost procesoru330 MHz
+
+Skenování
+Rozlišení skenování600 dpi
+Rychlost skenováníAž 10 barevných skenů/min, až 37,5 černobílých skenů/min
+Barevná hloubkaVstupní 48-bitů / výstupní 24-bitů
+Vstup dokumentůAutomatický oboustranný podavač dokumentů (RADF) s kapacitou 50 listů, plochý skener
+Kontrast7 úrovní
+FormátyM-TIFF, JPEG, XPS, PDF, Secure PDF + (BMP, PCX, GIF, TGA, PNG, WMF, EMF z Actkey Utility)
+AdresářLDAP nebo 100 e-mailových adres a 20 skupin adres
+Skenování doFTP, HTTP, USB paměť, E-mail, TWAIN, CIFS a sken do aplikace i faxu z Actkey Utility
+
+Kopírování
+Výstup první kopieDo 11 sekund
+Rychlost kopírováníAž 33 černobílých kopií za minutu
+RozlišeníAž 600 x 600 dpi
+Zmenšení/zvětšeníZoom 25 - 400%
+Maximální počet kopií99
+
+Fax
+Rozhraní faxuRJ11 x 2 (Line/Tel), PSTN, PBX Line
+Rychlost faxuITU-T G3(Super G3) a6 33.6 kbps, až 2 sekundy/stránka
+Rychlé vytáčení16 jednotlačítkových voleb (8 x 2 s použitím klávesy shift), 100 rychlých voleb
+SkupinyAž 20
+Oběžníkové vysíláníMaximálně 100
+Paměť faxu4 MB (cca 200 stránek - pro příjem a odesílání)
+
+Operační panel
+LCD panelJeden jednoduchý grafický panel:: 84,1 mm (V) x 33,6 mm (Š); Rozlišení: 320 x 128 bodů
+Klávesnice12 alfanumerických kláves, 4 hlavní funkční klávesy (kopírování, skenování, tisk, faxování), barevný a čb start, status, nastavení, pomoc, makro úlohy, 8 kláves a shift klávesa pro 16 jednotlačítkových voleb, 6 hlavních navigačních kláves (zpět, nahoru, dolů, vlevo, vpravo, OK), smazat, stop, úsporný režim, reset/log out; Qwerty klávesnice
+
+Kompatibilita
+Připojení10/100 TX Ethernet, USB 2.0, hostitelský port USB 2.0
+EmulacePCL6 (XL3.0), PCL5e, PostScript 3 (emulace), SIDM (IBM-PPR, EPSON-FX)
+Síť a protokolyMB471, MB471w: Síťová karta na základní desce s interním web serverem pro správu a nastavení stroje. Jsou podporovány všechny hlavní protokoly. TCP/IPv4&amp;v6, SMTP, POP3, HTTP, SNMPv1&amp;v3, DHCP, DNS, LPR, Port9100, BOOTP, ARP, FTP, CIFS, LDAP, SLP, Bonjour. NetWare, EtherTalk, NetBEUI, LLTD, Web Service on Devices. MB471w: Wireless LAN Protocol (IEEE802.11b, IEEE802.11g, IEEE802.11n, Infrastructure Mode, WEP, WPA(TKIP), WPA2(AES), WPS-PBC, WPS-PIN, Open system authentication, Shared key authentication, IEEE802.1x authentication)
+Kompatibilita s OSWindows XP (32-bit &amp; 64-bit) / Server 2003 (32-bit &amp; 64-bit) / Server 2008 (32-bit &amp; 64-bit) / Server 2008 R2 (64-bit) / Vista (32-bit &amp; 64-bit) / 7 (32-bit &amp; 64-bit); Mac OS X 10.4.0 - 10.7.2
+Rozšířené síťové vlastnosti a zabezpečeníFiltrování IP a MAC adres, šifrování SSL/TLS, EAP(IEEE802.1X), IPSec
+UtilityTemplate Manager, OKI LPR, PrintSuperVision.net, PrintSuperVision Java, Print Job Accounting, Print Job Accounting Client, Web Driver Installer, Network Card Setup, Configuration Tool, Actkey, PDF Direct Print, PS Gamma Adjuster
+Document managementNuance PaperPort SEv11, Nuance OmniPage SEv16
+
+Kvalita tisku
+Rozlišení1200 x 1200 dpi, 600 x 600 dpi
+
+Písma
+Fonty tiskárny87 škálovatelných PCL fontů a 80 PS fontů, bitmapové PCL fonty, OCR-A/B, čarový kód USPS ZIP
+Čárové kódy12 typů jednorozměrných s 28 variantami: UPC-A, UPC-E, EAN/JAN-8, EAN/JAN-13, Interleaved2of5, Code39, Code 128, EAN/UCC-128, CODABAR, ZIP+4POSTNET, USPS Zip Barcode; 1 typ dvourozměrný: PDF417
+
+Manipulace s papírem
+Kapacita zásobníku papíru1. zásobník: 250 listů gramáže 80 g/m2; Multifunkční podavač: 100 listů gramáže 80 g/m2; RADF: 50 listů gramáže 80 g/m2
+Kapacita volitelného zásobníku papíru530 listů gramáže 80 g/m2
+Maximální kapacita zásobníku papíru880 listů gramáže 80 g/m2
+Velikosti papíru1. zásobník: A4, A5, B5, A6; 2. zásobník: A4, A5, B5; Multifunkční podavač: A4, A5, B5, A6, Obálky (C5, C6, DL, Com-9, Com-10, Monarch), uživatelská velikost (délka až 1321 mm vč. banerů); Duplex: A4, B5; RADF: A4, B5, A5, A6 (A6 pouze při jednostranném tisku)
+Gramáž papíru1./2.zásobník: 60 - 120 g/m2; Multifunkční podavač: 60 - 160g/m2; Duplex: 60 - 120 g/m2; RADF: 60 - 105 g/m2
+Duplexní jednotkaStandardně
+Výstup papíruTiskem dolů: 150 listů gramáže 80 g/m2
+    [parametry] => Array
+        (
+            [Automatický oboustranný tisk  :] => ano
+            [Barva tisku:] => černobílý
+            [Doporučené pracovní využití [stran/měsíc]:] => 3000
+            [Formáty papíru:] => A6
+            [Funkce tiskárny:] => Automatický podavač dokumentů
+            [Hloubka [mm]:] => 425
+            [Hmotnost [kg]:] => 20
+            [LCD displej:] => monochromatický LCD
+            [Maximální pracovní využití [stran/měsíc]:] => 60000
+            [Počet portů RJ-45:] => 1
+            [Počet portů USB 2.0:] => 1
+            [Podpora Wi-Fi:] => ano
+            [Rozhraní:] => USB 2.0 (480Mb/s) 
+            [Rozlišení černého tisku [DPI]:] => 1200x1200
+            [Rozlišení kopírování [DPI]:] => 600x600
+            [Rozlišení skenování [DPI]:] => 600x600
+            [Rychlost černého tisku [stran/min]:] => 33
+            [Spotřeba při zátěži [W]:] => 600
+            [Spotřeba v pohotovost. režimu [W]:] => 95
+            [Šířka [mm]:] => 427
+            [Technologie tisku:] => Laser
+            [Vstupní zásobník              :] => 250
+            [Výstupní zásobník             :] => 150
+            [Výška [mm]:] => 455
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212494
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> PC příslušenství -> Tiskárny  ->   Multifunkční
+            [DLE VÝROBCE] =>  -> OKI ->   Multifunkční tiskárny
+        )
+
 )
 Array
 (
     [kod] => 8982708
     [part_no] => 45762012
-    [dostupnost_eshop] =>         Skladem         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										         										         										         										           										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 5 902 Kč
-    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
-    [Autorský fond  (AF*)] => 24.00; DPH: 21% (Tiskárny BEZ ink.tech. do 5000 Kč) 
-    [Vaše cena s RP*+ AF*] => 5 938 Kč
+    [dostupnost_eshop] => Skladem
+    [cena_bez_dph] => 5 902 Kč
+    [recyklacni_poplatek] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [autorsky_fond] => 24.00; DPH: 21% (Tiskárny BEZ ink.tech. do 5000 Kč) 
+    [cena_s_rp_af] => 7 185 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 7 185 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 1
@@ -280,35 +850,138 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212495
+    [popis] =>                      Popis:
+Rychlost tisku až 40 stran za minutu, rychlost tisku první stránky pouhých 4,5 sekund
+Výkonný procesor
+Rozlišení 1200 x 1200dpi pro jemné detaily
+Automatický oboustranný tisk a zásobník papíru rozšiřitelný až na 880 listů papíru
+Mimořádně spolehlivá digitální technologie LED s méně pohyblivými částmi pro výjimečnou odolnost
+Prodloužená tříletá záruka po registraci zdarma
+Tisk:
+Tisková technologie	digitální LED
+Rychlost tisku A4	40 str/min
+První stránka	do 4,5 sekund
+Zahřívání	Přibližně 17 s z úsporného režimu
+Max. rozlišení	
+1200 x 1200 dpi
+
+Průměrné zatížení	5 000 stránek/měs
+Maximální zatížení	80 000 stránek/měs
+Hardware a Software:
+Procesor	
+667 MHz
+
+Paměť	
+512MB RAM; 3GB eMMC
+
+Pevný disk	ne
+Tiskové jazyky	
+PostScript3 (emulace), PCL5e, PCL6(XL), EPSON FX, IBM ProPrinter, XPS, PDF(v1.7)
+
+Rozhraní	
+Vysokorychlostní USB 2.0, 10/100/1000 Ethernet
+
+Podporované operační systémy:
+Windows	
+Windows 7 (32-bit &amp; 64-bit), Windows 8 (32-bit &amp; 64-bit), Windows 8.1 (32-bit &amp; 64-bit), Windows Server 2003 (32-bit &amp; 64-bit), Windows Vista (32-bit &amp; 64-bit), Windows Server 2008 (32-bit &amp; 64-bit), Windows Server 2008 R2 (64-bit), Windows Server 2012 (64-bit), Windows Server 2012 R2 (32 bit &amp; 64 bit); Linux PPD; Mac OS 10.6.8 - 10.7, 10.8, 10.9
+
+Macintosh	
+Mac OS 10.6.8 - 10.7, 10.8, 10.9
+
+Práce s papírem:
+Standartní vstup papíru	250 listů 80g/m2
+Multifunkční podavač	100 listů až 80g/m2
+Volitelný vstup papíru	530 listů 80g/m2
+Standartní výstup papíru	
+Tiskem dolu: 150 listů; Tiskem nahoru: 100 listů
+
+Podporované formáty papíru	Zásobník 1: A4, A5, B5(JIS), A6, Letter, Legal 13, Legal 14, Executive, Statement; Zásobník 2: A4, A5, B5(JIS), Letter, Legal 13, Legal 14, Executive; MPT: A4, A5, B5(JIS), A6, Letter, Legal 13, Legal 14, Executive, Statement, Obálky: Monarch, Com-9, Com-10, DL, C5, C6; Duplex: A4, B5(JIS), Letter, až Legal 14, Executive
+Oboustranný tisk	standartně
+Gramáž papíru	
+Zásobník 1/2: 60 až 120 g/m2; MPT: 60 až 163 g/m2; Duplex: 60 až 120 g/m2
+
+Konstrukce:
+Rozměry (v*š*h)	
+245 x 387 x 364 mm; s 2. zásobni­kem 383 x 387 x 364 mm
+
+Hmotnost vč. spotřebního materiálu	
+12 kg
+
+Elektrické parametry:
+Napájení	
+Jednofázové střídavé napětí 220 - 240 V
+
+Frekvence	Frekvence 50/60Hz +/-10%
+Příkon	
+Typicky: 560 W; Maximálně: 900 W; Pohotovostní režim: 80 W; Úsporný režim:
+
+Spotřební materiál:
+Předinstalovaný	černý 3000 stran
+Výměnný	černý toner max 3000 stran nebo vysokokapacitní 7000 stran nebo extra vysokokapacitní 12000stran, obrazový válec 25 000 stran
+Doplňující údaje:
+Černobílá tiskárna B432 poskytuje vysoce kvalitní tiskové výstupy při výborném poměru cena/výkon. S B432 získáte spolehlivé a robustní zařízení, které nezatíží váš rozpočet.
+
+Záruka
+2 roky v servisu, po registraci produktu zdarma 3 roky (www.oki.cz/zaruka)
+    [parametry] => Array
+        (
+            [Automatický oboustranný tisk  :] => ano
+            [Barva tisku:] => černobílý
+            [Doporučené pracovní využití [stran/měsíc]:] => 4000
+            [Formáty papíru:] => A6
+            [Hloubka [mm]:] => 364
+            [Hmotnost [kg]:] => 12
+            [LCD displej:] => monochromatický LCD
+            [Počet portů RJ-45:] => 1
+            [Rozhraní:] => USB 2.0 (480Mb/s) 
+            [Rozlišení černého tisku [DPI]:] => 1200x1200
+            [Rychlost černého tisku [stran/min]:] => 42
+            [Spotřeba při zátěži [W]:] => 600
+            [Spotřeba v pohotovost. režimu [W]:] => 80
+            [Šířka [mm]:] => 387
+            [Technologie tisku:] => Laser
+            [Vstupní zásobník              :] => 350
+            [Výstupní zásobník             :] => 150
+            [Výška [mm]:] => 245
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212495
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> PC příslušenství -> Tiskárny  ->   Klasické
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Acer
+    [vyrobce] => Acer
     [kod] => 7702264
     [part_no] => DQ.SVAEC.004
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 12 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 12 Měsíce
     [status] =>  
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [url_image] => img.asp?stiid=212496
+    [popis] =>                      AZ3-615_Wub -  FreeDOS / Intel Pentium Dual-Core G3240T LGA 2.7G 3M 1333 1150 35W Haswell  / 500GB SATA 7200rpm / 4GB DDR3 / DVD-RW / Intel HD / USB kybd &amp; mouse / card reader / USB 3.0 / wifi + BT4.0 / HDMI / 23" IPS LED monitor (1920x1080) non - Touch s reproduktory a webkamerou /
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212496
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Počítače a notebooky -> Počítače ->   All-in-one počítače
+            [DLE VÝROBCE] =>  -> Acer -> Počítače ->   All-in-one počítače
+        )
+
 )
 Array
 (
     [kod] => 8982709
     [part_no] => 45762002
-    [dostupnost_eshop] =>         Zavolejte         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 4 464 Kč
-    [Recyklační poplatek  (RP*)] => 12.00; DPH: 21% (Laserová tiskárna) 
-    [Autorský fond  (AF*)] => 24.00; DPH: 21% (Tiskárny BEZ ink.tech. do 5000 Kč) 
-    [Vaše cena s RP*+ AF*] => 4 500 Kč
+    [dostupnost_eshop] => Zavolejte
+    [cena_bez_dph] => 4 464 Kč
+    [recyklacni_poplatek] => 12.00; DPH: 21% (Laserová tiskárna) 
+    [autorsky_fond] => 24.00; DPH: 21% (Tiskárny BEZ ink.tech. do 5000 Kč) 
+    [cena_s_rp_af] => 5 445 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 5 445 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -327,46 +1000,288 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212497
+    [popis] =>                      Popis:
+Rychlost tisku až 33 stran za minutu, rychlost tisku první stránky pouhých 5 sekund
+Výkonný procesor
+Rozlišení 1200 x 1200dpi pro jemné detaily
+Automatický oboustranný tisk a zásobník papíru rozšiřitelný až na 880 listů papíru
+Mimořádně spolehlivá digitální technologie LED s méně pohyblivými částmi pro výjimečnou odolnost
+Prodloužená tříletá záruka po registraci zdarma
+Tisk:
+Tisková technologie	digitální LED
+Rychlost tisku A4	33 str/min
+První stránka	do 5 sekund
+Zahřívání	Přibližně 17 s z úsporného režimu
+Max. rozlišení	
+1200 x 1200 dpi
+
+Průměrné zatížení	3 000 stránek/měs
+Maximální zatížení	60 000 stránek/měs
+Hardware a Software:
+Procesor	
+667 MHz
+
+Paměť	
+512MB RAM; 3GB eMMC
+
+Pevný disk	ne
+Tiskové jazyky	
+PCL5e, PCL6(XL), EPSON FX, IBM ProPrinter, XPS
+
+Rozhraní	
+Vysokorychlostní USB 2.0, 10/100/1000 Ethernet
+
+Podporované operační systémy:
+Windows	
+Windows 7 (32-bit &amp; 64-bit), Windows 8 (32-bit &amp; 64-bit), Windows 8.1 (32-bit &amp; 64-bit), Windows Server 2003 (32-bit &amp; 64-bit), Windows Vista (32-bit &amp; 64-bit), Windows Server 2008 (32-bit &amp; 64-bit), Windows Server 2008 R2 (64-bit), Windows Server 2012 (64-bit), Windows Server 2012 R2 (32 bit &amp; 64 bit); Linux PPD; Mac OS 10.6.8 - 10.7, 10.8, 10.9
+
+Macintosh	
+Mac OS 10.6.8 - 10.7, 10.8, 10.9
+
+Práce s papírem:
+Standartní vstup papíru	250 listů 80g/m2
+Multifunkční podavač	100 listů až 80g/m2
+Volitelný vstup papíru	530 listů 80g/m2
+Standartní výstup papíru	
+Tiskem dolu: 150 listů; Tiskem nahoru: 100 listů
+
+Podporované formáty papíru	Zásobník 1: A4, A5, B5(JIS), A6, Letter, Legal 13, Legal 14, Executive, Statement; Zásobník 2: A4, A5, B5(JIS), Letter, Legal 13, Legal 14, Executive; MPT: A4, A5, B5(JIS), A6, Letter, Legal 13, Legal 14, Executive, Statement, Obálky: Monarch, Com-9, Com-10, DL, C5, C6; Duplex: A4, B5(JIS), Letter, až Legal 14, Executive
+Oboustranný tisk	standartně
+Gramáž papíru	
+Zásobník 1/2: 60 až 120 g/m2; MPT: 60 až 163 g/m2; Duplex: 60 až 120 g/m2
+
+Konstrukce:
+Rozměry (v*š*h)	
+245 x 387 x 364 mm; s 2. zásobni­kem 383 x 387 x 364 mm
+
+Hmotnost vč. spotřebního materiálu	
+12 kg
+
+Elektrické parametry:
+Napájení	
+Jednofázové střídavé napětí 220 - 240 V
+
+Frekvence	Frekvence 50/60Hz +/-10%
+Příkon	
+Typicky: 560 W; Maximálně: 900 W; Pohotovostní režim: 80 W; Úsporný režim: &lt;7 W; Režim spánku: &lt;1,4 W;
+
+Spotřební materiál:
+Předinstalovaný	černý 2000 stran
+Výměnný	černý toner max 3000 stran nebo vysokokapacitní 7000 stran, obrazový válec 25 000 stran
+Doplňující údaje:
+Černobílá tiskárna B412 poskytuje vysoce kvalitní tiskové výstupy při výborném poměru cena/výkon. S B412 získáte spolehlivé a robustní zařízení, které nezatíží váš rozpočet.
+
+Záruka
+2 roky v servisu, po registraci produktu zdarma 3 roky (www.oki.cz/zaruka)
+    [parametry] => Array
+        (
+            [Automatický oboustranný tisk  :] => ano
+            [Barva tisku:] => černobílý
+            [Doporučené pracovní využití [stran/měsíc]:] => 3000
+            [Formáty papíru:] => A6
+            [Hloubka [mm]:] => 364
+            [Hmotnost [kg]:] => 12
+            [LCD displej:] => monochromatický LCD
+            [Počet portů RJ-45:] => 1
+            [Rozhraní:] => USB 2.0 (480Mb/s) 
+            [Rozlišení černého tisku [DPI]:] => 1200x1200
+            [Rychlost černého tisku [stran/min]:] => 35
+            [Spotřeba při zátěži [W]:] => 560
+            [Spotřeba v pohotovost. režimu [W]:] => 80
+            [Šířka [mm]:] => 387
+            [Technologie tisku:] => Laser
+            [Vstupní zásobník              :] => 350
+            [Výstupní zásobník             :] => 150
+            [Výška [mm]:] => 245
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212497
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> PC příslušenství -> Tiskárny  ->   Klasické
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Ubiquiti
+    [vyrobce] => Ubiquiti
     [kod] => 7860111P
     [part_no] => NBE-M5-300
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] =>  
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [url_image] => img.asp?stiid=212498
+    [popis] =>                      Obsah balení 	zařízení, PoE zdroj, napájecí kabel, manuál,
+
+
+
+NanoBeam vychází z dřívější velmi úspěšné řady produktů NanoBridge. Nově obsahuje výkonější hardware a chytřejší konstrukci. Konstrukce byla maximálně zjednodušena, instalace v terénu je nyní rychlejší a pohodlnější, pro zajímavost bych zmínil tlačítko pro uvolnění hlavní jednotky (zářiče) což byl problém u starší generace. Uvnitř NanoBeamu se nachází výkonný MIPS procesor Atheros 74KC s frekvencí 560MHz, kterému sekunduje 64MB operační paměti typu DDR2 a 8MB Flash paměť. Síťový port podporuje 10/100 Ethernet a lze po něm jednotku napájet pasivním PoE 24V/0,5A (aktivní PoE dle 802.3af není podporováno). Teoretická maximální propustnost jednotky je 300Mbit (MCS15, 802.11n, 2x2MIMO, při šířce kanálu 40MHz).
+
+Technická specifikace:
+Parametr 	Hodnota
+Frekvence (MHz) 	5170 - 5875
+Normy 	802.11a/n
+Maximální přenosová rychlost 	300 Mbps
+LAN port 	1x RJ45 10/100 Mbps
+Napájení 	12 - 24V (pouze PoE)
+Bezdrátové operační módy 	AP, Client, WDS
+Operační módy 	Bridge, NAT
+DHCP server / client 	Ano / Ano
+Výstup na externí anténu 	Ne
+Ostatní výstupy 	-
+Šifrování 	WEP, WPA, WPA2
+Minimální citlivost 	-96
+Provozní teplota 	-40 až 70 °C
+Regulace výkonu 	Ano
+Max. výstupní výkon 	23dBm
+Počet antén 	1(duální)
+Vyzařovací úhel H / V 	8° / 8°
+Zisk antény 	22dBi
+AirMAX 	Ano
+Chipset 	Atheros
+Procesor 	MIPS 74KC, 550 MHz
+RAM 	64 MB
+NAND 	8 MB
+Hmotnost 	1,2 Kg
+Operační systém 	AirOS
+Podporované OS 	-
+Podpora IPv6 	Transparentní (režim bridge)
+Výchozí IP 	192.168.1.20
+Výchozí jméno / heslo 	ubnt / ubnt
+Obsah balení 	zařízení, PoE zdroj, napájecí kabel, manuál,
+Venkovní použití 	Ano
+Balení obsahuje 1ks
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212498
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> PC příslušenství -> Sítě a VoIP -> Klienti ->   802.11a (5 GHz) -> Access Point (AP) -> 802.11b/g/n (2,4 nebo 5 GHz) ->   5 GHz
+            [DLE VÝROBCE] =>  ->   Ubiquiti
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Acer
+    [vyrobce] => Acer
     [kod] => 7702265
     [part_no] => DT.SVMEC.002
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 12 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 12 Měsíce
     [status] =>  
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [url_image] => img.asp?stiid=212499
+    [popis] =>                      ATC-115 - Originální Windows® 8,1 / A4M6210B CPU AMD A4 A4-6210 BGA 1.8G 2M 15W Beema  / 500GB SATA 7200rpm / 4GB DDR3 1600 / DVD-RW / AMD Radeon R3 / USB kybd &amp; mouse / card reader 
+
+Model: Acer Aspire TC115
+Operační systém: Windows 8.1
+Procesor:
+Výrobce procesoru AMD
+Typ procesoru A-Series
+Model procesoru A4-6210
+Jádro procesoru Čtyřjádrový
+Rychlost procesoru 1.80 GHz
+64bitové zpracování Ano
+
+Paměť:
+Typ paměti: DDR3
+Velikost operační paměti [GB]: 8
+Maximální operační paměť [GB]: 16
+
+Pevný disk:
+Typ pevného disku: Hard Disk Drive (HDD)
+Velikosti úložného prostoru (součet) [GB]: 500
+Ot./min pevného disku: 7 200
+
+Optická mechanika: DVD±RW
+Grafická karta: AMD Radeon R3 series
+Rozšiřující sloty:
+Počet rozšiřujících slotů celkem 2
+Počet slotů PCI Express x16 1
+Počet slotů Mini PCI Express 1
+
+Síť: GLAN
+Konektory (celkem):
+HDMI Ano
+Počet portů USB 3.0 4
+Počet portů USB 2.0 4
+Celkový počet portů USB 8
+Síť (RJ-45) Ano
+Audio linkový vstup Ano
+Audio Line Out Ano
+VGA Ano
+
+Čtečka paměťových karet: Ano
+
+Provedení (case): Mini-Tower
+
+Rozměry:
+Výška [mm]: 380,5
+Šířka [mm]: 175
+Hloubka [mm]: 413,7
+
+Hmotnost: Hmotnost balení 8 kg
+Napájení: Maximální výkon zdroje [W]: 220
+
+Klávesice: USB
+Myš: USB
+
+Software: Windows 8.1
+
+Obsah balení:počítač, USB kybd &amp; mouse
+    [parametry] => Array
+        (
+            [Barva:] => černá
+            [Čtečka karet:] => ano
+            [DVI výstup:] => 1x
+            [Formát skříně:] => Mini Tower
+            [Frekvence paměti [MHz]:] => 1600
+            [Frekvence procesoru [GHz]:] => 1,8
+            [HDMI výstup:] => ano
+            [Hloubka [mm]:] => 413,7
+            [Hmotnost [kg]:] => 8
+            [Max. velikost paměti [GB]:] => 16
+            [Operační systém:] => Windows 8.1
+            [Optická mechanika:] => DVD+-RW
+            [Otáčky pevného disku [ot./min]:] => 7200
+            [Počet HDMI:] => 1
+            [Počet jader procesoru:] => 4
+            [Počet portů USB 2.0:] => 4
+            [Počet portů USB 3.0:] => 4
+            [Počet vláken procesoru:] => 4
+            [Procesorová řada:] => A-Series
+            [PS/2 port                     :] => 1
+            [Síťová karta - rychlost [Mbps]:] => 10/100/1000
+            [Šířka [mm]:] => 175
+            [Typ disku:] => HDD
+            [Typ paměti:] => DDR3
+            [Velikost disku [GB]:] => 500
+            [Velikost operační paměti [GB]:] => 4
+            [VGA výstup:] => ano
+            [Vstup pro mikrofon:] => ano
+            [Výrobce grafického chipu:] => AMD
+            [Výrobce procesoru:] => AMD
+            [Výška [mm]:] => 380,5
+            [Zdroj [W]:] => 220
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212499
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Počítače a notebooky -> Počítače ->   Kancelář a internet ->   Domácnost a multimédia
+            [DLE VÝROBCE] =>  -> Acer -> Počítače -> Stolní počítače ->   PC Aspire
+        )
+
 )
 Array
 (
-    [vyrobce] =>   LG
+    [vyrobce] => LG
     [kod] => 8982710
     [part_no] => LGH955.ACZETS
-    [dostupnost_eshop] =>         do 2 dnů         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 13 131 Kč
-    [Recyklační poplatek  (RP*)] => 1.20; DPH: 21% (Mobilní telefony) 
-    [Vaše cena s RP*] => 13 132 Kč
+    [dostupnost_eshop] => do 2 dnů
+    [cena_bez_dph] => 13 131 Kč
+    [recyklacni_poplatek] => 1.20; DPH: 21% (Mobilní telefony) 
+    [Vaše cena s RP*] => 13 132 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 15 890 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [cena_s_rp_af] => 15 890 Kč
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -385,81 +1300,174 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212500
+    [popis] =>                      Základní údaje	OS	Android 5.0 Lollipop
+	Uživatelské prostředí	LG UI 4.1
+	Rozměry [mm]	148,9 x 53,3 x 7,1(9,4)
+	Hmotnost [g]	152 g
+	Displej	5,5", 1920x1080
+	Typ dotykového displeje	kapacitní P-OLED, 16M barev
+	Tvrzené sklo	Ano, Gorilla Glass 3
+Hardware	Výkon procesoru	2,0 GHz, Octa core (Quad 2,0 GHz + Quad 1,5 GHz)
+	Chipset	Qualcomm Snapdragon 810
+		MSM8994 LA 1.0
+	GPU	Adreno 430
+	RAM	2GB RAM
+	Paměť	16GB (x,xx dostupných)
+	Paměťová karta	Ano, microSDXC (až 128GB)
+	Cloudové úložiště	Google Drive
+Konektivita	2G síť [GSM]	GSM 850/900/1800/1900
+	2.5G síť [EGSM]	GPRS/EDGE class 12
+	3G síť  [UMTS]	WCDMA 850/900/1900/2100
+	3.5G síť [HSPA]	HSPA+ 21Mbps
+	4G síť [LTE]	Ano, CAT.6 (B1/B3/B7/B8/B20)
+	USB / OTG	Ano / OTG
+	Bluetooth	Ano, 4.1
+	WLAN	"Dual Band(2.4GHz/5GHz)
+802.11a/b/g/n/ac"
+	On Screen Phone	Ano
+	Miracast	Ano
+	NFC	Ano
+Foto video	Fotoaparát/Blesk	13MPx Laser AF OIS+ / Dual LED
+	Natáčení videa	UHD (3840x2160) / HD (1280x720) @120fps
+	Funkce fotoaparátu	Panorama, Automatický režim, samospoušť, hlasová spoušť, selfie s gestem ruky
+	Počet reproduktorů	mono
+	Počet mikrofonů	2
+	Druhý fotoaparát	Ano, 2,1MPx
+Zábava	Sluchátka/Bezdrát. sluchátka	3,5 mm jack, Bluetooth A2DP
+	Přehrávání hudby	AAC, AAC+, eAAC+, AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis(OGG),  PCM, ADPCM, WMA, EVRC, AC3/EC3
+	FM Rádio	FM rádio
+	Přehrávání videa	MPEG-4 / H.263 / H.264 /WMV/MKV
+	Dolby Mobile	Ne
+Organizace	Adresář/Kalendář/Budík	Ano/Ano/Ano
+	Vibrace	Ano
+	Vlastní zvonění	Ano
+	Hlasitý odposlech	Ano
+Google Apps	Google Maps, YouTube, Hangouts, Google+, Google Now, Gmail, Google Drive, Google Music, Google Play	Ano
+Web. prohlížeč	Prohlížeč xHTML/Chrome	Ano / Ano
+Navigace	A-GPS/GPS	Ano /Ano
+	Glonass/Digitální kompas	Ano / Ano
+LG Apps	LG SmartWorld	Ano
+	Smart Share / Wi-Fi Direct	Ano
+	Quick Memo+	Ano
+	Q-Slide Apps	Ano
+	Psaní pohybovými gesty	Ano
+	Smart Keyboard	Ano
+Kancelář	Prohlížeč dokumentů Office	
+	Synchronizace s PC	Ano, LG PC Suite
+	SMS/MMS/E-mail/Exchange AS	Ano/Ano/Ano/Ano
+Baterie	Typ baterie	3.000 mAh Li-Ion (integrovaná)
+	Pohotovostní režim	Až 230 hodin
+	Doba hovoru	Až 14 hodin
+	Bezdrátové nabíjení	Ne
+	Dostupné barevné kombinace	Platinum Silver / Flamenco Red
+Další	DualSIM	Ne
+	Notifikační LED	Ano
+	Zadní tlačítka	Ano
+	Typ SIM	microSIM
+		Q-remote
+	EasyHome	EasyHome
+	Knock Code	Knock Code
+		
+		Volitelné příslušenství: QuickCircle pouzdro
+SAR	Hodnota pro telefonování u ucha	
+	Hodnota pro nošení u těla	
+Pod čarou		Rychlé nabíjení, samoopravný zadní kryt
+    [parametry] => Array
+        (
+            [3.5mm jack:] => ano
+            [Audio formáty:] => FLAC
+            [Automatické zaostřování       :] => ano
+            [Barva:] => stříbrná
+            [Bluetooth:] => ano
+            [Bluetooth specifikace         :] => v4.1 (BLE, ANT+)
+            [Datové sítě:] => LTE
+            [Displej:] => OLED
+            [Distribuce:] => CZ
+            [Doba hovoru [min.]:] => 840
+            [Dotykový displej:] => ano
+            [FM rádio                      :] => ano
+            [Frekvence procesoru [GHz]:] => 2
+            [Funkce telefonu:] => Hudební přehrávač
+            [Glonass:] => ano
+            [GPS:] => ano
+            [Hloubka [mm]:] => 7,1
+            [Hmotnost [g]:] => 152
+            [Kapacita baterie [mAh]:] => 3000
+            [Konektory:] => Micro USB
+            [Max. rozlišení videa [px]:] => Ultra HD (3840 x 2160)
+            [Max. velikost paměťové karty [GB]:] => 128
+            [NFC                           :] => ano
+            [Operační systém:] => Android
+            [OTG (On-The-Go):] => ano
+            [Paměťová karta:] => micro SDXC
+            [Počet jader procesoru:] => 6
+            [Počet SIM karet:] => 1
+            [Podle použití:] => chytrý telefon
+            [Podpora telefonních sítí [MHz]:] => 2100
+            [Pohotovostní doba [h]:] => 230
+            [Rozlišení displeje [px]:] => FullHD (1920 x 1080)
+            [Rozlišení fotoaparátu [Mpx]:] => 13
+            [Rozlišení předního fotoaparátu [MPx]:] => 2,1
+            [Senzory:] => Světelný senzor
+            [Slot pro paměťové karty:] => ano
+            [Šířka [mm]:] => 53,3
+            [Typ SIM karty:] => microSIM (15 × 12 × 0,76 mm)
+            [Velikost displeje [palců]:] => 5,5
+            [Velikost operační paměti [GB]:] => 2
+            [Velikost úložiště [GB]:] => 16
+            [Vestavěný blesk:] => ano
+            [Video formáty:] => H.263
+            [Výška [mm]:] => 148,9
+            [Wi-Fi:] => ano
+            [Wi-Fi standardy       :] => g
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212500
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Mobily a tablety -> Mobilní telefony ->   Chytré telefony
+            [DLE VÝROBCE] =>  -> LG ->   Mobilní telefony, tablety
+        )
+
 )
 Array
 (
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [vyrobce] =>   Nintendo
+    [vyrobce] => Nintendo
     [kod] => 8880031
     [part_no] => NI3P090130
-    [dostupnost_eshop] =>         Zavolejte         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 330 Kč
-    [DPH] => 21%
-    [Vaše cena s DPH] => 399 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
-    [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnost_pobocky] => Array
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
+    [status] =>  
+    [popis] =>                      Hard Pouch od legendární japonské firmy Hori pro New Nintendo 3DS XL opatřené oficiální pečetí kvality od Nintenda chrání Vaše New 3DS XL ve velkém stylu!
+
+Pevné pouzdro je navrženo tak, aby konzole byla chráněna bez radikálního přidání na objemu. Odolná vnější skořepina spolehlivě pohltí otřesy a nárazy vznikající při pohybu. Pevné materiály zajistí Vašemu New 3DS XL bezpečí na dlouhých cestách a konzole zůstává díky měkké vystýlce v prvotřídní kondici.
+
+Pouzdro pojme:
+New Nintendo 3DS XL
+6 her
+náhradní stylus
+kompatibilní s původním Nintendo 3DS XL
+Firma Hori patří mezi vůbec první 3rd party výrobce herního příslušenství. V Japonsku je špičkou v branži již více než 30 let. Všechny produkty této společnosti jsou vyráběny s ohledem na ta nejpřísnější kvalitativní měřítka. Firma Hori je v Japonsku prémiovým výrobcem příslušenství značky Nintendo, Sony a Microsoft. Všechny produkty vyvážené mimo Japonsko jsou taktéž oficiálně licencované.
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212506
+    [zarazeni] => Array
         (
-            [OL] => 0
-            [TOH] => 0
-            [TOP] => 0
-            [TBA] => 0
-            [BR] => 0
-            [ZL] => 0
-            [OP] => 0
-            [UH] => 0
-            [HK] => 0
-            [ZN] => 0
-            [JI] => 0
-            [LI] => 0
-            [PR] => 0
-            [BC] => 0
+            [DLE KATEGORIE] =>  -> Pro hráče -> Herní konzole -> Nintendo -> Nintendo Wii ->   Příslušenství
+            [DLE VÝROBCE] =>  -> Nintendo -> Nintendo DS ->   Příslušenství
         )
 
-    [url_image] => img.asp?stiid=212506
 )
 Array
 (
-    [vyrobce] =>   Nintendo
+    [vyrobce] => Nintendo
     [kod] => 8880032
     [part_no] => NI3P090140
-    [dostupnost_eshop] =>         Skladem         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										         										         										         										           										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 330 Kč
+    [dostupnost_eshop] => Skladem
+    [cena_bez_dph] => 330 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 399 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [cena_s_rp_af] => 399 Kč
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 1
@@ -478,27 +1486,36 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212507
+    [popis] =>                      Hard Pouch od legendární japonské firmy Hori pro New Nintendo 3DS XL opatřené oficiální pečetí kvality od Nintenda chrání Vaše New 3DS XL ve velkém stylu!
+
+Pevné pouzdro je navrženo tak, aby konzole byla chráněna bez radikálního přidání na objemu. Odolná vnější skořepina spolehlivě pohltí otřesy a nárazy vznikající při pohybu. Pevné materiály zajistí Vašemu New 3DS XL bezpečí na dlouhých cestách a konzole zůstává díky měkké vystýlce v prvotřídní kondici.
+
+Pouzdro pojme:
+New Nintendo 3DS XL
+6 her
+náhradní stylus
+kompatibilní s původním Nintendo 3DS XL
+Firma Hori patří mezi vůbec první 3rd party výrobce herního příslušenství. V Japonsku je špičkou v branži již více než 30 let. Všechny produkty této společnosti jsou vyráběny s ohledem na ta nejpřísnější kvalitativní měřítka. Firma Hori je v Japonsku prémiovým výrobcem příslušenství značky Nintendo, Sony a Microsoft. Všechny produkty vyvážené mimo Japonsko jsou taktéž oficiálně licencované.
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212507
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Pro hráče -> Herní konzole -> Nintendo -> Nintendo Wii ->   Příslušenství
+            [DLE VÝROBCE] =>  -> Nintendo -> Nintendo DS ->   Příslušenství
+        )
+
 )
 Array
 (
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [vyrobce] =>   Nintendo
+    [vyrobce] => Nintendo
     [kod] => 8880033
     [part_no] => NI3P092010
-    [dostupnost_eshop] =>         Zavolejte         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 247 Kč
+    [dostupnost_eshop] => Zavolejte
+    [cena_bez_dph] => 247 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 299 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [cena_s_rp_af] => 299 Kč
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -517,32 +1534,29 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212509
+    [popis] =>                      Balení obsahuje dva vysoce kvalitní ochranné filtry pro displej konzole New Nintendo 3DS XL (jeden na horní a jeden na dolní displej) a čistící ubrousek. Filtry chrání displeje před prachem a škrábanci. Instalace je velmi snadná.
+
+Firma Hori patří mezi vůbec první 3rd party výrobce herního příslušenství. V Japonsku je špičkou v branži již více než 30 let. Všechny produkty této společnosti jsou vyráběny s ohledem na ta nejpřísnější kvalitativní měřítka. Firma Hori je v Japonsku prémiovým výrobcem příslušenství značky Nintendo, Sony a Microsoft. Všechny produkty vyvážené mimo Japonsko jsou taktéž oficiálně licencované.
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212509
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Pro hráče -> Herní konzole -> Nintendo -> Nintendo Wii ->   Příslušenství
+            [DLE VÝROBCE] =>  -> Nintendo -> Nintendo DS ->   Příslušenství
+        )
+
 )
 Array
 (
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [vyrobce] =>   Nintendo
+    [vyrobce] => Nintendo
     [kod] => 8880034
     [part_no] => NI3S28201
-    [dostupnost_eshop] =>         Zavolejte         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 660 Kč
+    [dostupnost_eshop] => Zavolejte
+    [cena_bez_dph] => 660 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 799 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [cena_s_rp_af] => 799 Kč
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -561,33 +1575,112 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212512
+    [popis] =>                      Ve hře Gardening Mama: Forest Friends používáte své zahradnické nářadí pomocí Nintendo 3DS stylusu a pěstujete více než 50 různých rostlin na zahradě svých snů. Spolu s Mamkou změníte prázdný pozemek na zahradu překypující čerstvými a zdravými produkty. Plňte zábavné minihry, zatímco plánujete zahradnickou strategii a dovážejte své plodiny do 6 různých obchodů vlastněných vašimi zvířecími kamarády.
+
+Rozšiřováním své zahrady a vyděláváním odměn, jako jsou nové odrůdy semen, květinových cibulek a stromů, můžete pomoci svým přátelům zlepšit jejich podnikání prodejem určité plodiny a zařídit tak, aby se jejich zákazníci vraceli. Zatímco každý z obchodů stoupá na žebříčku, získáváte „nákupní lístky“, které mohou být využity na jednu z více než 100 položek, které mohou zdobit vaši zahradu (ploty, fontány a dokonce i domácí zvířata). Abyste pomohli svým lesním kamarádům a postupně vytvořili perfektní zahradu, ujistěte se, že dopředu vybíráte ty nejlepší plodiny. Exkluzivní předměty pro vaši zahradu budou také k dispozici prostřednictvím SpotPass po vydání, tak dejte pozor, ať vám neuniknou další nápady na zábavné změny.
+    [parametry] => Array
+        (
+            [Distribuce:] => CZ
+            [Jazyková verze                :] => anglická
+            [Platforma:] => Nintendo 3DS
+            [Věkový rating (PEGI)          :] => 3
+            [Žánr                          :] => Strategická
+        )
+
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212512
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Pro hráče -> Herní konzole -> Nintendo -> Nintendo 3DS ->   Hry -> Hry ->   Hry pro Nindendo
+            [DLE VÝROBCE] =>  -> Nintendo -> Nintendo DS ->   Hry
+        )
+
 )
 Array
 (
-    [vyrobce] =>   ASUS
+    [vyrobce] => ASUS
     [kod] => 8982146P
     [part_no] => X552EP-SX003H
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] =>  
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [url_image] => img.asp?stiid=212513
+    [popis] =>                      ASUS X552EP 
+
+Klasický, nadčasový design
+
+Notebooky ASUS řady X jsou určeny pro každodenní používání a zábavu. Díky praktickým funkcím a výkonnému multitaskingu představují zcela univerzální zařízení. Modely řady X se vyznačují designem se soustřednými kruhy a strukturovanou opěrkou dlaní. Jde o elegantní zařízení, která budete rádi používat každý den. Oproti předchozí generaci notebooky řady X nabízejí o 5 % štíhlejší tělo, větší touchpad a ovládání pomocí intuitivních multidotykových gest Smart Gesture, několik portů USB 3.0 pro rychlé datové přenosy a technologii IceCool, která udržuje opěrku dlaní vždy příjemně chladnou.
+
+
+
+
+
+
+
+Notebook, s nímž je radost pracovat
+
+Řada X je vybavena všemi nezbytnými funkcemi, které přinášejí vysokou hodnotu a změní způsob vaší každodenní práce s počítačem. Ať už používáte notebook pro práci nebo pro zábavu, vždy dosáhnete vysoké produktivity. Notebook je vybaven grafickou kartou a procesorem Intel® Core™, funkcí Instant On umožňující probuzení počítače z režimu spánku během 2 sekund a rozhraním USB 3.0, které nabízí 10× rychlejší přenos dat než předchozí standard. Notebooky ASUS řady X vám poskytují vše, co potřebujete pro efektivní multitasking i multimediální zábavu. 
+
+
+
+Přesný, křišťálově čistý zvuk pro dokonalý zážitek jako v kině
+
+Většina notebooků k reprodukci zvuku využívá malé integrované reproduktory. Výsledný zvuk vychází z jediného zdroje, je nezřetelný a postrádá jakýkoli výraz. Stejně jako ostatní notebooky z portfolia společnosti ASUS je i řada X vybavena technologií SonicMaster a softwarem ASUS AudioWizard, které zajistí zvuk s vysokou kvalitou. Vychutnejte si u řady X prostorový zvuk, při jehož poslechu vám neunikne sebemenší detail žádného z nástrojů.
+
+
+
+Neomezený přístup k datům a souborům
+
+Úložiště ASUS WebStorage vám zprostředkuje přístup k vašim datům a souborům na jakémkoli zařízení s internetovým připojením. Díky úložišti ASUS WebStorage budou vaše soubory automaticky aktualizované a synchronizované napříč různými zařízeními. Můžete sdílet fotografie a videa s rodinou či přáteli nebo do svého zařízení přenášet hudbu a filmy. S notebooky ASUS řady X získáte možnost bezplatně využívat úložiště ASUS WebStorage.
+
+
+
+Technická specifikace
+
+Procesor AMD Dual-Core E1-2100, 1.0GHz
+
+Operační systém Windows 8 (64bit)
+
+Paměť RAM 4GB
+
+HDD SATA 500G 5400RPM 2.5 HDD
+
+Displej 15.6 LED-backlit TFT LCD Display, rozlišení: HD 1366x768 pix / 16:9
+
+Grafická karta AMD Radeon HD 8670M s pamětí 1GB
+
+Konektor HDMI 1.4
+
+HD web camera
+
+Optická mechanika Super Multi with Double Layer
+
+Wi-Fi 802.11bgn+Bluetooth 4.0 (Single band)
+
+LAN 10/100/1000 Mbps
+
+Čtečka SD karet
+
+USB Port 2x USB 3.0
+
+Rozhranní 1x Headphone-out Audio-in Combo Jack 1x RJ45 LAN Jack for LAN insert 1x VGA Port (D-Sub) 1x HDMI
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212513
+    [zarazeni] => Array
+        (
+            [DLE VÝROBCE] =>  -> ASUS -> NOTEBOOKY, TABLETY, PC ->   Business ->   Všestranný výkon
+        )
+
 )
 Array
 (
-    [vyrobce] =>   Nintendo
+    [vyrobce] => Nintendo
     [kod] => 8880035
     [part_no] => NI3S34355
-    [dostupnost_eshop] =>         Zavolejte         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC           										         										         										         										         										         										         										         										         										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 826 Kč
+    [dostupnost_eshop] => Zavolejte
+    [cena_bez_dph] => 826 Kč
     [DPH] => 21%
-    [Vaše cena s DPH] => 999 Kč
-    [Záruka spotřebitel] => 24 Měsíce
-    [Záruka ostatní] => 24 Měsíce
+    [cena_s_rp_af] => 999 Kč
+    [zaruka_spotrebitel] => 24 Měsíce
+    [zaruka_ostatni] => 24 Měsíce
     [status] => TOP produkt 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
     [dostupnost_pobocky] => Array
         (
             [OL] => 0
@@ -606,47 +1699,31 @@ Array
             [BC] => 0
         )
 
-    [url_image] => img.asp?stiid=212514
-)
-Array
-(
-    [status] =>  
-    [Hodnocení produktu] => Hodnoceno x          					   				
-)
-Array
-(
-    [vyrobce] =>   Patriot Memory
-    [kod] => 9302835
-    [part_no] => PB120GS25SSDR
-    [dostupnost_eshop] =>         Skladem         
-    [Dostupnost na pobočkách] =>   OL  TOH  TOP  TBA  BR  ZL  OP  UH  HK  ZN  JI  LI  PR  BC             										           										           										           										           										         										           										         										           										         										         										         										         										         										      
-    [Vaše cena bez DPH] => 1 234 Kč
-    [Recyklační poplatek  (RP*)] => 1.50; DPH: 21% (Komponenty nezaložené na mechanickém pohybu) 
-    [Autorský fond  (AF*)] => 37.03; DPH: 21% (HDD zabudovat. do PC) 
-    [Vaše cena s RP*+ AF*] => 1 273 Kč
-    [DPH] => 21%
-    [Vaše cena s DPH] => 1 540 Kč
-    [Záruka spotřebitel] => 36 Měsíce
-    [Záruka ostatní] => 36 Měsíce
-    [status] => V ceníku 
-    [Hodnocení produktu] => Hodnoceno 0x          					   				
-    [dostupnost_pobocky] => Array
+    [popis] =>                      Arion Sherwind a jeho přátelé ze slavného fotbalového týmu jsou zpět v novém dobrodružství, ale v Raimon Junior High se stalo něco divného. Arion se ocitá ve světě bez fotbalu a musí vyřešit jeho záhadné zmizení. Cestujte s ním v čase a vytvořte dokonalou jedenáctku, která přivede fotbal zpět.
+
+Příběh začíná když Arion Sherwind zjistí, že jsou o legendárních fotbalových činech Raimon Junior High z ničehe nic nikdo neví. Tam, kde kdysi stál velký fotbalový stadion, nyní leží baseballové hřiště. Děti, které dříve kopaly míč na ulici, mají nyní plné ruce práce s basketbalem, gymnastikou, hudbou a kaligrafií. V tomto paralelním světě, kde fotbal přestal existovat, musí Arion zjistit, co s jeho oblíbenou hrou stalo. Musí odhalit temné záměry El Dorado - světové vládnoucí rady - a čelit ničemům ohýbajícím samotný čas, aby navrátil fotbal zpátky do světa.
+
+Ve hrách Inazuma Eleven GO Chrono Stones: Wildfire a Inazuma Eleven GO Chrono Stones: Thunderflash vás čekají úžasné herní inovace. První novinkou je funkce Miximax, díky které lze sloučit aury různých hráčů, kteří se tak stanou ještě silnějšími. Miximax nabízí potenciál pro bezpočet kombinací dovedností hráčů a zlepšování statistik. V kombinaci s novým “brněním” fighting Spirits nabídnou Inazuma Eleven GO Chrono Stones: Wildfire a Inazuma Eleven GO Chrono Stones: Thunderflash nejucelenější teambuildingové možnosti, jaké byly dosud v sérii vidět.
+
+Systém Fighting Spirit umožní speciální pohyby a výrazně zvýší hráčovy statistiky, což bude mít výrazný vliv na průběh zápasů. Fighting Spirits obklopují tělo hráče jako klasické brnění, zároveň jsou ovšem všechny hráčovy schopnosti výrazně vyšší a speciální pohyby se stávají ještě silnějšími.
+
+Série Inazuma (jejíž známkou je exkluzivní obsah, jedinečný pro každou verzi) se vrací, spolu s rozličnými příběhovými událostmi, postavami, předměty a cutscenami exkluzivně pro každý titul. Stejně jako v předchozích částech mohou hrát zápas společně až čtyři osoby přes Wi-Fi. Po uvedení na trh bude přístupno více postav a předmětů ke stažení, což umožní hráčům vytvořit ještě silnější tým.
+
+Inazuma Eleven GO Chrono Stones: Wildfire i Inazuma Eleven GO Chrono Stones: Thunderflash jsou jedinečnou kombinací RPG a fotbalové akce, doplněnou o cestování časem a inovativní dodatky. Obě hry vychází na 27. března na Nintendo 3DS a Nintendo 2DS.
+    [parametry] => Array
         (
-            [OL] => 1
-            [TOH] => 1
-            [TOP] => 1
-            [TBA] => 1
-            [BR] => 1
-            [ZL] => 0
-            [OP] => 1
-            [UH] => 0
-            [HK] => 1
-            [ZN] => 0
-            [JI] => 0
-            [LI] => 0
-            [PR] => 0
-            [BC] => 0
+            [Distribuce:] => CZ
+            [Jazyková verze                :] => anglická
+            [Platforma:] => Nintendo 3DS
+            [Věkový rating (PEGI)          :] => 7
+            [Žánr                          :] => Sportovní
         )
 
-    [url_image] => img.asp?stiid=212486
+    [url_image] => http://dealer.tsbohemia.cz/img.asp?stiid=212514
+    [zarazeni] => Array
+        (
+            [DLE KATEGORIE] =>  -> Pro hráče -> Herní konzole -> Nintendo -> Nintendo 3DS ->   Hry -> Hry ->   Hry pro Nindendo
+            [DLE VÝROBCE] =>  -> Nintendo -> Nintendo DS ->   Hry
+        )
+
 )
