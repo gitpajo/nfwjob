@@ -201,7 +201,7 @@ class ProductInfo {
         return $produkt;
     }
 
-   private static function getInclusion($obsah_stranky, $produkt) {
+    private static function getInclusion($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
             $podminka = TRUE;
             $i = 0;
