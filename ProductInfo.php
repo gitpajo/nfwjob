@@ -187,7 +187,7 @@ class ProductInfo {
         }
         $divs = $obsah_stranky->find('div[class=sti_detail_gallery]');
         foreach ($divs as $div) {
-            $produkt["gallery_url_image"][] = $div->find('img', 0)->src;
+            $produkt["gallery_url_image"][] = self::SERVER_URL . $div->find('img', 0)->src;
         }
         return $produkt;
     }
