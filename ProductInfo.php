@@ -214,10 +214,11 @@ class ProductInfo {
                         $produkt['zarazeni'][$kategorie] = '';
                     }
                     if ($zarazeni->tag == 'a') {
+                        $vetev = self::eraseSpace($zarazeni->plaintext);
                         if ($produkt['zarazeni'][$kategorie] == '') {
-                            $produkt['zarazeni'][$kategorie] .= self::eraseSpace($zarazeni->plaintext);
+                            $produkt['zarazeni'][$kategorie] .= $vetev;
                         } else {
-                            $produkt['zarazeni'][$kategorie] .= ' -> ' . self::eraseSpace($zarazeni->plaintext);
+                            $produkt['zarazeni'][$kategorie] .= ' -> ' . $vetev;
                         }
                     }
                     $zarazeni = $zarazeni->next_sibling();
