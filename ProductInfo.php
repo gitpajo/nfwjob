@@ -67,8 +67,11 @@ class ProductInfo {
         return $prvek1;
     }
     
-    private static function unsetInformation($prvek1) {
-        return $prvek1;
+    private static function unsetInformation($produkt) {
+        foreach ($produkt as $klic => $value) {
+           //tady presunes jednotlive unsety
+        }
+        return $produkt;
     }
 
     private static function getInformation($obsah_stranky, $produkt) {
