@@ -22,6 +22,7 @@ class ProductInfo {
             $produkt = self::getInclusion($obsah_stranky, $produkt);
             printr($produkt);
             self::saveProduct($produkt, $soubor);
+            self::unsetInformation($produkt);
         }
     }
 
