@@ -71,7 +71,18 @@ class ProductInfo {
     
     private static function unsetInformation($produkt) {
         foreach ($produkt as $klic => $value) {
-           //tady presunes jednotlive unsety
+            if ($klic == 'Dostupnost na pobočkách') {
+                unset($produkt[$klic]);
+            }
+            if ($klic == 'Hodnocení produktu') {
+                unset($produkt[$klic]);
+            }
+            if ($klic == 'Garance ceny') {
+                unset($produkt[$klic]);
+            }
+            if ($klic == 'Mám o tento produkt zájem:') {
+                unset($produkt['parametry'][$klic]);
+            }
         }
         return $produkt;
     }
