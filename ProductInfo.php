@@ -125,6 +125,7 @@ class ProductInfo {
 
     private static function getPopis($obsah_stranky, $produkt) {
         $popis = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
+        $popis = str_replace(html_entity_decode('&nbsp;'), ' ', $popis);
         $produkt['popis'] = trim($popis);
         return $produkt;
     }
