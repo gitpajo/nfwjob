@@ -177,17 +177,20 @@ class ProductInfo {
 
     private static function getImage($obsah_stranky, $produkt) {
         $div = $obsah_stranky->find('div.sti_image', 0);
+        $i = 1;
         if ($div) {
             $images = $div->find('img');
             if ($images) {
                 foreach ($images as $image) {
-                    $produkt["gallery_url_image"][] = self::SERVER_URL . $image->src;
+                    $produkt['gallery_url_image']['Image ' . $i] = self::SERVER_URL . $image->src;
+                    $i++;
                 }
             }
         }
         $divs = $obsah_stranky->find('div[class=sti_detail_gallery]');
         foreach ($divs as $div) {
-            $produkt["gallery_url_image"][] = self::SERVER_URL . $div->find('img', 0)->src;
+            $produkt['gallery_url_image']['Image ' . $i] = self::SERVER_URL . $div->find('img', 0)->src;
+            $i++;
         }
         return $produkt;
     }
