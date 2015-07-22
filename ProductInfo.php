@@ -38,13 +38,13 @@ class ProductInfo {
     }
     
     private static function isProduct($obsah_stranky) {
-        $tabulka =  $obsah_stranky->find('table[class=sti_detail sti_detail_head]', 0);
+        $tabulka = self::findFirst($obsah_stranky, 'table[class=sti_detail sti_detail_head]');
         foreach ($tabulka->find('tr') as $element) {
-            if ($element->find('th', 0)) {
-                $prvek1 = $element->find('th', 0)->plaintext;
+            if (self::findFirst($element, 'th')) {
+                $prvek1 = self::findFirst($element, 'th')->plaintext;
             }
-            if ($element->find('td', 0)) {
-                $prvek2 = $element->find('td', 0)->plaintext;
+            if (self::findFirst($element, 'td')) {          
+                $prvek2 = self::findFirst($element, 'td')->plaintext;
             }
             if ($prvek1 == 'Kód' && $prvek2 != '') {
                 return true;
@@ -100,7 +100,7 @@ class ProductInfo {
     }
     
     private static function getName($obsah_stranky, $produkt) {
-        $name = $obsah_stranky->find('div[class=f_left product_name]', 0)->plaintext;
+        $name = self::findFirst($obsah_stranky, 'div[class=f_left product_name]')->plaintext;
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
@@ -111,12 +111,12 @@ class ProductInfo {
 
                 $prvek1 = '';
                 $prvek2 = '';
-                if ($element->find('th', 0)) {
-                    $prvek1 = $element->find('th', 0)->plaintext;
+                if (self::findFirst($element, 'th')) {
+                    $prvek1 = self::findFirst($element, 'th')->plaintext;
                     $prvek1 = self::renameInformation($prvek1);
                 }
-                if ($element->find('td', 0)) {
-                    $prvek2 = $element->find('td', 0)->plaintext;
+                if (self::findFirst($element, 'td')) {
+                    $prvek2 = self::findFirst($element, 'td')->plaintext;
                     $prvek2 = trim($prvek2);
                 }
                 if ($prvek1 && $prvek2) {
@@ -150,21 +150,21 @@ class ProductInfo {
     }
 
     private static function getPopis($obsah_stranky, $produkt) {
-        $popis = $obsah_stranky->find('div[id=popis-produktu]', 0)->plaintext;
+        $popis = self::findFirst($obsah_stranky, 'div[id=popis-produktu]')->plaintext;
         $produkt['popis'] = self::eraseSpace($popis);
         return $produkt;
     }
 
     private static function getParametr($obsah_stranky, $produkt) {
-        $div = $obsah_stranky->find('div[id=parametry]', 0);
+         $div = self::findFirst($obsah_stranky, 'div[id=parametry]');
         foreach ($div->find('table[class=sti_details]') as $tabulka) {
             $podminka = false;
             foreach ($tabulka->find('tr') as $parametry) {
                 if ($podminka == true) {
                     $klic = '';
                     $hodnota = '';
-                    if ($tabulka->find('td', 0)) {
-                        $klic = $parametry->find('td', 0)->plaintext;
+                    if (self::findFirst($tabulka, 'td')) {
+                        $klic = self::findFirst($parametry, 'td')->plaintext;
                         $klic = self::eraseSpace($klic);
                     }
                     if ($tabulka->find('td', 1)) {
@@ -182,7 +182,7 @@ class ProductInfo {
     }
 
     private static function getImage($obsah_stranky, $produkt) {
-        $div = $obsah_stranky->find('div.sti_image', 0);
+        $div = self::findFirst($obsah_stranky, 'div.sti_image');
         $i = 1;
         if ($div) {
             $images = $div->find('img');
@@ -195,7 +195,7 @@ class ProductInfo {
         }
         $divs = $obsah_stranky->find('div[class=sti_detail_gallery]');
         foreach ($divs as $div) {
-            $produkt['gallery_url_image']['Image ' . $i] = self::SERVER_URL . $div->find('img', 0)->src;
+            $produkt['gallery_url_image']['Image ' . $i] = self::SERVER_URL . self::findFirst($div, 'img')->src;
             $i++;
         }
         return $produkt;
@@ -206,7 +206,7 @@ class ProductInfo {
             $podminka = TRUE;
             $i = 0;
             $j = 0;
-            $zarazeni = $tabulka->find('strong.hcat', 0);
+            $zarazeni = self::findFirst($tabulka, 'strong.hcat');
             while ($podminka && $zarazeni) {
                 if ($zarazeni->next_sibling() != null) {
                     if ($zarazeni->tag == 'strong') {
