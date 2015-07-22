@@ -5,7 +5,7 @@ class ProductInfo {
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
     private static function findFirst($page, $selector) {
-        return $page->find($selector, 0)->plaintext;
+        return $page->find($selector, 0);
     }
 
     static function getProduct($url, $soubor) {
