@@ -15,7 +15,8 @@ class ProductInfo {
             printr('Nelze načíst stránku');
         } elseif (!self::isProduct($obsah_stranky)) {
             printr('Produkt nenalezen '. $url);
-            self::saveProduct('Produkt nenalezen ' . $url, $soubor);
+            $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
+            self::saveProduct($produkt, $soubor);
         } else {
             $produkt = array();
             $produkt = self::getName($obsah_stranky, $produkt);
