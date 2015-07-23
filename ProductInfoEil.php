@@ -66,7 +66,7 @@ class ProductInfoEil {
       } */
 
 // Funkce pro přejmenování informací o produktu
-    private static function renameInformation($prvek1) {
+ /*   private static function renameInformation($prvek1) {
         $seznam = array(
             'Tracklisting' => 'stopy',
             'Condition' => 'stav',
@@ -86,7 +86,7 @@ class ProductInfoEil {
         $prvek1 = str_replace(html_entity_decode('&nbsp;'), ' ', $prvek1);
         $prvek1 = str_replace($hledej, $nahrad, $prvek1);
         return $prvek1;
-    }
+    }*/
 
 // Funkce pro smazání informací o produktu
     private static function unsetInformation($produkt) {
