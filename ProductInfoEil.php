@@ -2,7 +2,7 @@
 
 class ProductInfoEil {
 
-    const PRODUCT_URL = 'http://eil.com/';
+    const SERVER_URL = 'http://eil.com/';
 
 // Funkce pro výpis prvního selectoru v zadanem elementu
     private static function findFirst($element, $selector) {
