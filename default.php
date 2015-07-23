@@ -34,7 +34,7 @@ foreach ($pages as $img) {
   printr($parametr);
   } */
 
-$url_produkty = array();
+/*$url_produkty = array();
 
 for ($cislo = 0; $cislo < 30; $cislo++) {
     $url_produkty[] = 212486 + $cislo;
@@ -48,7 +48,15 @@ if (file_exists($soubor)) {
 
 foreach ($url_produkty as $url_produkty) {
     ProductInfo::getProduct(ProductInfo::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
+}*/
+
+$soubor = 'produkt.txt';
+
+if (file_exists($soubor)) {
+    unlink($soubor);
 }
+
+ProductInfoEil::getProduct(ProductInfoEil::PRODUCT_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor);
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
