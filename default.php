@@ -50,6 +50,8 @@ foreach ($url_produkty as $url_produkty) {
     ProductInfo::getProduct(ProductInfo::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }*/
 
+require 'ProductInfoEil.php';
+
 $soubor = 'produkt.txt';
 
 if (file_exists($soubor)) {
