@@ -1,3 +1,7 @@
+class ProductInfoEil {
+    
+    const PRODUCT_URL = 'http://eil.com/shop/moreinfo.asp?catalogid=587277'; 
+ 
     private static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
         $promenna = trim($promenna, ':');
@@ -9,3 +13,4 @@
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
+}
