@@ -1,6 +1,6 @@
 class ProductInfoEil {
     
-    const PRODUCT_URL = 'http://eil.com/shop/moreinfo.asp?catalogid=587277'; 
+    const PRODUCT_URL = 'http://eil.com/'; 
  
     private static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
