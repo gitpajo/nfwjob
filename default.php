@@ -56,7 +56,7 @@ if (file_exists($soubor)) {
     unlink($soubor);
 }
 
-ProductInfoEil::getProduct(ProductInfoEil::PRODUCT_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor);
+ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor);
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
