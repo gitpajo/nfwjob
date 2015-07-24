@@ -68,13 +68,14 @@ class ProductInfoEil {
     }
     
     private static function getImage($obsah_stranky, $produkt) {
+        private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
         $produkt['img'][] = $img->src;
         $podminka = TRUE;
         while ($podminka) {
             if ($img->next_sibling() != NULL) {
-                $produkt['img'][] = $img->src;
                 $img = $img->next_sibling();
+                $produkt['img'][] = $img->src;
             } else {
                 $podminka = FALSE;
             }
