@@ -68,7 +68,13 @@ class ProductInfoEil {
     }
     
     private static function getImage($obsah_stranky, $produkt) {
-
+        $obsah_stranky->find('img[itemprop=image]', 0)->src;
+        $img = $obsah_stranky->find('img[itemprop=image]', 0);
+        $produkt['img'][] = $img->src;
+        $img = $img->next_sibling();
+        if ($img) {
+            $produkt['img'][] = $img->src;
+        }
         return $produkt;
     }
 
