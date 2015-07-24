@@ -56,11 +56,12 @@ class ProductInfoEil {
         return $produkt;
     }
     
-     private static function getArtist($bunka, $produkt) {
+    private static function getArtist($bunka, $produkt) {
         $artists = $bunka->next_sibling()->find('a');
         foreach ($artists as $artist) {
-            $produkt['souvisejici umelci'] .= $artist->plaintext . ' ';
+            $artists_seznam[] = $artist->plaintext;
         }
+        $produkt['souvisejici_umelci'] = 'array('.implode(",",$artists_seznam).')';
         return $produkt;
     }
 
