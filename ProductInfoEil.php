@@ -59,7 +59,7 @@ class ProductInfoEil {
      private static function getArtist($bunka, $produkt) {
         $artists = $bunka->next_sibling()->find('a');
         foreach ($artists as $artist) {
-            $produkt['souvisejici_umelci'][] = $artist->plaintext;
+            $produkt['souvisejici umelci'] .= $artist->plaintext . ' ';
         }
         return $produkt;
     }
