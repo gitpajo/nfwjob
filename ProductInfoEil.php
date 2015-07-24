@@ -65,7 +65,9 @@ class ProductInfoEil {
                 $bunky = $radek->find('td');
                 foreach ($bunky as $bunka) {
                     if ($bunka->plaintext == 'Tracklisting / Additional Info:') {
-                        $produkt['stopy'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $promenna = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $promenna = str_replace("\r\n", '', $promenna);
+                        $produkt['stopy'] = $promenna;
                     } else if ($bunka->plaintext == 'Condition:') {
                         $produkt['stav'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Availability:') {
