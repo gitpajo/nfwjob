@@ -75,8 +75,8 @@ class ProductInfoEil {
                 $bunky = $radek->find('td');
                 foreach ($bunky as $bunka) {
                     if ($bunka->plaintext == 'Tracklisting / Additional Info:') {
-                        $track_list = self::eraseSpace($bunka->next_sibling()->plaintext);
-                        $track_list = str_replace("\r\n", '', $track_list);
+                        $track_list = str_replace("\r\n", '', $bunka->next_sibling()->plaintext);
+                        $track_list = self::eraseSpace($track_list);
                         $produkt['stopy'] = $track_list;
                     } else if ($bunka->plaintext == 'Condition:') {
                         $produkt['stav'] = self::eraseSpace($bunka->next_sibling()->plaintext);
@@ -89,8 +89,8 @@ class ProductInfoEil {
                     } else if ($bunka->plaintext == 'Title:') {
                         $produkt['dilo'] = self::eraseSpace($bunka->next_sibling()->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Price:') {
-                        $cena = self::eraseSpace($bunka->next_sibling()->plaintext);
-                        $cena = str_replace('change currency', '', $cena);
+                        $cena = str_replace('change currency', '', $bunka->next_sibling()->plaintext);
+                        $cena = self::eraseSpace($cena);
                         $produkt['cena'] = $cena;
                     } else if ($bunka->plaintext == 'Format:') {
                         $produkt['format'] = self::eraseSpace($bunka->next_sibling()->plaintext);
