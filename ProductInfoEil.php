@@ -51,7 +51,7 @@ class ProductInfoEil {
 
 // Funkce pro vypsání názvu produktu
     private static function getName($obsah_stranky, $produkt) {
-        $name = $obsah_stranky->find('span[itemprop=name]')->plaintext;
+        $name = self::findFirst($obsah_stranky, 'span[itemprop=name]')->plaintext;
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
