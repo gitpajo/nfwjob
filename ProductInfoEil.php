@@ -42,23 +42,6 @@ class ProductInfoEil {
         }
     }
 
-// Funkce pro zjištění, zda produkt se zadaným url existuje
-    /* private static function isProduct($obsah_stranky) {
-      $tabulka = self::findFirst($obsah_stranky, 'table[class=sti_detail sti_detail_head]');
-      foreach ($tabulka->find('tr') as $element) {
-      if (self::findFirst($element, 'th')) {
-      $prvek1 = self::findFirst($element, 'th')->plaintext;
-      }
-      if (self::findFirst($element, 'td')) {
-      $prvek2 = self::findFirst($element, 'td')->plaintext;
-      }
-      if ($prvek1 == 'Kód' && $prvek2 != '') {
-      return true;
-      }
-      }
-      return false;
-      } */
-
 // Funkce pro smazání přebytečných mezer
     private static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
