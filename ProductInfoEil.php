@@ -89,7 +89,9 @@ class ProductInfoEil {
                     } else if ($bunka->plaintext == 'Title:') {
                         $produkt['dilo'] = self::eraseSpace($bunka->next_sibling()->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Price:') {
-                        $produkt['cena'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $cena = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $cena = str_replace('change currency', '', $cena);
+                        $produkt['cena'] = $cena;
                     } else if ($bunka->plaintext == 'Format:') {
                         $produkt['format'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Record Label:') {
