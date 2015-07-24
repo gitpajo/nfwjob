@@ -89,7 +89,7 @@ class ProductInfoEil {
                     } else if ($bunka->plaintext == 'EIL.COM Ref No:') {
                         $produkt['kod'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Related Artists:') {
-                        $produkt['souvisejici_umelci'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $produkt = self::getArtist($bunka, $produkt);
                     }
                 }
             }
