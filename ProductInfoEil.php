@@ -75,7 +75,7 @@ class ProductInfoEil {
                     } else if ($bunka->plaintext == 'Artist:') {
                         $produkt['umelec'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Title:') {
-                        $produkt['dilo'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $produkt['dilo'] = self::eraseSpace($bunka->next_sibling()->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Price:') {
                         $produkt['cena'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Format:') {
