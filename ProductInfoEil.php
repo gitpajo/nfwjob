@@ -46,6 +46,7 @@ class ProductInfoEil {
     private static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
         $promenna = trim($promenna, ':');
+        $promenna = str_replace('&nbsp;', '', $promenna);
         return trim($promenna);
     }
 
