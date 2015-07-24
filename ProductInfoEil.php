@@ -61,7 +61,7 @@ class ProductInfoEil {
         foreach ($artists as $artist) {
             $artists_seznam[] = $artist->plaintext;
         }
-        $produkt['souvisejici_umelci'] = 'array('.implode(",",$artists_seznam).')';
+        $produkt['souvisejici_umelci'] = 'array('.implode(", ",$artists_seznam).')';
         return $produkt;
     }
 
