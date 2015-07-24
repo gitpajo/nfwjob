@@ -22,6 +22,7 @@ class ProductInfoEil {
             $produkt = array();
             $produkt = self::getName($obsah_stranky, $produkt);
             $produkt = self::getInformation($obsah_stranky, $produkt);
+            $produkt = self::getImage($obsah_stranky, $produkt);
             printr($produkt);
             self::saveProduct($produkt, $soubor);
         }
@@ -63,6 +64,11 @@ class ProductInfoEil {
             $artists_seznam[] = $artist->plaintext;
         }
         $produkt['souvisejici_umelci'] = 'array('.implode(", ",$artists_seznam).')';
+        return $produkt;
+    }
+    
+    private static function getImage($obsah_stranky, $produkt) {
+
         return $produkt;
     }
 
