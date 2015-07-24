@@ -55,6 +55,14 @@ class ProductInfoEil {
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
+    
+     private static function getArtist($bunka, $produkt) {
+        $artists = $bunka->next_sibling()->find('a');
+        foreach ($artists as $artist) {
+            $produkt['souvisejici_umelci'][] = $artist->plaintext;
+        }
+        return $produkt;
+    }
 
     private static function getInformation($obsah_stranky, $produkt) {
         $div = $obsah_stranky->find('div[itemtype=http://schema.org/Product]', 0);
