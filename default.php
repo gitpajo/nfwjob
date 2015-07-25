@@ -49,7 +49,7 @@ if (file_exists($soubor)) {
 }
 
 foreach ($url_produkty as $url_produkty) {
-    ProductInfo::getProduct(ProductInfoTSBohemia::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
+    ProductInfoTSBohemia::getProduct(ProductInfoTSBohemia::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }*/
 
 $soubor = 'produkt.txt';
