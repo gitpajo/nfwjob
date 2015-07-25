@@ -4,10 +4,6 @@ class ProductInfoTSBohemia {
 
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
-    private static function findFirst($page, $selector) {
-        return $page->find($selector, 0);
-    }
-
     static function getProduct($url, $soubor) {
 
         $obsah_stranky = file_get_html($url);
@@ -32,11 +28,6 @@ class ProductInfoTSBohemia {
         }
     }
 
-    private static function saveProduct($produkt, $soubor) {
-        $obsah = print_r($produkt, true);
-        return file_put_contents($soubor, $obsah, FILE_APPEND);
-    }
-    
     private static function isProduct($obsah_stranky) {
         $tabulka = self::findFirst($obsah_stranky, 'table[class=sti_detail sti_detail_head]');
         foreach ($tabulka->find('tr') as $element) {
@@ -91,12 +82,6 @@ class ProductInfoTSBohemia {
             }
         }
         return $produkt;
-    }
-    
-    private static function eraseSpace($promenna) {
-        $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
-        $promenna = trim($promenna, ':');
-        return trim($promenna);
     }
     
     private static function getName($obsah_stranky, $produkt) {
