@@ -1,13 +1,8 @@
 <?php
 
-class ProductInfoEil {
+class ProductInfoEil extends ProductInfo {
 
     const SERVER_URL = 'http://eil.com/';
-
-// Funkce pro výpis prvního selectoru v zadanem elementu
-    private static function findFirst($element, $selector) {
-        return $element->find($selector, 0);
-    }
 
 // Řídídcí funkce třídy pro výpis jednotlivých produktů a volání privátních funkcí
     static function getProduct($url, $soubor) {
@@ -28,12 +23,6 @@ class ProductInfoEil {
         }
     }
 
-// Funkce pro uložení produktu do souboru
-    private static function saveProduct($produkt, $soubor) {
-        $obsah = print_r($produkt, true);
-        return file_put_contents($soubor, $obsah);
-    }
-
     private static function isProduct($obsah_stranky) {
         $div = $obsah_stranky->find('div[itemtype=http://schema.org/Product]', 0);
         if ($div) {
@@ -41,14 +30,6 @@ class ProductInfoEil {
         } else {
             return false;
         }
-    }
-
-// Funkce pro smazání přebytečných mezer
-    private static function eraseSpace($promenna) {
-        $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
-        $promenna = trim($promenna, ':');
-        $promenna = str_replace('&nbsp;', '', $promenna);
-        return trim($promenna);
     }
 
 // Funkce pro vypsání názvu produktu
