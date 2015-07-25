@@ -1,3 +1,5 @@
+<?php
+
 class ProductInfo {
 
  private static function eraseSpace($promenna) {
