@@ -1,5 +1,5 @@
 <?php
 
-class ProductInfoIce {
+class ProductInfoIce extends ProductInfo {
 
 }
