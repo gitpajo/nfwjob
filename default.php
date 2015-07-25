@@ -1,7 +1,8 @@
 <?php
 
-require 'ProductInfo.php';
+require 'ProductInfoTSBohemia.php';
 require 'ProductInfoEil.php';
+require 'ProductInfoIce.php';
 
 set_time_limit(300);
 
@@ -48,7 +49,7 @@ if (file_exists($soubor)) {
 }
 
 foreach ($url_produkty as $url_produkty) {
-    ProductInfo::getProduct(ProductInfo::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
+    ProductInfo::getProduct(ProductInfoTSBohemia::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }*/
 
 $soubor = 'produkt.txt';
