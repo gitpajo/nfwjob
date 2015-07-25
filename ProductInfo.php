@@ -1,6 +1,6 @@
 <?php
 
-class ProductInfo {
+class ProductInfoTSBohemia {
 
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
