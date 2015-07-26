@@ -18,7 +18,7 @@ class ProductInfo {
         return file_put_contents($soubor, $obsah);
     }
     
-    abstract static function getProduct($url, $soubor) {
+  /*  abstract static function getProduct($url, $soubor) {
     
-    }
+    }*/
 }
