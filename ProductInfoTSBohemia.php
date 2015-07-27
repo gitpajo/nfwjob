@@ -1,6 +1,6 @@
 <?php
 
-class ProductInfoTSBohemia extends PruductInfo {
+class ProductInfoTSBohemia extends ProductInfo {
 
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
