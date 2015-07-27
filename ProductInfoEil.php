@@ -19,7 +19,6 @@ class ProductInfoEil extends ProductInfo {
             $produkt = self::getInformation($obsah_stranky, $produkt);
             $produkt = self::getImage($obsah_stranky, $produkt);
             printr($produkt);
-            self::eraseFile($soubor);
             self::saveProduct($produkt, $soubor);
         }
     }
