@@ -1,6 +1,6 @@
 <?php
 
-class ProductInfo {
+abstract class ProductInfo {
 
     protected static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
