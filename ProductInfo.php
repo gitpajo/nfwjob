@@ -1,6 +1,12 @@
 <?php
 
 abstract class ProductInfo {
+    
+    protected static function eraseFile($soubor) {
+        if (file_exists($soubor)) {
+            unlink($soubor);
+        }
+    }
 
     protected static function eraseSpace($promenna) {
         $promenna = str_replace(html_entity_decode('&nbsp;'), ' ', $promenna);
