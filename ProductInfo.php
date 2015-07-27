@@ -23,7 +23,5 @@ abstract class ProductInfo implements ProductInterface {
         $obsah = print_r($produkt, true);
         return file_put_contents($soubor, $obsah);
     }
-    
-     abstract static function getProduct($url, $soubor);
-    
+
 }
