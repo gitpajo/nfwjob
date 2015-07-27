@@ -56,17 +56,9 @@ foreach ($url_produkty as $url_produkty) {
 
 $soubor = 'produkt.txt';
 
-if (file_exists($soubor)) {
-    unlink($soubor);
-}
-
 ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor);
 
 $soubor2 = 'produkt2.txt';
-
-if (file_exists($soubor2)) {
-    unlink($soubor2);
-}
 
 ProductInfoEil::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor2);
 
