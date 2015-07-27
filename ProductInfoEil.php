@@ -50,12 +50,12 @@ class ProductInfoEil extends ProductInfo {
     
     private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
-        $produkt['img'][] = self::SERVER_URL . $img->src;
+        $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
         $podminka = TRUE;
         while ($podminka) {
             if ($img->next_sibling() != NULL) {
                 $img = $img->next_sibling();
-                $produkt['img'][] = self::SERVER_URL . $img->src;
+                $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
             } else {
                 $podminka = FALSE;
             }
