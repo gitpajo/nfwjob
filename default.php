@@ -1,5 +1,7 @@
 <?php
 
+require 'ProductInfo.php';
+
 require 'ProductInfoTSBohemia.php';
 require 'ProductInfoEil.php';
 require 'ProductInfoIce.php';
