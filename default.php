@@ -70,7 +70,7 @@ $soubor2 = 'produkt2.txt';
 
 eraseFile($soubor2);
 
-ProductInfoEil::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor2);
+ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor2);
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
