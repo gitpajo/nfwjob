@@ -1,6 +1,6 @@
 <?php
 
-abstract class ProductInfo {
+abstract class ProductInfo implements ProductInterface {
     
     static function eraseFile($soubor) {
         if (file_exists($soubor)) {
@@ -24,6 +24,6 @@ abstract class ProductInfo {
         return file_put_contents($soubor, $obsah);
     }
     
-   // abstract static function getProduct($url, $soubor);
+     abstract static function getProduct($url, $soubor);
     
 }
