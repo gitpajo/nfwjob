@@ -5,10 +5,16 @@ Array
     [dostupnost] => In Stock - Buy before 2:30pm for First Class Postage today
     [rok] => 1970 - 45 years old
     [umelec] => Led Zeppelin (click here for complete listing)
-    [dilo] => Led Zeppelin III - VG&nbsp;(click here for more of the same title)
-    [cena] => &pound; 50.00  							&nbsp;&nbsp;change currency
+    [dilo] => Led Zeppelin III - VG(click here for more of the same title)
+    [cena] => &pound; 50.00
     [format] => vinyl LP album (LP record)
     [vydavatel] => Atlantic
-    [zeme_puvodu] => USA  					&nbsp;
+    [zeme_puvodu] => USA
     [souvisejici_umelci] => array(Band Of Joy, Bonham, Broken Glass, Carter-Lewis & The Southerners, Cartoone, Coverdale Page, Deborah Bonham, Dread Zeppelin, Far Corporation, Jimmy Page, John Paul Jones, Lez Zeppelin, Listen (60s), Lord Sutch, Page & Plant, Pattty Griffin, Paul, Robert Plant, The Honeydrippers, The Outsiders (UK), Them Crooked Vultures)
+    [img] => Array
+        (
+            [0] => http://eil.com/images/main/Led-Zeppelin-Led-Zeppelin-III-587277.jpg
+            [1] => http://eil.com/Gallery/587277b.jpg
+        )
+
 )
