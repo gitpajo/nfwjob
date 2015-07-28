@@ -1,5 +1,7 @@
 <?php
 
+require 'ProductInterface.php';
+
 abstract class ProductInfo implements ProductInterface {
     
     static function eraseFile($soubor) {
