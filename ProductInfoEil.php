@@ -9,6 +9,10 @@ class ProductInfoEil extends ProductInfo {
         $obsah_stranky = file_get_html($url);
         if ($obsah_stranky == false) {
             printr('Nelze načíst stránku');
+        } elseif (strpos($url, self::SERVER_URL) == FALSE) {
+            printr('URL neobsahuje doménu ' . $url);
+            $produkt = array('status' => 'Špatná doména ', 'url' => $url);
+            self::saveProduct($produkt, $soubor);
         } elseif (!self::isProduct($obsah_stranky)) {
             printr('Produkt nenalezen ' . $url);
             $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
