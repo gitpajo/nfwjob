@@ -1,0 +1,36 @@
+Array
+(
+    [nazev] => 2 1/4 CT Created Pink Sapphire and Diamond 14K Gold Earrings                 ICE STYLE: ECC_105466
+    [popis] => Simple and classic. Delicately crafted in lustrous 14K yellow gold, they put on display 2 1/4 carats of vibrant created pink sapphires and sparkling diamonds.
+    [parametry] => Array
+        (
+            [Product Type] => Earrings
+            [Material Type] => Gold
+            [Material Color] => Yellow
+            [Material Grade] => 14K
+            [Stone Type] => Diamond, Sapphire
+            [Stone Color] => Pink, White
+            [Birthstone] => April, September
+            [Earring Back Type] => Friction Back
+            [Finish] => Polished
+            [Diamond Type] => Diamond
+            [Diamond Clarity] => I1;I2
+            [Diamond Color] => GHI
+            [Diamond Shape] => Round
+            [Diamond Setting] => Shared Prong
+            [Diamond Total Weight] => 0.048
+            [Diamond Count] => 6
+            [Diamond Creation Method] => Natural
+            [Diamond Treatment Method] => Not Treated
+            [Gemstone Type] => Sapphire
+            [Gemstone Color] => Pink
+            [Gemstone Setting] => 4 Prong
+            [Gemstone Shape] => Cushion
+            [Gemstone Count] => 2
+            [Gemstone Carat Weight] => 2.2
+            [Gemstone Birth Month] => September
+            [Gemstone Creation Method] => Synthetic
+            [Gemstone Treatment] => Not Treated
+        )
+
+)
