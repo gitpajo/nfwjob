@@ -30,7 +30,7 @@ class ProductInfoEil extends ProductInfo {
     }
 
     private static function isProduct($obsah_stranky) {
-        $div = $obsah_stranky->find('div[itemtype=http://schema.org/Product]', 0);
+        $div = self::findFirst($obsah_stranky, 'div[itemtype=http://schema.org/Product]');
         if ($div) {
             return true;
         } else {
@@ -70,7 +70,7 @@ class ProductInfoEil extends ProductInfo {
     }
 
     private static function getInformation($obsah_stranky, $produkt) {
-        $div = $obsah_stranky->find('div[itemtype=http://schema.org/Product]', 0);
+        $div = self::findFirst($obsah_stranky, 'div[itemtype=http://schema.org/Product]');
         $radky = $div->find('tr');
         $podminka = false;
         foreach ($radky as $radek) {
