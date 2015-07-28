@@ -5,26 +5,31 @@ class ProductInfoTSBohemia extends ProductInfo {
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
     static function getProduct($url, $soubor) {
-
-        $obsah_stranky = file_get_html($url);
-        if ($obsah_stranky == false) {
-            printr('Nelze načíst stránku');
-        } elseif (!self::isProduct($obsah_stranky)) {
-            printr('Produkt nenalezen '. $url);
-            $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
+        if (strpos($url, self::SERVER_URL) === FALSE) {
+            printr('URL neobsahuje doménu ' . self::SERVER_URL);
+            $produkt = array('status' => 'Špatná doména ', 'url' => $url);
             self::saveProduct($produkt, $soubor);
         } else {
-            $produkt = array();
-            $produkt = self::getName($obsah_stranky, $produkt);
-            $produkt = self::getInformation($obsah_stranky, $produkt);
-            $produkt = self::getAvailability($obsah_stranky, $produkt);
-            $produkt = self::getPopis($obsah_stranky, $produkt);
-            $produkt = self::getParametr($obsah_stranky, $produkt);
-            $produkt = self::getImage($obsah_stranky, $produkt);
-            $produkt = self::getInclusion($obsah_stranky, $produkt);
-            $produkt = self::unsetInformation($produkt);
-            printr($produkt);
-            self::saveProduct($produkt, $soubor);
+            $obsah_stranky = file_get_html($url);
+            if ($obsah_stranky == false) {
+                printr('Nelze načíst stránku');
+            } elseif (!self::isProduct($obsah_stranky)) {
+                printr('Produkt nenalezen ' . $url);
+                $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
+                self::saveProduct($produkt, $soubor);
+            } else {
+                $produkt = array();
+                $produkt = self::getName($obsah_stranky, $produkt);
+                $produkt = self::getInformation($obsah_stranky, $produkt);
+                $produkt = self::getAvailability($obsah_stranky, $produkt);
+                $produkt = self::getPopis($obsah_stranky, $produkt);
+                $produkt = self::getParametr($obsah_stranky, $produkt);
+                $produkt = self::getImage($obsah_stranky, $produkt);
+                $produkt = self::getInclusion($obsah_stranky, $produkt);
+                $produkt = self::unsetInformation($produkt);
+                printr($produkt);
+                self::saveProduct($produkt, $soubor);
+            }
         }
     }
 
