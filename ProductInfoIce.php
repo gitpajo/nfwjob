@@ -78,5 +78,20 @@ class ProductInfoIce extends ProductInfo {
 
         return $produkt;
     }
+    
+    private static function getImage($obsah_stranky, $produkt) {
+       $img = self::findFirst($obsah_stranky, 'a[class=highslide]');
+       $produkt['obrazek'] = self::eraseSpace($img->href);
+       return $produkt;
+    }
+
+    private static function getPrice($obsah_stranky, $produkt) {
+        $div = self::findFirst($obsah_stranky, 'div[class=price-box]');
+        $cena = self::findFirst($div, 'span[class=price]')->plaintext;
+        $produkt['cena'] = self::eraseSpace($cena);
+        $cena = $div->find('span[class=price]', 1)->plaintext;
+        $produkt['cena_bezna'] = self::eraseSpace($cena);
+        return $produkt;
+    }
 
 }
