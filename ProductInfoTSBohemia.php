@@ -157,8 +157,8 @@ class ProductInfoTSBohemia extends ProductInfo {
                         $klic = self::findFirst($parametry, 'td')->plaintext;
                         $klic = self::eraseSpace($klic);
                     }
-                    if ($tabulka->find('td', 1)) {
-                        $hodnota = $parametry->find('td', 1)->plaintext;
+                    if (self::findSecond($tabulka, 'td')) {
+                        $hodnota = self::findSecond($parametry, 'td')->plaintext;
                         $hodnota = self::eraseSpace($hodnota);
                     }
                     if ($klic && $hodnota) {
