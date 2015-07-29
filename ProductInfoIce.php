@@ -14,11 +14,11 @@ class ProductInfoIce extends ProductInfo {
             $obsah_stranky = file_get_html($url);
             if ($obsah_stranky == false) {
                 printr('Nelze načíst stránku');
-            }/* elseif (!self::isProduct($obsah_stranky)) {
+            } elseif (!self::isProduct($obsah_stranky)) {
               printr('Produkt nenalezen ' . $url);
               $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
               self::saveProduct($produkt, $soubor);
-              } */ else {
+              } else {
                 $produkt = array();
                 $produkt = self::getName($obsah_stranky, $produkt);
                 $produkt = self::getPrice($obsah_stranky, $produkt);
@@ -32,19 +32,12 @@ class ProductInfoIce extends ProductInfo {
     }
 
     private static function isProduct($obsah_stranky) {
-        $tabulka = self::findFirst($obsah_stranky, 'table[class=sti_detail sti_detail_head]');
-        foreach ($tabulka->find('tr') as $element) {
-            if (self::findFirst($element, 'th')) {
-                $prvek1 = self::findFirst($element, 'th')->plaintext;
-            }
-            if (self::findFirst($element, 'td')) {
-                $prvek2 = self::findFirst($element, 'td')->plaintext;
-            }
-            if ($prvek1 == 'Kód' && $prvek2 != '') {
-                return true;
-            }
+        $div = self::findFirst($obsah_stranky, 'div[itemtype=name]');
+        if ($div) {
+            return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
 // Funkce pro vypsání názvu produktu
