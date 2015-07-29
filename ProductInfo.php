@@ -23,7 +23,7 @@ abstract class ProductInfo implements ProductInterface {
     
     protected static function saveProduct($produkt, $soubor) {
         $obsah = print_r($produkt, true);
-        return file_put_contents($soubor, $obsah);
+        return file_put_contents($soubor, $obsah, FILE_APPEND);
     }
 
 }
