@@ -38,7 +38,7 @@ foreach ($pages as $img) {
   printr($parametr);
   } */
 
-/*$url_produkty = array();
+$url_produkty = array();
 
 for ($cislo = 0; $cislo < 30; $cislo++) {
     $url_produkty[] = 212486 + $cislo;
@@ -46,23 +46,23 @@ for ($cislo = 0; $cislo < 30; $cislo++) {
 
 $soubor = 'produkty.txt';
 
-self::eraseFile($soubor);
+ProductInfo::eraseFile($soubor);
 
 foreach ($url_produkty as $url_produkty) {
     ProductInfoTSBohemia::getProduct(ProductInfoTSBohemia::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
-}*/
+}
 
-$soubor = 'produkt.txt';
+$soubor2 = 'produkt.txt';
 
-self::eraseFile($soubor);
+ProductInfo::eraseFile($soubor2);
 
-ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor);
+ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor2);
 
-$soubor2 = 'produkt2.txt';
+$soubor3 = 'produkt2.txt';
 
-self::eraseFile($soubor2);
+ProductInfo::eraseFile($soubor3);
 
-ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor2);
+ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor3);
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
