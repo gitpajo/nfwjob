@@ -46,10 +46,6 @@ for ($cislo = 0; $cislo < 30; $cislo++) {
 
 $soubor = 'produkty.txt';
 
-if (file_exists($soubor)) {
-    unlink($soubor);
-}
-
 foreach ($url_produkty as $url_produkty) {
     ProductInfoTSBohemia::getProduct(ProductInfoTSBohemia::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }*/
