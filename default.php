@@ -1,11 +1,5 @@
 <?php
 
-function eraseFile($soubor) {
-    if (file_exists($soubor)) {
-        unlink($soubor);
-    }
-}
-
 require 'ProductInfo.php';
 
 require 'ProductInfoTSBohemia.php';
