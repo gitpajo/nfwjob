@@ -84,8 +84,8 @@ class ProductInfoIce extends ProductInfo {
         $div = self::findFirst($obsah_stranky, 'div[class=price-box]');
         $cena = self::findFirst($div, 'span[class=price]')->plaintext;
         $produkt['cena'] = self::eraseSpace($cena);
-        $cena = $div->find('span[class=price]', 1)->plaintext;
-        $produkt['cena_bezna'] = self::eraseSpace($cena);
+        $cena_bezna = self::findSecond($div, 'span[class=price]')->plaintext;
+        $produkt['cena_bezna'] = self::eraseSpace($cena_bezna);
         return $produkt;
     }
 
