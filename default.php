@@ -56,13 +56,9 @@ foreach ($url_produkty as $url_produkty) {
 
 $soubor = 'produkt.txt';
 
-eraseFile($soubor);
-
 ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor);
 
 $soubor2 = 'produkt2.txt';
-
-eraseFile($soubor2);
 
 ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor2);
 
