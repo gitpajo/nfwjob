@@ -32,7 +32,7 @@ class ProductInfoIce extends ProductInfo {
     }
 
     private static function isProduct($obsah_stranky) {
-        $div = self::findFirst($obsah_stranky, 'div[itemtype=name]');
+        $div = self::findFirst($obsah_stranky, 'div[itemprop=name]');
         if ($div) {
             return true;
         } else {
