@@ -21,8 +21,10 @@ class ProductInfoIce extends ProductInfo {
               } */ else {
                 $produkt = array();
                 $produkt = self::getName($obsah_stranky, $produkt);
+                $produkt = self::getPrice($obsah_stranky, $produkt);
                 $produkt = self::getPopis($obsah_stranky, $produkt);
                 $produkt = self::getParametr($obsah_stranky, $produkt);
+                $produkt = self::getImage($obsah_stranky, $produkt);
                 printr($produkt);
                 self::saveProduct($produkt, $soubor);
             }
