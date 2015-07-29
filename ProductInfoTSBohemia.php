@@ -5,6 +5,7 @@ class ProductInfoTSBohemia extends ProductInfo {
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
     static function getProduct($url, $soubor) {
+        self::eraseFile($soubor);
         if (strpos($url, self::SERVER_URL) === FALSE) {
             printr('URL neobsahuje doménu ' . self::SERVER_URL);
             $produkt = array('status' => 'Špatná doména ', 'url' => $url);
