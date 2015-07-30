@@ -88,9 +88,13 @@ class ProductInfoEil extends ProductInfo {
                     } else if ($bunka->plaintext == 'Year of Release:') {
                         $produkt['rok'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Artist:') {
-                        $produkt['umelec'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $umelec = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $umelec = trim($umelec, '(click here for complete listing)');
+                        $produkt['umelec'] = $umelec;
                     } else if ($bunka->plaintext == 'Title:') {
-                        $produkt['dilo'] = self::eraseSpace($bunka->next_sibling()->next_sibling()->plaintext);
+                        $dilo = self::eraseSpace($bunka->next_sibling()->next_sibling()->plaintext);
+                        $dilo = trim($dilo, '(click here for more of the same title)');
+                        $produkt['dilo'] = $dilo;
                     } else if ($bunka->plaintext == 'Price:') {
                         $cena = str_replace('change currency', '', $bunka->next_sibling()->plaintext);
                         $cena = self::eraseSpace($cena);
