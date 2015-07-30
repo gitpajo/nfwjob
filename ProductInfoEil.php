@@ -54,12 +54,13 @@ class ProductInfoEil extends ProductInfo {
     }
     
      private static function getTrack($seznam_skladeb, $produkt) {
-        $tracks = explode('<BR>', $seznam_skladeb->plaintext);
-        $produkt['stopy'] = $tracks;
+        $tracks = self::findFirst($seznam_skladeb, 'FONT');
+        $tracks_array = explode('<BR>', $tracks);
+        $produkt['stopy'] = $tracks_array;
         return $produkt;
     }
     
-    private static function getImage($obsah_stranky, $produkt) {
+     private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
         $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
         $podminka = TRUE;
