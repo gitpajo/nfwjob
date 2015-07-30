@@ -83,7 +83,9 @@ class ProductInfoEil extends ProductInfo {
                     } else if ($bunka->plaintext == 'Condition:') {
                         $produkt['stav'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Availability:') {
-                        $produkt['dostupnost'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $dostupnost = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $dostupnost = trim($dostupnost, 'In Stock - ');
+                        $produkt['dostupnost'] = $dostupnost;
                     } else if ($bunka->plaintext == 'Year of Release:') {
                         $rok = self::eraseSpace($bunka->next_sibling()->plaintext);
                         $rok = substr($rok, 0, 4);
