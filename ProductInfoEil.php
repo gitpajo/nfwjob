@@ -92,7 +92,8 @@ class ProductInfoEil extends ProductInfo {
                         $produkt['rok'] = $rok;
                     } else if ($bunka->plaintext == 'Artist:') {
                         $umelec = self::eraseSpace($bunka->next_sibling()->plaintext);
-                        $umelec = trim($umelec, '(click here for complete listing)');
+                        $umelec = trim($umelec, 'click here for complete listing)');
+                        $umelec = trim($umelec, '(');
                         $produkt['umelec'] = $umelec;
                     } else if ($bunka->plaintext == 'Title:') {
                         $dilo = self::eraseSpace($bunka->next_sibling()->next_sibling()->plaintext);
