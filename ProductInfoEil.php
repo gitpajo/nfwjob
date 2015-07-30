@@ -53,6 +53,14 @@ class ProductInfoEil extends ProductInfo {
         return $produkt;
     }
     
+     private static function getTrack($seznam_skladeb, $produkt) {
+        $tracks = explode('<BR>', $seznam_skladeb->plaintext);
+        foreach ($tracks as $track) {
+            $produkt['stopy'][] = self::eraseSpace($track);
+        }
+        return $produkt;
+    }
+    
     private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
         $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
@@ -77,9 +85,7 @@ class ProductInfoEil extends ProductInfo {
                 $bunky = $radek->find('td');
                 foreach ($bunky as $bunka) {
                     if ($bunka->plaintext == 'Tracklisting / Additional Info:') {
-                        $track_list = str_replace("\r\n", '', $bunka->next_sibling()->plaintext);
-                        $track_list = self::eraseSpace($track_list);
-                        $produkt['stopy'] = $track_list;
+                        $produkt = self::getTrack($bunka->next_sibling(), $produkt);
                     } else if ($bunka->plaintext == 'Condition:') {
                         $produkt['stav'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Availability:') {
