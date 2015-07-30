@@ -85,7 +85,9 @@ class ProductInfoEil extends ProductInfo {
                     } else if ($bunka->plaintext == 'Availability:') {
                         $produkt['dostupnost'] = self::eraseSpace($bunka->next_sibling()->plaintext);
                     } else if ($bunka->plaintext == 'Year of Release:') {
-                        $produkt['rok'] = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $rok = self::eraseSpace($bunka->next_sibling()->plaintext);
+                        $rok = substr($rok, 0, 4);
+                        $produkt['rok'] = $rok;
                     } else if ($bunka->plaintext == 'Artist:') {
                         $umelec = self::eraseSpace($bunka->next_sibling()->plaintext);
                         $umelec = trim($umelec, '(click here for complete listing)');
