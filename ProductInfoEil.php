@@ -48,9 +48,8 @@ class ProductInfoEil extends ProductInfo {
     private static function getArtist($bunka, $produkt) {
         $artists = $bunka->next_sibling()->find('a');
         foreach ($artists as $artist) {
-            $artists_seznam[] = $artist->plaintext;
+            $produkt['souvisejici_umelci'][] = $artist->plaintext;
         }
-        $produkt['souvisejici_umelci'] = 'array('.implode(", ",$artists_seznam).')';
         return $produkt;
     }
     
