@@ -60,7 +60,7 @@ class ProductInfoEil extends ProductInfo {
         foreach ($tracks_array as $one_track) {
             if (strpos($one_track, 'Cassette') === 0) {
                 $cassette = $one_track;
-            } else if ($one_track === '') {
+            } else if (trim($one_track) === '') {
                 unset($one_track);
             } else {
                 $produkt['stopy'][$cassette][] = $one_track;
