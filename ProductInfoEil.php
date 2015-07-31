@@ -56,7 +56,15 @@ class ProductInfoEil extends ProductInfo {
      private static function getTrack($seznam_skladeb, $produkt) {
         $tracks = self::findFirst($seznam_skladeb, 'FONT')->innertext;
         $tracks_array = explode('<br>', $tracks);
-        $produkt['stopy'] = $tracks_array;
+        $cassette = 'bez cassette';
+        foreach ($tracks_array as $one_track) {
+            if (strpos($one_track, 'cassette') === 0) {
+                $cassette = $one_track;
+            } else {
+
+                $produkt['stopy'][$cassette][] = $one_track;
+            }
+        }
         return $produkt;
     }
     
