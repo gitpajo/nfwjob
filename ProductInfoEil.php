@@ -48,7 +48,7 @@ class ProductInfoEil extends ProductInfo {
     private static function getArtist($bunka, $produkt) {
         $artists = $bunka->next_sibling()->find('a');
         foreach ($artists as $artist) {
-            $produkt['souvisejici_umelci'][] = $artist->plaintext;
+            $produkt['souvisejici_umelci'][] = self::eraseSpace($artist->plaintext);
         }
         return $produkt;
     }
