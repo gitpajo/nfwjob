@@ -91,7 +91,7 @@ class ProductInfoEil extends ProductInfo {
                 }
             }
         } else {
-            printr('Obrázek produktu nenalezen');
+            $produkt['img'] = 'nema obrazek';
         }
         return $produkt;
     }
