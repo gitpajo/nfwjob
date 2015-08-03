@@ -4,6 +4,7 @@ class ProductInfoTSBohemia extends ProductInfo {
 
     const SERVER_URL = 'http://dealer.tsbohemia.cz/';
     
+// Řídídcí funkce třídy pro výpis jednotlivých produktů a volání privátních funkcí
     static function getProduct($url, $soubor) {
         if (strpos($url, self::SERVER_URL) === FALSE) {
             printr('URL neobsahuje doménu ' . self::SERVER_URL);
@@ -33,6 +34,7 @@ class ProductInfoTSBohemia extends ProductInfo {
         }
     }
 
+// Funkce pro zjištění, jestli produkt se zadaným url existuje
     private static function isProduct($obsah_stranky) {
         $tabulka = self::findFirst($obsah_stranky, 'table[class=sti_detail sti_detail_head]');
         foreach ($tabulka->find('tr') as $element) {
@@ -49,6 +51,7 @@ class ProductInfoTSBohemia extends ProductInfo {
         return false;
     }
     
+// Funkce pro přejmenování informací o produktu
     private static function renameInformation($prvek1) {
         $seznam = array(
             'Výrobce' => 'vyrobce',
@@ -71,6 +74,7 @@ class ProductInfoTSBohemia extends ProductInfo {
         return $prvek1;
     }
     
+// Funkce pro smazání informací o produktu
     private static function unsetInformation($produkt) {
         foreach ($produkt as $klic => $value) {
             if ($klic == 'Dostupnost na pobočkách') {
@@ -89,12 +93,14 @@ class ProductInfoTSBohemia extends ProductInfo {
         return $produkt;
     }
     
+// Funkce pro vypsání názvu produktu
     private static function getName($obsah_stranky, $produkt) {
         $name = self::findFirst($obsah_stranky, 'div[class=f_left product_name]')->plaintext;
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
 
+// Funkce pro vypsání informací o produktu
     private static function getInformation($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('table[class=sti_detail sti_detail_head]') as $tabulka) {
             foreach ($tabulka->find('tr') as $element) {
@@ -117,6 +123,7 @@ class ProductInfoTSBohemia extends ProductInfo {
         return $produkt;
     }
 
+// Funkce pro vypsání dostupnosti produktu
     private static function getAvailability($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('table[class=sti_detail_avail]') as $tabulka) {
             $i = 0;
@@ -139,12 +146,14 @@ class ProductInfoTSBohemia extends ProductInfo {
         return $produkt;
     }
 
+// Funkce pro vypsání popisu produktu
     private static function getPopis($obsah_stranky, $produkt) {
         $popis = self::findFirst($obsah_stranky, 'div[id=popis-produktu]')->plaintext;
         $produkt['popis'] = self::eraseSpace($popis);
         return $produkt;
     }
 
+// Funkce pro vypsání parametrů produktu
     private static function getParametr($obsah_stranky, $produkt) {
          $div = self::findFirst($obsah_stranky, 'div[id=parametry]');
         foreach ($div->find('table[class=sti_details]') as $tabulka) {
@@ -170,7 +179,8 @@ class ProductInfoTSBohemia extends ProductInfo {
         }
         return $produkt;
     }
-
+    
+// Funkce pro vypsání url obrázků produktu
     private static function getImage($obsah_stranky, $produkt) {
         $div = self::findFirst($obsah_stranky, 'div.sti_image');
         $i = 1;
@@ -190,7 +200,8 @@ class ProductInfoTSBohemia extends ProductInfo {
         }
         return $produkt;
     }
-
+    
+// Funkce pro vypsání zařazení produktu
     private static function getInclusion($obsah_stranky, $produkt) {
         foreach ($obsah_stranky->find('div[id=zarazeni-produktu]') as $tabulka) {
             $podminka = TRUE;
