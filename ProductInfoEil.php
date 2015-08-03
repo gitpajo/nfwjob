@@ -81,7 +81,9 @@ class ProductInfoEil extends ProductInfo {
         while ($podminka) {
             if ($img->next_sibling() != NULL) {
                 $img = $img->next_sibling();
-                $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
+                if ($img->src != NULL) {
+                    $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
+                }
             } else {
                 $podminka = FALSE;
             }
