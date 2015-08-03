@@ -56,7 +56,10 @@ $soubor2 = 'produkt.txt';
 
 ProductInfo::eraseFile($soubor2);
 
-ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL . 'shop/moreinfo.asp?catalogid=587277', $soubor2);
+foreach ($url_produkty as $url_produkty) {
+    ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL .
+            'shop/moreinfo.asp?catalogid=' . $url_produkty, $soubor2);
+}
 
 $soubor3 = 'produkt2.txt';
 
