@@ -74,19 +74,24 @@ class ProductInfoEil extends ProductInfo {
         return $produkt;
     }
     
-     private static function getImage($obsah_stranky, $produkt) {
+    // Funkce pro vypsání url obrázků produktu    
+    private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
-        $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
-        $podminka = TRUE;
-        while ($podminka) {
-            if ($img->next_sibling() != NULL) {
-                $img = $img->next_sibling();
-                if ($img->src != NULL) {
-                    $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
+        if ($img) {
+            $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
+            $podminka = TRUE;
+            while ($podminka) {
+                if ($img->next_sibling() != NULL) {
+                    $img = $img->next_sibling();
+                    if ($img->src) {
+                        $produkt['img'][] = trim(self::SERVER_URL, '/') . $img->src;
+                    }
+                } else {
+                    $podminka = FALSE;
                 }
-            } else {
-                $podminka = FALSE;
             }
+        } else {
+            printr('Obrázek produktu nenalezen');
         }
         return $produkt;
     }
