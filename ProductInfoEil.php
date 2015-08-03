@@ -29,6 +29,7 @@ class ProductInfoEil extends ProductInfo {
         }
     }
 
+// Funkce pro zjištění, jestli produkt se zadaným url existuje  
     private static function isProduct($obsah_stranky) {
         $div = self::findFirst($obsah_stranky, 'div[itemtype=http://schema.org/Product]');
         if ($div) {
@@ -44,7 +45,8 @@ class ProductInfoEil extends ProductInfo {
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
-    
+   
+// Funkce pro vypsání souvisejících umělců produktu 
     private static function getArtist($bunka, $produkt) {
         $artists = $bunka->next_sibling()->find('a');
         foreach ($artists as $artist) {
@@ -53,6 +55,7 @@ class ProductInfoEil extends ProductInfo {
         return $produkt;
     }
     
+// Funkce pro vypsání skladeb produktu   
     private static function getTrack($seznam_skladeb, $produkt) {
         unset($produkt['stopy']);
         $tracks = self::findFirst($seznam_skladeb, 'FONT')->innertext;
@@ -74,7 +77,7 @@ class ProductInfoEil extends ProductInfo {
         return $produkt;
     }
     
-    // Funkce pro vypsání url obrázků produktu    
+// Funkce pro vypsání url obrázků produktu    
     private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
         if ($img) {
@@ -95,7 +98,8 @@ class ProductInfoEil extends ProductInfo {
         }
         return $produkt;
     }
-
+    
+// Funkce pro vypsání informací o produktu    
     private static function getInformation($obsah_stranky, $produkt) {
         $div = self::findFirst($obsah_stranky, 'div[itemtype=http://schema.org/Product]');
         $radky = $div->find('tr');
