@@ -48,7 +48,7 @@ $soubor = 'produkty.txt';
 
 ProductInfo::eraseFile($soubor);
 
-foreach ($url_produkty as $url_produkty) {
+foreach ($url_produkty as $url_produkt) {
     ProductInfoTSBohemia::getProduct(ProductInfoTSBohemia::SERVER_URL . '?cls=stoitem&stiid=' . $url_produkty, $soubor);
 }
 
@@ -56,7 +56,7 @@ $soubor2 = 'produkt.txt';
 
 ProductInfo::eraseFile($soubor2);
 
-foreach ($url_produkty as $url_produkty) {
+foreach ($url_produkty as $url_produkt) {
     ProductInfoEil::getProduct(ProductInfoEil::SERVER_URL .
             'shop/moreinfo.asp?catalogid=' . $url_produkty, $soubor2);
 }
