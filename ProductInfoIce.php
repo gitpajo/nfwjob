@@ -31,6 +31,7 @@ class ProductInfoIce extends ProductInfo {
         }
     }
 
+// Funkce pro zjištění, jestli produkt se zadaným url existuje
     private static function isProduct($obsah_stranky) {
         $div = self::findFirst($obsah_stranky, 'div[itemprop=name]');
         if ($div) {
@@ -47,12 +48,14 @@ class ProductInfoIce extends ProductInfo {
         return $produkt;
     }
 
+// Funkce pro vypsání popisu produktu
     private static function getPopis($obsah_stranky, $produkt) {
         $popis = self::findFirst($obsah_stranky, 'div[id=details]')->plaintext;
         $produkt['popis'] = self::eraseSpace($popis);
         return $produkt;
     }
 
+// Funkce pro vypsání parametrů produktu
     private static function getParametr($obsah_stranky, $produkt) {
         $table = self::findfirst($obsah_stranky, 'table[class=data-table]');
         foreach ($table->find('tr') as $parametry) {
@@ -74,12 +77,14 @@ class ProductInfoIce extends ProductInfo {
         return $produkt;
     }
     
+// Funkce pro url obrázků produktu
     private static function getImage($obsah_stranky, $produkt) {
        $img = self::findFirst($obsah_stranky, 'a[class=highslide]');
        $produkt['obrazek'] = self::eraseSpace($img->href);
        return $produkt;
     }
-
+    
+// Funkce pro vypsání ceny produktu
     private static function getPrice($obsah_stranky, $produkt) {
         $div = self::findFirst($obsah_stranky, 'div[class=price-box]');
         $cena = self::findFirst($div, 'span[class=price]')->plaintext;
