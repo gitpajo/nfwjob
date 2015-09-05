@@ -32,7 +32,6 @@ class ProductInfoBook extends ProductInfo {
         $divs = $obsah_stranky->find('div[class=title]');
         foreach ($divs as $div) {
             $produkt[]['Title '] = $div->plaintext;
-            $i++;
         }
         return $produkt;
     }
@@ -41,7 +40,6 @@ class ProductInfoBook extends ProductInfo {
         $divs = $obsah_stranky->find('div[class=author]');
         foreach ($divs as $div) {
             $produkt[]['Author '] = $div->plaintext;
-            $i++;
         }
         return $produkt;
     }
