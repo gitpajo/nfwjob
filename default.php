@@ -67,6 +67,19 @@ ProductInfo::eraseFile($soubor3);
 
 ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor3);
 
+for ($cislo = 1; $cislo < 30; $cislo++) {
+    $url_produkty[] = $cislo;
+}
+
+$soubor = 'produkt3.txt';
+
+ProductInfo::eraseFile($soubor);
+
+foreach ($url_produkty as $url_produkt) {
+    ProductInfoBook::getProduct(ProductInfoBook::SERVER_URL . 
+    'cs/results?d=368&f=&p=' . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
+}
+
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
 /* $link = @mysql_connect('localhost', 'root', '')
