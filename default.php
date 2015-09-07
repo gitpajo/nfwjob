@@ -1,10 +1,14 @@
 <?php
 
+include_once 'printr.php';
+include_once 'simple_html_dom.php';
+
 require 'ProductInfo.php';
 
 require 'ProductInfoTSBohemia.php';
 require 'ProductInfoEil.php';
 require 'ProductInfoIce.php';
+require 'ProductInfoBook.php';
 
 set_time_limit(300);
 
@@ -12,7 +16,7 @@ echo 'Hello World';
 
 printr('***POKUS***');
 
-$novinky = FNovinky::getall(true, LANG);
+/*$novinky = FNovinky::getall(true, LANG);
 foreach ($novinky as $p) {
     printr($p['name']);
 }
@@ -22,7 +26,7 @@ foreach ($pages as $img) {
     ?>
     <img src="<?= FStranka::imgLinkGallery($img, 'middle') ?>"> <?php
     printr($img['description']);
-}
+}*/
 
 /* $pages = FStranka::get(11);
   printr($pages);
@@ -40,7 +44,7 @@ foreach ($pages as $img) {
 
 $url_produkty = array();
 
-for ($cislo = 0; $cislo < 30; $cislo++) {
+for ($cislo = 0; $cislo < 1; $cislo++) {
     $url_produkty[] = 212486 + $cislo;
 }
 
@@ -67,17 +71,21 @@ ProductInfo::eraseFile($soubor3);
 
 ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrings/gemstone-earring-prd-ecc-105466', $soubor3);
 
-for ($cislo = 1; $cislo < 30; $cislo++) {
+$url_produkty = array();
+
+for ($cislo = 1; $cislo < 2; $cislo++) {
     $url_produkty[] = $cislo;
 }
+
+printr($url_produkty);
 
 $soubor = 'produkt3.txt';
 
 ProductInfo::eraseFile($soubor);
 
 foreach ($url_produkty as $url_produkt) {
-    ProductInfoBook::getProduct(ProductInfoBook::SERVER_URL . 
-    'cs/results?d=368&f=&p=' . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
+    ProductInfoBook::getProduct(ProductInfoBook::SERVER_URL
+    , $soubor);
 }
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
