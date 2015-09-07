@@ -11,7 +11,7 @@ class ProductInfoBook extends ProductInfo {
             $produkt = array('status' => 'Špatná doména ', 'url' => $url);
             self::saveProduct($produkt, $soubor);
         } else {
-            $obsah_stranky = file_get_html($url);
+            $obsah_stranky = file_get_html($url, FALSE, self::getContext());
             if ($obsah_stranky == false) {
                 printr('Nelze načíst stránku');
             } elseif (!self::isProduct($obsah_stranky)) {
@@ -43,4 +43,14 @@ class ProductInfoBook extends ProductInfo {
         }
         return $produkt;
     }
+    
+   private static function getContext() {
+        $opts = array(
+            'http' => array(
+              'user_agent' => 'My agent name',
+            )
+        );
+        return stream_context_create($opts);
+   }
+    
 }
