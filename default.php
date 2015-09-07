@@ -16,17 +16,17 @@ echo 'Hello World';
 
 printr('***POKUS***');
 
-/*$novinky = FNovinky::getall(true, LANG);
-foreach ($novinky as $p) {
-    printr($p['name']);
-}
+/* $novinky = FNovinky::getall(true, LANG);
+  foreach ($novinky as $p) {
+  printr($p['name']);
+  }
 
-$pages = FStranka::nactigalerii(9);
-foreach ($pages as $img) {
-    ?>
-    <img src="<?= FStranka::imgLinkGallery($img, 'middle') ?>"> <?php
-    printr($img['description']);
-}*/
+  $pages = FStranka::nactigalerii(9);
+  foreach ($pages as $img) {
+  ?>
+  <img src="<?= FStranka::imgLinkGallery($img, 'middle') ?>"> <?php
+  printr($img['description']);
+  } */
 
 /* $pages = FStranka::get(11);
   printr($pages);
@@ -73,7 +73,7 @@ ProductInfoIce::getProduct(ProductInfoIce::SERVER_URL . 'earrings/diamond-earrin
 
 $url_produkty = array();
 
-for ($cislo = 1; $cislo < 2; $cislo++) {
+for ($cislo = 1; $cislo < 4; $cislo++) {
     $url_produkty[] = $cislo;
 }
 
@@ -84,8 +84,8 @@ $soubor = 'produkt3.txt';
 ProductInfo::eraseFile($soubor);
 
 foreach ($url_produkty as $url_produkt) {
-    ProductInfoBook::getProduct(ProductInfoBook::SERVER_URL
-    , $soubor);
+    ProductInfoBook::getProduct(ProductInfoBook::SERVER_URL . 'cs/results?d=368&f=&p='
+            . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
 }
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
