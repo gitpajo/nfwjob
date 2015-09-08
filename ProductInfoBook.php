@@ -39,7 +39,9 @@ class ProductInfoBook extends ProductInfo {
 
     protected static function saveProduct($produkt, $soubor) {
         foreach ($produkt as $pro) {
-            file_put_contents($soubor, $pro['Title'].' '.$pro['Author'].PHP_EOL, FILE_APPEND);
+            if (isset($pro['Title'])) {
+                file_put_contents($soubor, $pro['Title'].' '.$pro['Author'].PHP_EOL, FILE_APPEND);
+            }
         }
     }
 
