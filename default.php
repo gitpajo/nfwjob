@@ -9,6 +9,7 @@ require 'ProductInfoTSBohemia.php';
 require 'ProductInfoEil.php';
 require 'ProductInfoIce.php';
 require 'ProductInfoBook.php';
+require 'ProductEReading.php';
 
 set_time_limit(300);
 
@@ -77,8 +78,6 @@ for ($cislo = 1; $cislo < 4; $cislo++) {
     $url_produkty[] = $cislo;
 }
 
-printr($url_produkty);
-
 $soubor = 'produkt3.txt';
 
 ProductInfo::eraseFile($soubor);
@@ -87,6 +86,15 @@ foreach ($url_produkty as $url_produkt) {
     ProductInfoBook::getProduct(ProductInfoBook::SERVER_URL . 'cs/results?d=368&f=&p='
             . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
 }
+
+printr($url_produkty);
+
+foreach($url_produkty as $url_produkt) {
+    ProductInfoBook::getProduct(ProductInfoEReading::SERVER_URL . 'cs/vypujcky?str='
+            . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
+}
+
+
 
 //getProduct('http://dealer.tsbohemia.cz/?cls=stoitem&stiid=212486');
 
