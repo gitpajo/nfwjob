@@ -1,5 +1,5 @@
 <?php
-class ProductInfoTSBohemia extends ProductInfo {
+class ProductEReading extends ProductInfo {
     const SERVER_URL = 'http://www.ereading.cz/';
     
 }
