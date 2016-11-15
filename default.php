@@ -90,8 +90,8 @@ foreach ($url_produkty as $url_produkt) {
 printr($url_produkty);
 
 foreach($url_produkty as $url_produkt) {
-    ProductInfoBook::getProduct(ProductInfoEReading::SERVER_URL . 'cs/vypujcky?str='
-            . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
+    ProductInfoEReading::getProduct(ProductInfoEReading::SERVER_URL . 'cs/vypujcky?str='
+            . $url_produkt, $soubor);
 }
 
 
