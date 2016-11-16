@@ -9,7 +9,7 @@ require 'ProductInfoTSBohemia.php';
 require 'ProductInfoEil.php';
 require 'ProductInfoIce.php';
 require 'ProductInfoBook.php';
-require 'ProductEReading.php';
+require 'ProductInfoEReading.php';
 
 set_time_limit(300);
 
