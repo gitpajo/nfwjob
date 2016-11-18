@@ -15,7 +15,7 @@ set_time_limit(300);
 
 echo 'Hello World';
 
-printr('***POKUS***');
+print_r('***POKUS***');
 
 /* $novinky = FNovinky::getall(true, LANG);
   foreach ($novinky as $p) {
