@@ -39,4 +39,14 @@ class ProductInfoEReading extends ProductInfo {
         $produkt['popis'] = self::eraseSpace($popis);
         return $produkt;
     }
+
+    private static function getBook($obsah_stranky, $produkt) {
+        $divs = $obsah_stranky->find('div[class=bookListText]');
+        foreach ($divs as $div) {
+            $title = self::findFirst($div, 'h2')->plaintext;
+            $author = self::findFirst($div, 'h3')->plaintext;
+            $produkt[] = ['Title' => $title, 'Author' => $author];
+        }
+        return $produkt;
+    }
 }
