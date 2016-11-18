@@ -86,7 +86,7 @@ foreach ($url_produkty as $url_produkt) {
             . $url_produkt . '&q=ereading&s=relevance&sw=SMART&t=GOOGLE&w=ALL&wd=', $soubor);
 }
 
-printr($url_produkty);
+print_r($url_produkty);
 
 foreach($url_produkty as $url_produkt) {
     ProductInfoEReading::getProduct(ProductInfoEReading::SERVER_URL . 'cs/vypujcky?str='
