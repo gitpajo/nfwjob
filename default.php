@@ -1,6 +1,5 @@
 <?php
 
-include_once 'print_r.php';
 include_once 'simple_html_dom.php';
 
 require 'ProductInfo.php';
