@@ -28,7 +28,7 @@ class ProductInfoTSBohemia extends ProductInfo {
                 $produkt = self::getImage($obsah_stranky, $produkt);
                 $produkt = self::getInclusion($obsah_stranky, $produkt);
                 $produkt = self::unsetInformation($produkt);
-                printr($produkt);
+                print_r($produkt);
                 self::saveProduct($produkt, $soubor);
             }
         }
