@@ -7,21 +7,21 @@ class ProductInfoBook extends ProductInfo {
 // Řídídcí funkce třídy pro výpis jednotlivých produktů a volání privátních funkcí
     static function getProduct($url, $soubor) {
         if (strpos($url, self::SERVER_URL) === FALSE) {
-            printr('URL neobsahuje doménu '.self::SERVER_URL);
+            print_r('URL neobsahuje doménu '.self::SERVER_URL);
             $produkt = array('status' => 'Špatná doména ', 'url' => $url);
             self::saveProduct($produkt, $soubor);
         } else {
             $obsah_stranky = file_get_html($url, FALSE, self::getContext());
             if ($obsah_stranky == false) {
-                printr('Nelze načíst stránku');
+                print_r('Nelze načíst stránku');
             } elseif (!self::isProduct($obsah_stranky)) {
-                printr('Produkt nenalezen '.$url);
+                print_r('Produkt nenalezen '.$url);
                 $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
                 self::saveProduct($produkt, $soubor);
             } else {
                 $produkt = array();
                 $produkt = self::getBook($obsah_stranky, $produkt);
-                printr($produkt);
+                print_r($produkt);
                 self::saveProduct($produkt, $soubor);
             }
         }
