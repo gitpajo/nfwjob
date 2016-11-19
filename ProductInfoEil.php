@@ -45,7 +45,7 @@ class ProductInfoEil extends ProductInfo {
         $produkt['nazev'] = self::eraseSpace($name);
         return $produkt;
     }
-   
+
 // Funkce pro vypsání souvisejících umělců produktu 
     private static function getArtist($bunka, $produkt) {
         $artists = $bunka->next_sibling()->find('a');
@@ -54,7 +54,7 @@ class ProductInfoEil extends ProductInfo {
         }
         return $produkt;
     }
-    
+
 // Funkce pro vypsání skladeb produktu   
     private static function getTrack($seznam_skladeb, $produkt) {
         unset($produkt['stopy']);
@@ -71,12 +71,12 @@ class ProductInfoEil extends ProductInfo {
                     $produkt['stopy'][] = $one_track;
                 } else {
                     $produkt['stopy'][$cassette][] = $one_track;
-                }    
+                }
             }
         }
         return $produkt;
     }
-    
+
 // Funkce pro vypsání url obrázků produktu    
     private static function getImage($obsah_stranky, $produkt) {
         $img = self::findFirst($obsah_stranky, 'img[itemprop=image]');
@@ -98,7 +98,7 @@ class ProductInfoEil extends ProductInfo {
         }
         return $produkt;
     }
-    
+
 // Funkce pro vypsání informací o produktu    
     private static function getInformation($obsah_stranky, $produkt) {
         $div = self::findFirst($obsah_stranky, 'div[itemtype=http://schema.org/Product]');

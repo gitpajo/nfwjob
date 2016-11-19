@@ -1,8 +1,9 @@
 <?php
+
 class ProductInfoEReading extends ProductInfo {
-    
+
     const SERVER_URL = 'http://www.ereading.cz/';
-    
+
     static function getProduct($url, $soubor) {
         if (strpos($url, self::SERVER_URL) === FALSE) {
             print_r('URL neobsahuje doménu ' . self::SERVER_URL);
@@ -30,4 +31,5 @@ class ProductInfoEReading extends ProductInfo {
         }
         return $produkt;
     }
+
 }

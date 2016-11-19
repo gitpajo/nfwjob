@@ -42,7 +42,7 @@ print_r('***POKUS***');
   printr($parametr);
   } */
 
-$url_produkty = array();
+$url_produkty = [];
 
 for ($cislo = 0; $cislo < 1; $cislo++) {
     $url_produkty[] = 212486 + $cislo;
@@ -88,7 +88,7 @@ foreach ($url_produkty as $url_produkt) {
 
 print_r($url_produkty);
 
-foreach($url_produkty as $url_produkt) {
+foreach ($url_produkty as $url_produkt) {
     ProductInfoEReading::getProduct(ProductInfoEReading::SERVER_URL . 'cs/vypujcky?str='
             . $url_produkt, $soubor);
 }

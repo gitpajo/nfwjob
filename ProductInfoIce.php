@@ -15,10 +15,10 @@ class ProductInfoIce extends ProductInfo {
             if ($obsah_stranky == false) {
                 print_r('Nelze načíst stránku');
             } elseif (!self::isProduct($obsah_stranky)) {
-              print_r('Produkt nenalezen ' . $url);
-              $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
-              self::saveProduct($produkt, $soubor);
-              } else {
+                print_r('Produkt nenalezen ' . $url);
+                $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
+                self::saveProduct($produkt, $soubor);
+            } else {
                 $produkt = array();
                 $produkt = self::getName($obsah_stranky, $produkt);
                 $produkt = self::getPrice($obsah_stranky, $produkt);
@@ -76,14 +76,14 @@ class ProductInfoIce extends ProductInfo {
 
         return $produkt;
     }
-    
+
 // Funkce pro url obrázků produktu
     private static function getImage($obsah_stranky, $produkt) {
-       $img = self::findFirst($obsah_stranky, 'a[class=highslide]');
-       $produkt['obrazek'] = self::eraseSpace($img->href);
-       return $produkt;
+        $img = self::findFirst($obsah_stranky, 'a[class=highslide]');
+        $produkt['obrazek'] = self::eraseSpace($img->href);
+        return $produkt;
     }
-    
+
 // Funkce pro vypsání ceny produktu
     private static function getPrice($obsah_stranky, $produkt) {
         $div = self::findFirst($obsah_stranky, 'div[class=price-box]');

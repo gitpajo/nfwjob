@@ -7,7 +7,7 @@ class ProductInfoBook extends ProductInfo {
 // Řídídcí funkce třídy pro výpis jednotlivých produktů a volání privátních funkcí
     static function getProduct($url, $soubor) {
         if (strpos($url, self::SERVER_URL) === FALSE) {
-            print_r('URL neobsahuje doménu '.self::SERVER_URL);
+            print_r('URL neobsahuje doménu ' . self::SERVER_URL);
             $produkt = array('status' => 'Špatná doména ', 'url' => $url);
             self::saveProduct($produkt, $soubor);
         } else {
@@ -15,7 +15,7 @@ class ProductInfoBook extends ProductInfo {
             if ($obsah_stranky == false) {
                 print_r('Nelze načíst stránku');
             } elseif (!self::isProduct($obsah_stranky)) {
-                print_r('Produkt nenalezen '.$url);
+                print_r('Produkt nenalezen ' . $url);
                 $produkt = array('status' => 'Produkt nenalezen ', 'url' => $url);
                 self::saveProduct($produkt, $soubor);
             } else {
@@ -40,7 +40,7 @@ class ProductInfoBook extends ProductInfo {
     protected static function saveProduct($produkt, $soubor) {
         foreach ($produkt as $pro) {
             if (isset($pro['Title'])) {
-                file_put_contents($soubor, $pro['Title'].' '.$pro['Author'].PHP_EOL, FILE_APPEND);
+                file_put_contents($soubor, $pro['Title'] . ' ' . $pro['Author'] . PHP_EOL, FILE_APPEND);
             }
         }
     }
